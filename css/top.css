@@ -32,10 +32,10 @@ header.top div.headerLeft div.logoBox {
 header.top div.headerLeft div.logoBox p {
   font-family: "Roboto";
   color: #161616;
-  margin-bottom: -1.5vw;
+  margin-top: 1.3vw;
   font-size: 1.35vw;
   /*18px*/
-  line-height: 3vw;
+  line-height: 0.4vw;
   /*16px*/
 }
 
