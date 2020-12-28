@@ -1,5 +1,3 @@
-# web-design-final-project
-
-My final project of web.
+# CCNS Website
 
 Roughly rebuilding of CCNS website
