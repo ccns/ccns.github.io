@@ -35,7 +35,7 @@
 
 .card:hover {
   background-color: #fbf9f9;
-  transform: scale(1.5);
+  transform: scale(1.2);
   z-index: 100;
   position: relative;
 }

@@ -11,9 +11,9 @@ section.intro div.backgroundWords {
   color: #5d5b5b;
   z-index: -1;
   font-family: "Playfair Display";
-  margin-top: 3vw;
+  margin-top: 1vw;
   /*95px*/
-  font-size: 9vw;
+  font-size: 8vw;
   /*135px*/
 }
 
@@ -23,15 +23,15 @@ section.intro div.weIntro {
   font-size: 5.2vw;
   /*70px*/
   font-weight: 900;
-  margin-left: 11vw;
+  margin-left: 18.5vw;
   /*150px*/
-  margin-top: 13.7vw;
+  margin-top: 11vw;
   /*190px*/
   letter-spacing: 1px;
 }
 
 section.intro div.contactLine {
-  margin-left: 11vw;
+  margin-left: 18.5vw;
   /*150px*/
   margin-top: 2vw;
   display: flex;
@@ -74,17 +74,25 @@ section.intro div.clubIntro span.white {
   color: white;
 }
 
-section.map div{
-   width:800px;
-   height:600px;
-   margin-left: 10vw;
+
+section.map-iframe div.map{
+    width:100%;
+    height:auto;
+    margin-top: -4vw;
+    margin-left: 19vw;
+    margin-bottom: 3vw;
 }
 
+section.map-iframe div.map iframe{
+    width: 800px;
+}
+
+/* scroll top button */
 a.button {
     position: fixed;
     right: 20px;
     bottom: 20px;
-    display: block;
+    displasy: block;
     width: 30px;
     height: 30px;
     text-align: center;
@@ -92,14 +100,6 @@ a.button {
     text-decoration: none;
     border: 3px solid;
     border-radius: 25px;
-}
-
-section.map-iframe div.map{
-    margin-left: 400px;
-}
-
-section.map-iframe div.map iframe{
-    width: 800px;
 }
 
 @keyframes linkAnimate {
