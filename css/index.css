@@ -76,15 +76,13 @@ section.intro div.clubIntro span.white {
 
 
 section.map-iframe div.map{
-    width:100%;
-    height:auto;
-    margin-top: -4vw;
     margin-left: 19vw;
-    margin-bottom: 3vw;
+    margin-bottom: 6vw;
 }
 
 section.map-iframe div.map iframe{
-    width: 800px;
+    width: 900px;
+    height: 600px;
 }
 
 /* scroll top button */

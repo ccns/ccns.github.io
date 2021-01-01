@@ -54,6 +54,7 @@ header.top div.headerRight {
   justify-content: flex-end;
   height: 11.5vw;
   width: 49%;
+  margin-right: 5vw;
 }
 
 header.top div.headerRight a {
