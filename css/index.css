@@ -75,6 +75,7 @@ section.intro div.clubIntro span.white {
 }
 
 
+/* iframe map */
 section.map-iframe div.map{
     margin-left: 19vw;
     margin-bottom: 6vw;
@@ -83,6 +84,7 @@ section.map-iframe div.map{
 section.map-iframe div.map iframe{
     width: 900px;
     height: 600px;
+    border:0;
 }
 
 /* scroll top button */
