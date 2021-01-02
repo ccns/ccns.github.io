@@ -1,5 +1,5 @@
 $('#google-form').submit(function (e) {
-     //在這裡我們要先擋掉form默認事件
+     //擋掉form默認事件
      e.preventDefault();
 
      // 確認必填欄位是否填寫
