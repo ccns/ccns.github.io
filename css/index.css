@@ -85,13 +85,13 @@ section.intro div.clubIntro span.white {
     font-family: "Playfair Display";
     margin-top: 1vw;
     /*95px*/
-    font-size: 10vw;
+    font-size: 12vw;
     /*135px*/
   }
   section.intro div.weIntro {
     color: #c49f54;
     font-family: "Amiri";
-    font-size: 6.2vw;
+    font-size: 7vw;
     /*70px*/
     font-weight: 900;
     margin-left: 18.5vw;
@@ -99,22 +99,24 @@ section.intro div.clubIntro span.white {
     margin-top: 15vw;
     /*190px*/
     letter-spacing: 1px;
+
   }
   section.intro div.contactLine i {
-    font-size: 4.8vw;
+    font-size: 8vw;
     /*30px*/
     margin: 0.75vw;
     color: #5c5c5c;
+
   }
   section.intro div.clubIntro {
     font-family: "Noto Sans TC";
-    font-size: 3.5vw;
-    width: 62.5vw;
+    font-size: 5vw;
+    width: 65vw;
     margin: 0 auto;
     color: #999;
     margin-top: 2vw;
     letter-spacing: 2px;
-    line-height: 4.5vw;
+    line-height: 6vw;
   }
 
 }
