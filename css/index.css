@@ -105,7 +105,7 @@ section.intro div.clubIntro span.white {
     /*30px*/
     margin: 0.75vw;
     color: #5c5c5c;
-
+    letter-spacing: 5px;
   }
   section.intro div.clubIntro {
     font-family: "Noto Sans TC";
@@ -132,6 +132,7 @@ section.map-iframe div.map iframe {
   border: 0;
 }
 
+/* iframe RWD  */
 @media only screen and (max-width:768px) {
   section.map-iframe div.map {
     margin-left: 19vw;
