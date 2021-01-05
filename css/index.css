@@ -74,6 +74,52 @@ section.intro div.clubIntro span.white {
   color: white;
 }
 
+
+@media only screen and (max-width:768px) {
+  section.intro div.backgroundWords {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: #5d5b5b;
+    z-index: -1;
+    font-family: "Playfair Display";
+    margin-top: 1vw;
+    /*95px*/
+    font-size: 10vw;
+    /*135px*/
+  }
+  section.intro div.weIntro {
+    color: #c49f54;
+    font-family: "Amiri";
+    font-size: 6.2vw;
+    /*70px*/
+    font-weight: 900;
+    margin-left: 18.5vw;
+    /*150px*/
+    margin-top: 15vw;
+    /*190px*/
+    letter-spacing: 1px;
+  }
+  section.intro div.contactLine i {
+    font-size: 4.8vw;
+    /*30px*/
+    margin: 0.75vw;
+    color: #5c5c5c;
+  }
+  section.intro div.clubIntro {
+    font-family: "Noto Sans TC";
+    font-size: 3.5vw;
+    width: 62.5vw;
+    margin: 0 auto;
+    color: #999;
+    margin-top: 2vw;
+    letter-spacing: 2px;
+    line-height: 4.5vw;
+  }
+
+}
+
+
 /* iframe map */
 section.map-iframe div.map {
   margin-left: 19vw;

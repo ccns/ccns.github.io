@@ -13,6 +13,7 @@ header.top div.headerLeft {
 
 header.top div.headerLeft a.homeLink {
   text-decoration: none;
+  color: white;
 }
 
 header.top div.headerLeft div.logoBox {
@@ -86,7 +87,87 @@ header.top div.headerRight i:hover {
   color: #c49f54;
 }
 
+@media only screen and (max-width:768px) {
+  header.top div.headerLeft {
+    padding: 2.45vw;
+    /*45px*/
+    display: flex;
+    align-items: center;
+    width: 49%;
+  }
 
+  header.top div.headerLeft a.homeLink {
+    text-decoration: none;
+    color: white;
+  }
+  header.top div.headerLeft a.homeLink p {
+    font-size: 2.5vw;
+}
+
+  header.top div.headerLeft div.logoBox {
+    margin-right: 1.5vw;
+    width: 6.6vw;
+    height: 6.45vw;
+    background-color: #c49f54;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+  }
+
+  header.top div.headerLeft div.logoBox p {
+    font-family: "Roboto";
+    color: #161616;
+    margin-top: 1.3vw;
+    font-size: 2.35vw;
+    /*18px*/
+    line-height: 1.4vw;
+    /*16px*/
+  }
+
+  header.top div.headerLeft p {
+    font-family: "Noto Sans TC";
+    font-size: 1.35vw;
+    /*18px*/
+    color: white;
+    margin-bottom: 0;
+    letter-spacing: 2px;
+  }
+
+  header.top div.headerRight {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 11.5vw;
+    width: 49%;
+    margin-right: 3vw;
+  }
+
+  header.top div.headerRight a {
+    text-decoration: none;
+    color: white;
+    font-size: 2.45vw;
+    letter-spacing: 3px;
+    margin-left: 1vw;
+    margin-right: 3vw;
+  }
+
+  header.top div.headerRight a:hover {
+    animation-name: linkAnimate;
+    animation-duration: 0.4s;
+    color: #c49f54;
+  }
+
+  header.top div.headerRight i {
+    cursor: pointer;
+    color: white;
+    font-size: 2.13vw;
+    /*30px*/
+    margin-right: 3.45vw;
+    /*45px*/
+  }
+
+}
 @keyframes linkAnimate {
   from {
     color: white;
