@@ -1,7 +1,7 @@
 img.thumbnails-left {
   float: left;
   width: 300px;
-  height: auto;
+  height: 150px;
   max-width: 100%;
   margin: auto;
 }
@@ -9,7 +9,7 @@ img.thumbnails-left {
 img.thumbnails-right {
   float: right;
   width: 300px;
-  height: auto;
+  height: 150px;
   max-width: 100%;
   margin: auto;
 }
@@ -53,13 +53,13 @@ section.memberIntro table {
 
 @media only screen and (max-width:768px) {
   img.thumbnails-left {
-    width: 50%;
-    height: auto;
+    width: 150px;
+    height: 90px;
     max-width: 100%;
   }
   img.thumbnails-right {
-    width: 50%;
-    height: auto;
+    width: 150px;
+    height: 90px;
     max-width: 100%;
   }
   section.memberIntro div.desc-left {
