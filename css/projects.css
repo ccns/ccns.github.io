@@ -40,15 +40,6 @@
   position: relative;
 }
 
-/* Responsive columns - one column layout (vertical) on small screens */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
-}
-
 section.club-projects div.project-title span.white {
   display: flex;
   flex-direction: column;
@@ -124,11 +115,12 @@ input[type=submit]:hover {
 
   /* 一行要幾個 */
   .column {
+    display: block;
     float: left;
     width: 75%;
     height: auto;
-    padding: 0 15px;
-    font-size: 3.75vw;
+    font-size: 3.5vw;
+    margin-bottom: 20px;
   }
 
   /* 用padding分開 */
