@@ -3,7 +3,6 @@ img.thumbnails-left {
   width: 300px;
   height: 150px;
   max-width: 100%;
-  margin: auto;
 }
 
 img.thumbnails-right {
@@ -11,7 +10,6 @@ img.thumbnails-right {
   width: 300px;
   height: 150px;
   max-width: 100%;
-  margin: auto;
 }
 
 section.memberIntro div.desc-left {
@@ -54,26 +52,30 @@ section.memberIntro table {
 @media only screen and (max-width:768px) {
   img.thumbnails-left {
     width: 150px;
-    height: 90px;
+    height: 80px;
     max-width: 100%;
+    margin-left: 15px;
+
   }
   img.thumbnails-right {
     width: 150px;
-    height: 90px;
+    height: 80px;
     max-width: 100%;
+    margin-right: 15px;
   }
   section.memberIntro div.desc-left {
     text-align: left;
     font-size: 3.5vw;
     float: left;
-    max-width: 100%;
+    margin-left: 15px;
+
   }
 
   section.memberIntro div.desc-right {
     text-align: right;
     font-size: 3.5vw;
     float: right;
-    max-width: 100%;
+    margin-right: 15px;
   }
   section.memberIntro table {
     width: 100%;
