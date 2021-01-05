@@ -74,7 +74,6 @@ section.intro div.clubIntro span.white {
   color: white;
 }
 
-
 @media only screen and (max-width:768px) {
   section.intro div.backgroundWords {
     position: absolute;
@@ -88,6 +87,7 @@ section.intro div.clubIntro span.white {
     font-size: 12vw;
     /*135px*/
   }
+
   section.intro div.weIntro {
     color: #c49f54;
     font-family: "Amiri";
@@ -100,6 +100,7 @@ section.intro div.clubIntro span.white {
     /*190px*/
     letter-spacing: 1px;
   }
+
   section.intro div.contactLine i {
     font-size: 8vw;
     /*30px*/
@@ -107,6 +108,7 @@ section.intro div.clubIntro span.white {
     color: #5c5c5c;
     letter-spacing: 5px;
   }
+
   section.intro div.clubIntro {
     font-family: "Noto Sans TC";
     font-size: 5vw;
@@ -117,9 +119,7 @@ section.intro div.clubIntro span.white {
     letter-spacing: 2px;
     line-height: 8vw;
   }
-
 }
-
 
 /* iframe map */
 section.map-iframe div.map {
@@ -164,6 +164,23 @@ a.button {
   text-decoration: none;
   border: 3px solid;
   border-radius: 25px;
+}
+
+/* RWD scroll top button */
+@media only screen and (max-width:768px) {
+  a.button {
+    position: fixed;
+    right: 10px;
+    bottom: 5px;
+    displasy: block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    border: 3px solid;
+    border-radius: 25px;
+  }
 }
 
 @keyframes linkAnimate {
