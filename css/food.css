@@ -24,3 +24,31 @@ section.gallery div.desc {
   color: white;
   font-size:20px;
 }
+@media only screen and (max-width:768px) {
+  section.gallery div.gallery {
+    border: 1px solid #ccc;
+    float: left;
+    width: 50%;
+    height: auto;
+    margin-left: 25vw;
+  }
+
+  section.gallery div.gallery:hover {
+    border: 1px solid #777;
+
+  }
+
+  section.gallery div.gallery img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+
+  section.gallery div.desc {
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size:4.5vw;
+  }
+
+}
