@@ -99,7 +99,6 @@ section.intro div.clubIntro span.white {
     margin-top: 15vw;
     /*190px*/
     letter-spacing: 1px;
-
   }
   section.intro div.contactLine i {
     font-size: 8vw;
@@ -114,9 +113,9 @@ section.intro div.clubIntro span.white {
     width: 65vw;
     margin: 0 auto;
     color: #999;
-    margin-top: 2vw;
+    margin-top: 3vw;
     letter-spacing: 2px;
-    line-height: 6vw;
+    line-height: 8vw;
   }
 
 }
