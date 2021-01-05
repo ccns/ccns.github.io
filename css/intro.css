@@ -1,6 +1,7 @@
 section.intro div.introImg img{
   width: 400px;
   height: auto;
+  max-width: 100%;
   float: right;
   margin-right: 350px;
   margin-top: 40px;
@@ -9,6 +10,7 @@ section.intro div.introImg img{
 img.googleImg{
 	width: 800px;
   height: auto;
+  max-width: 100%;
 	margin-left: 4vw;
 }
 
@@ -17,9 +19,11 @@ img.googleImg{
 /* Timeline picture */
 img.timeline-pic{
 	width: 600px;
+  height: auto;
 	max-width: 100%;
 	display: block;
 	margin: auto;
+
 }
 
 
