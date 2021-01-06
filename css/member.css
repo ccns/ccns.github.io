@@ -61,7 +61,7 @@ section.memberIntro div.desc-right span.whiteAdj {
 
 @media only screen and (max-width:768px) {
   section.memberIntro div.member-row{
-    height: 300px;
+    height: 200px;
     padding: 10px;
     margin: 30px 30px;
   }
@@ -92,14 +92,14 @@ section.memberIntro div.desc-right span.whiteAdj {
   }
 
   section.memberIntro div.desc-left {
-    text-align: center;
+    text-align: left;
     margin-left: 10vw;
     font-size: 24px;
   }
 
   section.memberIntro div.desc-right {
-    text-align: center;
-    margin-right: 20vw;
+    text-align: left;
+    margin-left: 10vw;
     font-size: 24px;
   }
 
