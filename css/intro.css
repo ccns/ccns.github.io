@@ -192,9 +192,14 @@ section.timeline div.Timeline dl dd.pos-left .events:before {
 /* RWD timeline */
 @media only screen and (max-width:768px) {
   section.timeline div.Timeline dl dd .events {
-    margin-left: 3px;
-    margin-right: 3px;
+    width: 40%;
+    margin-left: 15px;
+    margin-right: 15px;
   }
-
-
+  section.timeline div.Timeline dl dd .events .events-header {
+    font-size: 18px;
+  }
+  section.timeline div.Timeline dl dd .events .events-footer {
+    font-size: 16px;
+  }
 }
