@@ -193,15 +193,15 @@ header.top div.topNav div.navIcon i {
 
   .overlay .closebtn {
     position: absolute;
-    top: 20px;
-    right: 34px;
+    top: 24px;
+    right: 26px;
   }
 
   header.top div.topNav div.navIcon i {
     display: block;
     position: absolute;
     top: 24px;
-    right: 18px;
+    right: 10px;
     cursor: pointer;
     color: white;
     font-size: 40px;

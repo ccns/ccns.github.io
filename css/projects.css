@@ -113,21 +113,17 @@ input[type=submit]:hover {
 
 @media only screen and (max-width:768px) {
 
-  /* 一行要幾個 */
   .column {
     display: block;
     float: left;
     width: 75%;
-    height: auto;
-    font-size: 4vw;
-    margin-bottom: 30px;
+    margin: 15px 0;
   }
 
-  /* 用padding分開 */
   .row {
     height: auto;
-    padding: 10px;
-    margin: 0 10px;
+    padding: 0px;
+    margin: 0 0;
   }
 
   .card {
