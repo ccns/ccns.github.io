@@ -18,16 +18,12 @@ header.top div.topNav div.headerLeft a.homeLink {
 
 header.top div.topNav div.headerLeft div.logoBox {
   margin-right: 1.5vw;
-  /*20px*/
   width: 4.6vw;
-  /*60px*/
   height: 4.45vw;
-  /*60px*/
   background-color: #c49f54;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
 }
 
 header.top div.topNav div.headerLeft div.logoBox p {
@@ -35,9 +31,7 @@ header.top div.topNav div.headerLeft div.logoBox p {
   color: #161616;
   margin-top: 1.3vw;
   font-size: 1.35vw;
-  /*18px*/
   line-height: 0.4vw;
-  /*16px*/
 }
 
 header.top div.topNav div.headerLeft p {
@@ -183,7 +177,6 @@ header.top div.topNav div.headerRight i:hover {
     letter-spacing: 2px;
     margin-top: 8vw;
     margin-bottom: 5vw;
-    margin-right: 50vw;
     width: 200px;
   }
   header.top div.topNav div.headerRight a:hover {
