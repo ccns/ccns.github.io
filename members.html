@@ -12,37 +12,47 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Amiri:700|Crimson+Text:700|Droid+Serif:400,700|Libre+Baskerville:700|Noto+Sans|Playfair+Display:900|Roboto:900|Taviraj:900&display=swap" rel="stylesheet">
 
+  <script type="text/javascript" src="js/navBar.js"></script>
   <script type="text/javascript" src="js/scroll-top.js"></script>
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
   <header class="top container-fluid">
-    <div class="headerLeft">
-      <a class="homeLink" href="index.html">
-        <div class="logoBox">
-          <p>CC</p>
-          <p>NS</p>
+    <div class="topNav">
+      <div class="headerLeft">
+        <a class="homeLink" href="index.html">
+          <div class="logoBox">
+            <p>CC</p>
+            <p>NS</p>
+          </div>
+        </a>
+        <a class="homeLink" href="index.html">
+          <p>
+            成大電腦網路愛好社
+          </p>
+        </a>
+      </div>
+
+      <div id="navBar" class="overlay">
+        <div class="headerRight overlay-content">
+          <a href="index.html">首頁</a>
+          <a href="intro.html">介紹</a>
+          <a href="members.html">社員</a>
+          <a href="env.html">社辦</a>
+          <a href="projects.html">專案</a>
+          <a href="events.html">定期聚</a>
+          <a href="food.html">食物</a>
         </div>
-      </a>
-      <a class="homeLink" href="index.html">
-        <p>
-          成大電腦網路愛好社
-        </p>
-      </a>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+          <i class="fas fa-times fa"></i>
+        </a>
+      </div>
+
+      <div class="navIcon">
+        <i class="fas fa-bars fa" onclick="openNav()"></i>
+      </div>
     </div>
-
-    <div class="headerRight">
-      <a href="./index.html">首頁</a>
-      <a href="./intro.html">介紹</a>
-      <a href="./members.html">社員</a>
-      <a href="./env.html">社辦</a>
-      <a href="./projects.html">專案</a>
-      <a href="./events.html">定期聚</a>
-      <a href="./food.html">食物</a>
-    </div>
-
-
   </header>
   <section class="memberIntro">
     <div class="member-row">
@@ -189,156 +199,156 @@
           </span>
         </div>
       </div>
-</div>
+    </div>
 
-      <div class="member-row">
-        <div class="member-column">
-          <img class="thumbnails-left" src="resources/members/DC.jpg" loading="lazy" alt="">
-          <div class="desc-left">
-            <span class="whiteAdj">
-              <h1>Daniel Chen
-                <a href="https://github.com/d4n1elchen" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
-              </h1>
-              <p>
-                USC CS碩一，曾任副社，
-              </p>
-              <p>
-                Cofounder of AInimal，現任職於Biilabs。
-              </p>
-            </span>
-          </div>
-        </div>
-
-        <div class="member-column">
-          <img class="thumbnails-right" src="resources/members/sou.jpg" loading="lazy" alt="">
-          <div class="desc-right">
-            <span class="whiteAdj">
-              <h1>Sou
-                <a href="https://github.com/Yuessiah" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
-              </h1>
-              <p>
-                資工碩一，曾任社長，
-              </p>
-              <p>
-                競程助教。
-              </p>
-            </span>
-          </div>
+    <div class="member-row">
+      <div class="member-column">
+        <img class="thumbnails-left" src="resources/members/DC.jpg" loading="lazy" alt="">
+        <div class="desc-left">
+          <span class="whiteAdj">
+            <h1>Daniel Chen
+              <a href="https://github.com/d4n1elchen" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
+            </h1>
+            <p>
+              USC CS碩一，曾任副社，
+            </p>
+            <p>
+              Cofounder of AInimal，現任職於Biilabs。
+            </p>
+          </span>
         </div>
       </div>
 
-
-      <div class="member-row">
-        <div class="member-column">
-          <img class="thumbnails-left" src="resources/members/Gholk.jpg" loading="lazy" alt="">
-          <div class="desc-left">
-            <span class="whiteAdj">
-              <h1>Gholk
-                <a href="https://github.com/GHolk" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
-              </h1>
-              <p>
-                交大測量研究助理，
-              </p>
-              <p>
-                Emacs擁護者。
-              </p>
-            </span>
-          </div>
+      <div class="member-column">
+        <img class="thumbnails-right" src="resources/members/sou.jpg" loading="lazy" alt="">
+        <div class="desc-right">
+          <span class="whiteAdj">
+            <h1>Sou
+              <a href="https://github.com/Yuessiah" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
+            </h1>
+            <p>
+              資工碩一，曾任社長，
+            </p>
+            <p>
+              競程助教。
+            </p>
+          </span>
         </div>
+      </div>
+    </div>
 
-        <div class="member-column">
-          <img class="thumbnails-right" src="resources/members/HexRabbit.jpg" loading="lazy" alt="">
-          <div class="desc-right">
-            <span class="whiteAdj">
-              <h1>HexRabbit
-                <a href="https://github.com/HexRabbit" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
-              </h1>
-              <p>
-                交大資電駭客碩一，曾任社長，
-              </p>
-              <p>
-                10sec CTF成員，現任職於TeamT5。
-              </p>
-            </span>
-          </div>
+
+    <div class="member-row">
+      <div class="member-column">
+        <img class="thumbnails-left" src="resources/members/Gholk.jpg" loading="lazy" alt="">
+        <div class="desc-left">
+          <span class="whiteAdj">
+            <h1>Gholk
+              <a href="https://github.com/GHolk" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
+            </h1>
+            <p>
+              交大測量研究助理，
+            </p>
+            <p>
+              Emacs擁護者。
+            </p>
+          </span>
         </div>
       </div>
 
-
-
-      <div class="member-row">
-        <div class="member-column">
-          <img class="thumbnails-left" src="resources/members/araHi.jpg" loading="lazy" alt="">
-          <div class="desc-left">
-            <span class="whiteAdj">
-              <h1>arasHi
-                <a href="https://github.com/arasHi87" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
-              </h1>
-              <p>
-                資工系大一，
-              </p>
-              <p>
-                他不想努力了。
-              </p>
-            </span>
-          </div>
+      <div class="member-column">
+        <img class="thumbnails-right" src="resources/members/HexRabbit.jpg" loading="lazy" alt="">
+        <div class="desc-right">
+          <span class="whiteAdj">
+            <h1>HexRabbit
+              <a href="https://github.com/HexRabbit" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
+            </h1>
+            <p>
+              交大資電駭客碩一，曾任社長，
+            </p>
+            <p>
+              10sec CTF成員，現任職於TeamT5。
+            </p>
+          </span>
         </div>
+      </div>
+    </div>
 
 
 
-        <div class="member-column">
-          <img class="thumbnails-right" src="resources/members/Auyu.jpg" loading="lazy" alt="">
-          <div class="desc-right">
-            <span class="whiteAdj">
-              <h1>Auyu0408
-              </h1>
-              <p>
-                資工系大二，
-              </p>
-              <p>
-                她會彈鋼琴，好厲害。
-              </p>
-            </span>
-          </div>
+    <div class="member-row">
+      <div class="member-column">
+        <img class="thumbnails-left" src="resources/members/araHi.jpg" loading="lazy" alt="">
+        <div class="desc-left">
+          <span class="whiteAdj">
+            <h1>arasHi
+              <a href="https://github.com/arasHi87" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
+            </h1>
+            <p>
+              資工系大一，
+            </p>
+            <p>
+              他不想努力了。
+            </p>
+          </span>
         </div>
       </div>
 
 
 
-        <div class="member-row">
-          <div class="member-column">
-            <img class="thumbnails-left" src="resources/members/Kirito.jpg" loading="lazy" alt="">
-            <div class="desc-left">
-              <span class="whiteAdj">
-                <h1>MiohitoKiri5474
-                  <a href="https://github.com/miohitokiri5474" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
-                </h1>
-                <p>
-                  資工系大二，aka桐人，
-                </p>
-                <p>
-                  競程助教。
-                </p>
-              </span>
-            </div>
-          </div>
-
-          <div class="member-column">
-            <img class="thumbnails-right" src="resources/members/leo.jpg" loading="lazy" alt="">
-            <div class="desc-right">
-              <span class="whiteAdj">
-                <h1>Leo900807
-                </h1>
-                <p>
-                  資工系大二，競程助教，
-                </p>
-                <p>
-                  據說潤羽るしあ是他婆。
-                </p>
-              </span>
-            </div>
-          </div>
+      <div class="member-column">
+        <img class="thumbnails-right" src="resources/members/Auyu.jpg" loading="lazy" alt="">
+        <div class="desc-right">
+          <span class="whiteAdj">
+            <h1>Auyu0408
+            </h1>
+            <p>
+              資工系大二，
+            </p>
+            <p>
+              她會彈鋼琴，好厲害。
+            </p>
+          </span>
         </div>
+      </div>
+    </div>
+
+
+
+    <div class="member-row">
+      <div class="member-column">
+        <img class="thumbnails-left" src="resources/members/Kirito.jpg" loading="lazy" alt="">
+        <div class="desc-left">
+          <span class="whiteAdj">
+            <h1>MiohitoKiri5474
+              <a href="https://github.com/miohitokiri5474" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
+            </h1>
+            <p>
+              資工系大二，aka桐人，
+            </p>
+            <p>
+              競程助教。
+            </p>
+          </span>
+        </div>
+      </div>
+
+      <div class="member-column">
+        <img class="thumbnails-right" src="resources/members/leo.jpg" loading="lazy" alt="">
+        <div class="desc-right">
+          <span class="whiteAdj">
+            <h1>Leo900807
+            </h1>
+            <p>
+              資工系大二，競程助教，
+            </p>
+            <p>
+              據說潤羽るしあ是他婆。
+            </p>
+          </span>
+        </div>
+      </div>
+    </div>
   </section>
   <section class="to-top">
     <a class="button" href="#"><i class="fas fa-chevron-up"></i></a>

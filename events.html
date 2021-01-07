@@ -14,34 +14,45 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Amiri:700|Crimson+Text:700|Droid+Serif:400,700|Libre+Baskerville:700|Noto+Sans|Playfair+Display:900|Roboto:900|Taviraj:900&display=swap" rel="stylesheet">
 
+  <script type="text/javascript" src="js/navBar.js"></script>
   <script type="text/javascript" src="js/scroll-top.js"></script>
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
   <header class="top container-fluid">
-    <div class="headerLeft">
-      <a class="homeLink" href="index.html">
-        <div class="logoBox">
-          <p>CC</p>
-          <p>NS</p>
-        </div>
-      </a>
-      <a class="homeLink" href="index.html">
-        <p>
-          成大電腦網路愛好社
-        </p>
-      </a>
-    </div>
+    <div class="topNav">
+      <div class="headerLeft">
+        <a class="homeLink" href="index.html">
+          <div class="logoBox">
+            <p>CC</p>
+            <p>NS</p>
+          </div>
+        </a>
+        <a class="homeLink" href="index.html">
+          <p>
+            成大電腦網路愛好社
+          </p>
+        </a>
+      </div>
 
-    <div class="headerRight">
-      <a href="./index.html">首頁</a>
-      <a href="./intro.html">介紹</a>
-      <a href="./members.html">社員</a>
-      <a href="./env.html">社辦</a>
-      <a href="./projects.html">專案</a>
-      <a href="./events.html">定期聚</a>
-      <a href="./food.html">食物</a>
+      <div id="navBar" class="overlay">
+        <div class="headerRight overlay-content">
+          <a href="index.html">首頁</a>
+          <a href="intro.html">介紹</a>
+          <a href="members.html">社員</a>
+          <a href="env.html">社辦</a>
+          <a href="projects.html">專案</a>
+          <a href="events.html">定期聚</a>
+          <a href="food.html">食物</a>
+        </div>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+          <i class="fas fa-times fa"></i>
+        </a>
+      </div>
+      <div class="navIcon">
+        <i class="fas fa-bars fa" onclick="openNav()"></i>
+      </div>
     </div>
   </header>
 
