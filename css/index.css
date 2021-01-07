@@ -135,9 +135,9 @@ section.map-iframe div.map iframe {
 /* iframe RWD  */
 @media only screen and (max-width:768px) {
   section.map-iframe div.map {
-    margin-left: 19vw;
     position: relative;
     padding-bottom: 75%;
+    margin-left: 19vw;
     overflow: hidden;
   }
 
@@ -145,7 +145,7 @@ section.map-iframe div.map iframe {
     position: absolute;
     top: 0;
     left: 0;
-    width: 90%;
+    width: 85%;
     height: 75%;
     border: 0;
   }

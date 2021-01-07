@@ -146,7 +146,6 @@ header.top div.topNav div.headerRight i:hover {
     align-items: center;
     justify-content: flex-end;
     height: 11.5vw;
-    margin-left: 20vw;
     margin-bottom: 20vw;
     padding: 5px;
   }
@@ -178,7 +177,8 @@ header.top div.topNav div.headerRight i:hover {
     letter-spacing: 2px;
     margin-top: 8vw;
     margin-bottom: 5vw;
-    width: 180px;
+    margin-left: 0;
+    min-width: 180px;
   }
   header.top div.topNav div.headerRight a:hover {
        background-color: grey;
