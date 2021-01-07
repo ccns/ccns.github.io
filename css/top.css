@@ -158,7 +158,6 @@ header.top div.topNav div.headerRight i:hover {
     align-items: center;
     justify-content: flex-end;
     height: 11.5vw;
-    width: 49%;
     margin-left: 20vw;
     margin-bottom: 20vw;
     padding: 5px;
@@ -166,12 +165,11 @@ header.top div.topNav div.headerRight i:hover {
 
   .overlay {
     height: 100%;
-    width: 0;
+    width: 0%;
     position: fixed;
     z-index: 1;
     top: 0;
     right: 0;
-    background-color: rgb(0,0,0);
     background-color: rgba(0,0,0, 0.9);
     overflow-x: hidden;
     transition: 0.5s;
@@ -189,13 +187,11 @@ header.top div.topNav div.headerRight i:hover {
     color: white;
     display: block;
     transition: 0.3s;
-    margin-right: 5vw;
-    margin-top: 5vw;
     text-decoration: none;
     color: white;
     font-size: 4.5vw;
     letter-spacing: 1px;
-    margin-left: 2.54vw;
+    margin: 5vw 5vw 5vw 5vw;
   }
   header.top div.topNav div.headerRight a:hover {
        background-color: grey;
