@@ -182,16 +182,14 @@ header.top div.topNav div.headerRight i:hover {
   }
 
   header.top div.topNav div.headerRight a {
-    padding: 8px;
-    text-decoration: none;
-    color: white;
+    padding: 5px;
     display: block;
     transition: 0.3s;
     text-decoration: none;
     color: white;
     font-size: 4.5vw;
-    letter-spacing: 1px;
-    margin: 5vw 5vw 5vw 5vw;
+    letter-spacing: 2px;
+    margin: 5vw 14vw 5vw 5vw;
   }
   header.top div.topNav div.headerRight a:hover {
        background-color: grey;
