@@ -181,7 +181,10 @@ header.top div.topNav div.headerRight i:hover {
     color: white;
     font-size: 4.5vw;
     letter-spacing: 2px;
-    margin: 5vw 5vw;
+    margin-top: 8vw;
+    margin-bottom: 5vw;
+    margin-right: 50vw;
+    width: 200px;
   }
   header.top div.topNav div.headerRight a:hover {
        background-color: grey;
