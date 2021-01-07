@@ -131,13 +131,13 @@ header.top div.topNav div.headerRight i:hover {
   }
 
   header.top div.topNav div.headerLeft a.homeLink p {
-    font-size: 3vw;
+    font-size: 4.5vw;
   }
 
   header.top div.topNav div.headerLeft div.logoBox {
     margin-right: 2vw;
-    width: 8vw;
-    height: 6.45vw;
+    width: 10vw;
+    height: 8.45vw;
     background-color: #c49f54;
     display: flex;
     flex-direction: column;
@@ -149,9 +149,9 @@ header.top div.topNav div.headerRight i:hover {
     font-family: "Roboto";
     color: #161616;
     margin-top: 1.3vw;
-    font-size: 2.35vw;
+    font-size: 3.35vw;
     /*18px*/
-    line-height: 1.4vw;
+    line-height: 2.4vw;
     /*16px*/
   }
 
