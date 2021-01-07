@@ -109,13 +109,6 @@ header.top div.topNav div.headerRight i:hover {
     display: block;
   }
 
-  header.top div.topNav div.navIcon a.icon {
-    display: block;
-    position: absolute;
-    right: 16px;
-    top: 12px;
-  }
-
   header.top div.topNav div.headerLeft {
     padding: 3vw;
     /*45px*/
@@ -206,8 +199,8 @@ header.top div.topNav div.headerRight i:hover {
   }
   header.top div.topNav div.navIcon i{
     position: absolute;
-    top: 20px;
-    right: 24px;
+    top: 28px;
+    right: 22px;
     cursor:pointer;
     color:white;
     font-size: 40px;
