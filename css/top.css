@@ -142,7 +142,6 @@ header.top div.topNav div.headerRight i:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
   }
 
   header.top div.topNav div.headerLeft div.logoBox p {
@@ -150,9 +149,7 @@ header.top div.topNav div.headerRight i:hover {
     color: #161616;
     margin-top: 1.3vw;
     font-size: 3.35vw;
-    /*18px*/
     line-height: 2.4vw;
-    /*16px*/
   }
 
   /* NavBar for RWD  */
@@ -215,8 +212,8 @@ header.top div.topNav div.headerRight i:hover {
   }
   header.top div.topNav div.navIcon i{
     position: absolute;
-    top: 28px;
-    right: 28px;
+    top: 20px;
+    right: 24px;
     cursor:pointer;
     color:white;
     font-size: 40px;
