@@ -164,15 +164,17 @@ a.button {
   text-decoration: none;
   border: 3px solid;
   border-radius: 25px;
+  z-index: 9999;
 }
 
 /* RWD scroll top button */
 @media only screen and (max-width:768px) {
   a.button {
+    z-index: 9999;
     position: fixed;
     right: 10px;
     bottom: 5px;
-    displasy: block;
+    display: block;
     width: 30px;
     height: 30px;
     text-align: center;

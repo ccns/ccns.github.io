@@ -80,6 +80,7 @@ header.top div.topNav div.headerRight i:hover {
   animation-duration: 0.4s;
   color: #c49f54;
 }
+
 .overlay .closebtn {
   display: none;
 }
@@ -177,7 +178,7 @@ header.top div.topNav div.headerRight i:hover {
     letter-spacing: 2px;
     margin-top: 8vw;
     margin-bottom: 5vw;
-    width: 200px;
+    width: 180px;
   }
   header.top div.topNav div.headerRight a:hover {
        background-color: grey;
