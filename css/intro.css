@@ -9,7 +9,7 @@ section.intro div.introImg img {
 
 @media only screen and (max-width:768px) {
   section.intro div.introImg img {
-    width: 25%;
+    width: 62%;
     height: auto;
     max-width: 100%;
     float: right;
