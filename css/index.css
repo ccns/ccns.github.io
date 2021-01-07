@@ -11,21 +11,21 @@ section.intro div.backgroundWords {
   color: #5d5b5b;
   z-index: -1;
   font-family: "Playfair Display";
-  margin-top: 1vw;
+  margin-top: 5vw;
   /*95px*/
-  font-size: 8vw;
+  font-size: 10vw;
   /*135px*/
 }
 
 section.intro div.weIntro {
   color: #c49f54;
   font-family: "Amiri";
-  font-size: 5.2vw;
+  font-size: 3.5vw;
   /*70px*/
   font-weight: 900;
   margin-left: 18.5vw;
   /*150px*/
-  margin-top: 11vw;
+  margin-top: 18.5vw;
   /*190px*/
   letter-spacing: 1px;
 }
@@ -33,7 +33,7 @@ section.intro div.weIntro {
 section.intro div.contactLine {
   margin-left: 18.5vw;
   /*150px*/
-  margin-top: 2vw;
+  margin-top: 1vw;
   display: flex;
   align-items: center;
   margin-bottom: 5vw;
@@ -61,7 +61,7 @@ section.intro div.contactLine i:hover {
 
 section.intro div.clubIntro {
   font-family: "Noto Sans TC";
-  font-size: 2.3vw;
+  font-size: 2vw;
   width: 62.5vw;
   margin: 0 auto;
   color: #999;
@@ -84,14 +84,14 @@ section.intro div.clubIntro span.white {
     font-family: "Playfair Display";
     margin-top: 1vw;
     /*95px*/
-    font-size: 12vw;
+    font-size: 10vw;
     /*135px*/
   }
 
   section.intro div.weIntro {
     color: #c49f54;
     font-family: "Amiri";
-    font-size: 7vw;
+    font-size: 6vw;
     /*70px*/
     font-weight: 900;
     margin-left: 18.5vw;
@@ -128,7 +128,7 @@ section.map-iframe div.map {
 }
 
 section.map-iframe div.map iframe {
-  max-width: 100%;
+  max-width: 75%;
   border: 0;
 }
 
