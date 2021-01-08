@@ -5,16 +5,15 @@ section.intro {
 }
 
 section.intro div.backgroundWords {
-  position: absolute;
   width: 100%;
   text-align: center;
   color: #5d5b5b;
-  z-index: -1;
   font-family: "Playfair Display";
   margin-top: 5vw;
   /*95px*/
   font-size: 10vw;
   /*135px*/
+  user-select: none;
 }
 
 section.intro div.weIntro {
@@ -25,7 +24,7 @@ section.intro div.weIntro {
   font-weight: 900;
   margin-left: 18.5vw;
   /*150px*/
-  margin-top: 18.5vw;
+  margin-top: 3.5vw;
   /*190px*/
   letter-spacing: 1px;
 }
@@ -76,16 +75,15 @@ section.intro div.clubIntro span.white {
 
 @media only screen and (max-width:768px) {
   section.intro div.backgroundWords {
-    position: absolute;
     width: 100%;
     text-align: center;
     color: #5d5b5b;
-    z-index: -1;
     font-family: "Playfair Display";
     margin-top: 1vw;
     /*95px*/
     font-size: 10vw;
     /*135px*/
+    user-select: none;
   }
 
   section.intro div.weIntro {
@@ -96,7 +94,7 @@ section.intro div.clubIntro span.white {
     font-weight: 900;
     margin-left: 18.5vw;
     /*150px*/
-    margin-top: 15vw;
+    margin-top: 4vw;
     /*190px*/
     letter-spacing: 1px;
   }
