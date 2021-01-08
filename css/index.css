@@ -22,7 +22,7 @@ section.intro div.weIntro {
   font-size: 3.5vw;
   /*70px*/
   font-weight: 900;
-  margin-left: 18.5vw;
+  margin-left: var(--ccns-margin-width);
   /*150px*/
   margin-top: 3.5vw;
   /*190px*/
@@ -30,7 +30,7 @@ section.intro div.weIntro {
 }
 
 section.intro div.contactLine {
-  margin-left: 18.5vw;
+  margin-left: var(--ccns-margin-width);
   /*150px*/
   margin-top: 1vw;
   display: flex;
@@ -92,7 +92,7 @@ section.intro div.clubIntro span.white {
     font-size: 6vw;
     /*70px*/
     font-weight: 900;
-    margin-left: 18.5vw;
+    margin-left: var(--ccns-margin-width);
     /*150px*/
     margin-top: 4vw;
     /*190px*/
@@ -121,7 +121,7 @@ section.intro div.clubIntro span.white {
 
 /* iframe map */
 section.map-iframe div.map {
-  margin-left: 19vw;
+  margin-left: var(--ccns-margin-width);
   margin-bottom: 5vw;
 }
 
@@ -135,7 +135,7 @@ section.map-iframe div.map iframe {
   section.map-iframe div.map {
     position: relative;
     padding-bottom: 75%;
-    margin-left: 19vw;
+    margin-left: var(--ccns-margin-width);
     overflow: hidden;
   }
 

@@ -3,7 +3,7 @@ section.intro div.introImg img {
   height: auto;
   max-width: 100%;
   float: right;
-  margin-right: 20vw;
+  margin-right: var(--ccns-margin-width);
   margin-top: 2vw;
 }
 
@@ -13,7 +13,7 @@ section.intro div.introImg img {
     height: auto;
     max-width: 100%;
     float: right;
-    margin-right: 20vw;
+    margin-right: var(--ccns-margin-width);
     margin-top: 3vw;
   }
 

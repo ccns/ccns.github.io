@@ -23,3 +23,14 @@
 body{
     background-color: #141414;
 }
+
+
+:root {
+    --ccns-margin-width: 20vw;
+}
+
+@media only screen and (max-width:768px) {
+    :root {
+        --ccns-margin-width: 17.5vw;
+    }
+}
