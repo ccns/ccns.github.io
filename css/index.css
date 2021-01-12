@@ -9,7 +9,7 @@ section.intro div.backgroundWords {
   text-align: center;
   color: #5d5b5b;
   font-family: "Playfair Display";
-  margin-top: 5vw;
+  margin-top: 1vw;
   /*95px*/
   font-size: 10vw;
   /*135px*/
@@ -24,7 +24,7 @@ section.intro div.weIntro {
   font-weight: 900;
   margin-left: var(--ccns-margin-width);
   /*150px*/
-  margin-top: 3.5vw;
+  margin-top: 1vw;
   /*190px*/
   letter-spacing: 1px;
 }
@@ -35,7 +35,7 @@ section.intro div.contactLine {
   margin-top: 1vw;
   display: flex;
   align-items: center;
-  margin-bottom: 5vw;
+  margin-bottom: 3vw;
 }
 
 section.intro div.contactLine div.line {
