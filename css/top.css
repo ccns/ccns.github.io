@@ -200,11 +200,11 @@ header.top div.topNav div.navIcon i {
   header.top div.topNav div.navIcon i {
     display: block;
     position: absolute;
-    top: 20px;
+    top: 30px;
     right: 10px;
     cursor: pointer;
     color: white;
-    font-size: 40px;
+    font-size: 30px;
   }
 }
 
