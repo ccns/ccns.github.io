@@ -1,0 +1,37 @@
+{
+  "name": "ccns.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.0.2",
+    "bootstrap": "^4.4.0",
+    "flipclock": "^0.10.8",
+    "jquery": "^3.5.0",
+    "popper.js": "^1.16.0"
+  },
+  "devDependencies": {
+    "ejs": "^3.1.5",
+    "moment": "^2.29.1",
+    "request": "^2.88.2"
+  },
+  "scripts": {
+    "gen": "git pull && node generate.js",
+    "bootstrap": "cp -r node_modules/bootstrap/dist -T frameworks/bootstrap",
+    "flipclock": "cp -r node_modules/flipclock/dist -T frameworks/flipclock",
+    "fontawesome": "cp -r node_modules/@fortawesome/fontawesome-free -T frameworks/fontawesome-free",
+    "jquery": "cp -r node_modules/jquery/dist/ -T frameworks/jquery",
+    "bundle": "rm -rf frameworks/*; npm run bootstrap; npm run flipclock; npm run fontawesome; npm run jquery",
+    "push": "git add -A && git diff-index --quiet HEAD || (git commit -m 'update events' && git push)"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ccns/ccns.github.io.git"
+  },
+  "author": "Daniel Chen",
+  "license": "GPL",
+  "bugs": {
+    "url": "https://github.com/ccns/ccns.github.io/issues"
+  },
+  "homepage": "https://github.com/ccns/ccns.github.io#readme"
+}
