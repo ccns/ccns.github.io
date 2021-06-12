@@ -1,10 +1,10 @@
-section.memberIntro div.member-row{
+section.memberIntro div.member-row {
   height: 300px;
   padding: 50px;
   margin: 0 50px;
 }
 
-section.memberIntro div.member-column{
+section.memberIntro div.member-column {
   float: left;
   width: 50%;
   padding: 0 10px;
@@ -52,16 +52,22 @@ section.memberIntro div.desc-right span.whiteAdj {
   color: rgb(229, 233, 236);
 }
 
+iframe.c-chan {
+  width: 200px;
+  height: 420px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
 
-
-@media only screen and (max-width:768px) {
-  section.memberIntro div.member-row{
+@media only screen and (max-width: 768px) {
+  section.memberIntro div.member-row {
     height: 200px;
     padding: 10px;
     margin: 30px 30px;
   }
 
-  section.memberIntro div.member-column{
+  section.memberIntro div.member-column {
     width: 100%;
     padding: 5px 0px;
   }
@@ -97,5 +103,4 @@ section.memberIntro div.desc-right span.whiteAdj {
     margin-left: 10vw;
     font-size: 22px;
   }
-
 }
