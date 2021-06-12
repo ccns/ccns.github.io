@@ -6,13 +6,12 @@
 .column {
   float: left;
   width: 50%;
-  padding: 0 10px;
+  padding: 0 40px;
 }
 
 /* 用padding分開 */
 .row {
-  height: 180px;
-  padding: 60px;
+  padding: 40px 10vw;
   margin: 0 10px;
 }
 
@@ -27,10 +26,7 @@
   padding: 16px;
   text-align: center;
   background-color: #dfdcdc;
-  height: 10vw;
-  width: 35vw;
-  transition: transform .2s;
-  margin-left: 50px;
+  transition: transform 0.2s;
 }
 
 .card:hover {
@@ -66,17 +62,21 @@ section.club-projects div.project-desc p.desc-box {
 }
 
 /* form */
+.project-form {
+  margin-top: 80px;
+  margin-bottom: 60px;
+}
+
 form {
   width: 50%;
   border-radius: 5px;
   background-color: #dfdcdc;
   padding: 30px;
-  margin-left: 400px;
-  margin-bottom: 20px;
+  margin: 20px auto;
 }
 
-input[type=text] {
-  width: 200px;
+input[type="text"] {
+  width: 100%;
   padding: 12px 20px;
   margin: 8px 2px 0 0px;
   display: inline-block;
@@ -88,7 +88,7 @@ input[type=text] {
 
 textarea {
   height: 150px;
-  width: 300px;
+  width: 100%;
   margin-top: 10px;
   padding: 12px 20px;
   border: 1px solid #ccc;
@@ -96,28 +96,28 @@ textarea {
   vertical-align: middle;
 }
 
-input[type=submit] {
-  width: 35%;
-  background-color: #4CAF50;
+input[type="submit"] {
+  font-size: 18px;
+  background-color: #4caf50;
   color: white;
-  padding: 14px 20px;
+  padding: 12px 40px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   margin-top: 20px;
 }
 
-input[type=submit]:hover {
+input[type="submit"]:hover {
   background-color: #45a049;
 }
 
-@media only screen and (max-width:768px) {
-
+@media only screen and (max-width: 768px) {
   .column {
     display: block;
     float: left;
-    width: 75%;
+    width: 100%;
     margin: 15px 0;
+    padding: 0 40px;
   }
 
   .row {
@@ -132,8 +132,7 @@ input[type=submit]:hover {
     background-color: #dfdcdc;
     height: auto;
     width: 100%;
-    transition: transform .2s;
-    margin-left: 12vw;
+    transition: transform 0.2s;
   }
 
   .card:hover {
@@ -155,15 +154,19 @@ input[type=submit]:hover {
   }
 
   /* form */
+  .project-form {
+    margin-top: 40px;
+    padding: 0 40px;
+  }
+
   form {
-    width: 75%;
+    width: 100%;
     border-radius: 5px;
     background-color: #dfdcdc;
     padding: 30px;
-    margin-left: 15vw;
   }
 
-  input[type=text] {
+  input[type="text"] {
     width: 100%;
     height: auto;
     padding: 12px 20px;
@@ -185,10 +188,10 @@ input[type=submit]:hover {
     vertical-align: middle;
   }
 
-  input[type=submit] {
+  input[type="submit"] {
     width: 75%;
     height: auto;
-    background-color: #4CAF50;
+    background-color: #4caf50;
     color: white;
     padding: 14px 20px;
     border: none;
@@ -198,7 +201,7 @@ input[type=submit]:hover {
     margin-top: 20px;
   }
 
-  input[type=submit]:hover {
+  input[type="submit"]:hover {
     background-color: #45a049;
   }
 }
