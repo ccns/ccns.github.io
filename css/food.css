@@ -1,19 +1,15 @@
 section.discord-embed div.discord-food {
-  margin-left: 18vw;
-  margin-bottom: 3vw;
-  width: 1000px;
-  height: 800px;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  height: 75vh;
   max-width: 100%;
   max-height: 100%;
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width: 768px) {
   section.discord-embed div.discord-food {
-    margin-top: 5vw;
-    margin-left: 10vw;
-    width: 600px;
-    height: 450px;
-    max-width: 75%;
-    max-height: 75%;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    height: 85vh;
   }
 }
