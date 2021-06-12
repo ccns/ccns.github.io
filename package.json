@@ -16,7 +16,7 @@
     "request": "^2.88.2"
   },
   "scripts": {
-    "gen": "git pull && node generate.js",
+    "gen": "node generate.js",
     "bootstrap": "cp -r node_modules/bootstrap/dist -T frameworks/bootstrap",
     "flipclock": "cp -r node_modules/flipclock/dist -T frameworks/flipclock",
     "fontawesome": "cp -r node_modules/@fortawesome/fontawesome-free -T frameworks/fontawesome-free",
