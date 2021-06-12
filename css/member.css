@@ -1,54 +1,30 @@
-section.memberIntro div.member-row {
-  height: 300px;
-  padding: 50px;
-  margin: 0 50px;
+section.memberIntro div.member-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 50px 10vw;
 }
 
-section.memberIntro div.member-column {
-  float: left;
-  width: 50%;
-  padding: 0 10px;
+section.memberIntro div.member-item {
+  flex: 50%;
+  padding: 50px 5vw;
 }
 
-img.thumbnails-left {
-  width: 50%;
-  height: auto;
-  max-width: 100%;
-  margin-left: 10vw;
+img.thumbnails {
+  width: 100%;
 }
 
-img.thumbnails-right {
-  width: 50%;
-  height: auto;
-  max-width: 100%;
-  margin-left: 8vw;
-}
-
-section.memberIntro div.desc-left {
+section.memberIntro div.desc {
   text-align: left;
-  margin-left: 10vw;
   font-size: 20px;
 }
 
-section.memberIntro div.desc-right {
-  text-align: left;
-  margin-left: 8vw;
-  font-size: 20px;
-}
-
-section.memberIntro div.desc-left h1 {
+section.memberIntro div.desc h1 {
   color: #c49f54;
+  margin-top: 20px;
 }
 
-section.memberIntro div.desc-right h1 {
-  color: #c49f54;
-}
-
-section.memberIntro div.desc-left span.whiteAdj {
-  color: rgb(229, 233, 236);
-}
-
-section.memberIntro div.desc-right span.whiteAdj {
+section.memberIntro div.desc span.whiteAdj {
   color: rgb(229, 233, 236);
 }
 
@@ -61,46 +37,20 @@ iframe.c-chan {
 }
 
 @media only screen and (max-width: 768px) {
-  section.memberIntro div.member-row {
-    height: 200px;
-    padding: 10px;
-    margin: 30px 30px;
+  section.memberIntro div.member-list {
+    padding: 30px 30px;
   }
 
-  section.memberIntro div.member-column {
-    width: 100%;
-    padding: 5px 0px;
+  section.memberIntro div.member-item {
+    flex: 100%;
   }
 
-  img.thumbnails-left {
-    width: 75%;
-    height: auto;
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 10vw;
-  }
-
-  img.thumbnails-right {
-    width: 75%;
-    height: auto;
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 10vw;
-  }
-
-  section.memberIntro div.desc-left {
+  section.memberIntro div.desc {
     text-align: center;
-    margin-left: 10vw;
     font-size: 22px;
   }
 
-  section.memberIntro div.desc-right {
-    text-align: center;
-    margin-left: 10vw;
-    font-size: 22px;
+  iframe.c-chan {
+    display: none;
   }
 }
