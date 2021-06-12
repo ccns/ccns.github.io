@@ -22,7 +22,8 @@
     "fontawesome": "cp -r node_modules/@fortawesome/fontawesome-free -T frameworks/fontawesome-free",
     "jquery": "cp -r node_modules/jquery/dist/ -T frameworks/jquery",
     "bundle": "rm -rf frameworks/*; npm run bootstrap; npm run flipclock; npm run fontawesome; npm run jquery",
-    "push": "git add -A && git diff-index --quiet HEAD || (git commit -m 'update events' && git push)"
+    "push": "git add -A && git diff-index --quiet HEAD || (git commit -m 'update pages' && git push)",
+    "update": "npm run gen; npm run push"
   },
   "repository": {
     "type": "git",
