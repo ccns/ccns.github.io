@@ -8,29 +8,36 @@
 @import "env.css";
 
 @font-face {
-    font-family: "Noto Sans TC";
-    src: url('../fonts/NotoSans-Regular.ttf');
-    font-display: swap;
+  font-family: "Noto Sans TC";
+  src: url("../fonts/NotoSans-Regular.ttf");
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "Noto Sans TC Bold";
-    src: url('../fonts/NotoSans-Regular.ttf');
-    font-display: swap;
+  font-family: "Noto Sans TC Bold";
+  src: url("../fonts/NotoSans-Regular.ttf");
+  font-display: swap;
 }
 
-
-body{
-    background-color: #141414;
+body {
+  background-color: #141414;
 }
-
 
 :root {
-    --ccns-margin-width: 20vw;
+  --ccns-margin-width: 20vw;
 }
 
-@media only screen and (max-width:768px) {
-    :root {
-        --ccns-margin-width: 17.5vw;
-    }
+a {
+  color: #5479c4;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #c49f54;
+}
+
+@media only screen and (max-width: 768px) {
+  :root {
+    --ccns-margin-width: 17.5vw;
+  }
 }
