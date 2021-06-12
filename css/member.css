@@ -24,6 +24,16 @@ section.memberIntro div.desc h1 {
   margin-top: 20px;
 }
 
+section.memberIntro div.desc h1 a {
+  color: #888;
+  font-size: 95%;
+  margin-left: 5px;
+}
+
+section.memberIntro div.desc h1 a i:hover {
+  color: #c49f54;
+}
+
 section.memberIntro div.desc span.whiteAdj {
   color: rgb(229, 233, 236);
 }
