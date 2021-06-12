@@ -1,0 +1,96 @@
+[
+  {
+    "name": "Ian Sung",
+    "thumbnail": "/resources/members/Ian.jpg",
+    "description": "資工系大四，競程助教，\n目前任職於NextDrive。",
+    "links": [{ "link": "https://github.com/a20034294", "icon": "github" }]
+  },
+  {
+    "name": "nbsword",
+    "thumbnail": "/resources/members/nbsword.jpg",
+    "description": "工資系大四，aka空白，現任社長，\n曾任職於 Cinnamon AI。",
+    "links": [{ "link": "https://github.com/nbswords", "icon": "github" }]
+  },
+  {
+    "name": "Rain",
+    "thumbnail": "/resources/members/Rain.jpg",
+    "description": "資工系大四，現任副社長，\n曾任職於 iCHEF。",
+    "links": [{ "link": "https://github.com/RainrainWu", "icon": "github" }]
+  },
+  {
+    "name": "Tsundere Chen",
+    "thumbnail": "/resources/members/TC.jpg",
+    "description": "資工系大三，前任社長，\n曾任職於 Pixnet、NextDrive。",
+    "links": [{ "link": "https://github.com/TsundereChen", "icon": "github" }]
+  },
+  {
+    "name": "r2",
+    "thumbnail": "/resources/members/r2.jpg",
+    "description": "地科所碩二，曾任社長，\n夢之大地 BBS 系統維護者。",
+    "links": [{ "link": "https://github.com/holishing", "icon": "github" }]
+  },
+  {
+    "name": "Dom2112",
+    "thumbnail": "/resources/members/Dom2112.jpg",
+    "description": "資工系大四，\n夢之大地 BBS 程式開發者。",
+    "links": [{ "link": "https://github.com/IepIweidieng", "icon": "github" }]
+  },
+  {
+    "name": "Shun Jie",
+    "thumbnail": "/resources/members/SJ.jpg",
+    "description": "機械所碩三，曾任社長，\n他畢業了，好耶。",
+    "links": [{ "link": "https://github.com/xcv123321", "icon": "github" }]
+  },
+  {
+    "name": "Raiso",
+    "thumbnail": "/resources/members/Raiso.jpg",
+    "description": "機械所碩一，曾任副社長，\n玩具大師，競程助教。",
+    "links": [{ "link": "https://github.com/raiso777", "icon": "github" }]
+  },
+  {
+    "name": "Daniel Chen",
+    "thumbnail": "/resources/members/DC.jpg",
+    "description": "美國南加州理工大學 Computer Science 碩三，曾任副社長，\n去年因為疫情逃回台灣，現在要逃回美國了。",
+    "links": [{ "link": "https://github.com/d4n1elchen", "icon": "github" }]
+  },
+  {
+    "name": "Sou",
+    "thumbnail": "/resources/members/sou.jpg",
+    "description": "資工碩一，曾任社長，\n競程助教。",
+    "links": [{ "link": "https://github.com/IepIweidieng", "icon": "github" }]
+  },
+  {
+    "name": "Gholk",
+    "thumbnail": "/resources/members/GHolk.jpg",
+    "description": "交大測量所畢業，曾任副社長，\nEmacs 擁護者。",
+    "links": [{ "link": "https://github.com/GHolk", "icon": "github" }]
+  },
+  {
+    "name": "HexRabbit",
+    "thumbnail": "/resources/members/HexRabbit.jpg",
+    "description": "交大資電駭客碩一，曾任社長，\n10sec CTF 成員，曾任職於 TeamT5。",
+    "links": [{ "link": "https://github.com/HexRabbit", "icon": "github" }]
+  },
+  {
+    "name": "arasHi",
+    "thumbnail": "/resources/members/araHi.jpg",
+    "description": "資工系大一，aka 伊嵐，\n他不想努力了。",
+    "links": [{ "link": "https://github.com/arasHi87", "icon": "github" }]
+  },
+  {
+    "name": "Auyu0408",
+    "thumbnail": "/resources/members/Auyu.jpg",
+    "description": "資工系大二，\n她會彈鋼琴，好厲害。"
+  },
+  {
+    "name": "MiohitoKiri5474",
+    "thumbnail": "/resources/members/Kirito.jpg",
+    "description": "資工系大二，aka桐人，\n競程助教。",
+    "links": [{ "link": "https://github.com/miohitokiri5474", "icon": "github" }]
+  },
+  {
+    "name": "Leo900807",
+    "thumbnail": "/resources/members/leo.jpg",
+    "description": "資工系大二，競程助教，<br />據說 <a href=\"https://www.youtube.com/channel/UCl_gCybOJRIgOXw6Qb4qJzQ\">潤羽るしあ </a> 是他婆。"
+  }
+]
