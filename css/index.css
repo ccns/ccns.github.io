@@ -39,7 +39,7 @@ section.intro div.contactLine {
 }
 
 section.intro div.contactLine div.line {
-  width: 11vw;
+  width: 8vw;
   height: 1px;
   background-color: #c49f54;
   margin-right: 2vw;
@@ -61,7 +61,7 @@ section.intro div.contactLine i:hover {
 section.intro div.clubIntro {
   font-family: "Noto Sans TC";
   font-size: 2vw;
-  width: 62.5vw;
+  width: 60vw;
   margin: 0 auto;
   color: #999;
   margin-top: 2vw;
