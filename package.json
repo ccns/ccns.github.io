@@ -6,7 +6,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.0.2",
     "bootstrap": "^4.4.0",
-    "flipclock": "^0.10.8",
+    "flipclock": "^0.10.5",
     "jquery": "^3.5.0",
     "popper.js": "^1.16.0"
   },
