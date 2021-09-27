@@ -435,9 +435,9 @@
         }, attributes));
       }
       /**
-       * Get the `name` attribute. Uses the `this.constructor.name` by default.
+       * Get the `name` attribute.
        *
-       * @return {string} - The `name` attribute.
+       * @type {string}
        */
 
 
@@ -630,38 +630,23 @@
       }, {
         key: "name",
         get: function get() {
-          return this.constructor.name;
-        }
-        /**
-         * Get the `className` attribute. Used for CSS. Kebab cases the `name`
-         * property by default.
-         *
-         * @return {string} - The `className` attribute.
-         */
+          if (!(this.constructor.defineName instanceof Function)) {
+            error('Every class must define its name.');
+          }
 
-      }, {
-        key: "className",
-        get: function get() {
-          return kebabCase(this.name);
+          return this.constructor.defineName();
         }
         /**
-         * Get the `events` attribute.
+         * The `events` attribute.
          *
-         * @return {array} - The `events` attribute.
+         * @type {object}
          */
 
       }, {
         key: "events",
         get: function get() {
-          return this.$events || [];
-        }
-        /**
-         * Set the registered events for this class.
-         *
-         * @param  {array} value - The new events array.
-         * @return {void}
-         */
-        ,
+          return this.$events || {};
+        },
         set: function set(value) {
           this.$events = value;
         }
@@ -883,9 +868,9 @@
         return _this;
       }
       /**
-       * Get the `digits` attribute.
+       * The `digits` attribute.
        *
-       * @return {(Array|undefined)} - The `digits` attribute.
+       * @type {(Array|undefined)}
        */
 
 
@@ -936,47 +921,43 @@
         value: function clone(value, attributes) {
           return new this.constructor(value, Object.assign(this.getPublicAttributes(), attributes));
         }
+        /**
+         * Define the name of the class.
+         *
+         * @return {string}
+         */
+
       }, {
         key: "digits",
         get: function get() {
           return this.$digits;
-        }
-        /**
-         * Set `digits` attribute.
-         *
-         * @param  {array} value - An array of digits/characters.
-         * @return {void}
-         */
-        ,
+        },
         set: function set(value) {
           this.$digits = value;
           this.minimumDigits = Math.max(this.minimumDigits, length(value));
         }
         /**
-         * Get the `value` attribute.
+         * The `value` attribute.
          *
-         * @return {*} - The `value` attribute.
+         * @type {*}
          */
 
       }, {
         key: "value",
         get: function get() {
           return this.$value;
-        }
-        /**
-         * Set `value` attribute. Also digitizes the new value, and sets the
-         * `digits` attributes
-         *
-         * @param  {*} value - The `value` attribute.
-         * @return {void}
-         */
-        ,
+        },
         set: function set(value) {
           this.$value = value;
           this.digits = digitize(this.format(value), {
             minimumDigits: this.minimumDigits,
             prependLeadingZero: this.prependLeadingZero
           });
+        }
+      }], [{
+        key: "defineName",
+        value: function defineName() {
+          return 'FaceValue';
         }
       }]);
 
@@ -1014,6 +995,7 @@
      * @memberof module:Config/ConsoleMessages
      */
     var ConsoleMessages = {
+      className: 'The className() is not defined.',
       items: 'The items property must be an array.',
       theme: 'The theme property must be an object.',
       language: 'The language must be an object.',
@@ -1068,9 +1050,9 @@
         return _this;
       }
       /**
-       * Get the `dataType` attribute.
+       * The `dataType` attribute.
        *
-       * @return {*} - The `dataType` attribute.
+       * @type {*}
        */
 
 
@@ -1280,24 +1262,16 @@
           return this.defaultDataType();
         }
         /**
-         * Get the `value` attribute.
+         * The `value` attribute.
          *
-         * @return {*} - The `value` attribute.
+         * @type {*}
          */
 
       }, {
         key: "value",
         get: function get() {
           return this.$value;
-        }
-        /**
-         * Set the `value` attribute.
-         *
-         * @param  {*} value - Any value that is not an instance of `FaceValue` will
-         *     be cast into one.
-         * @return {void}
-         */
-        ,
+        },
         set: function set(value) {
           if (!(value instanceof FaceValue)) {
             value = this.createFaceValue(value);
@@ -1306,45 +1280,30 @@
           this.$value = value;
         }
         /**
-         * Get the `stopAt` attribute.
+         * The `stopAt` attribute.
          *
-         * @return {*} - The `stopAt` attribute.
+         * @type {*}
          */
 
       }, {
         key: "stopAt",
         get: function get() {
           return this.$stopAt;
-        }
-        /**
-         * Set the `stopAt` attribute.
-         *
-         * @param  {*} value - Any value that is used to match against the face to
-         *     determine when the clock should stop.
-         * @return {void}
-         */
-        ,
+        },
         set: function set(value) {
           this.$stopAt = value;
         }
         /**
-         * Get the `originalValue` attribute.
+         * The `originalValue` attribute.
          *
-         * @return {*} - The `originalValue` attribute.
+         * @type {*}
          */
 
       }, {
         key: "originalValue",
         get: function get() {
           return this.$originalValue;
-        }
-        /**
-         * Set the `originalValue` attribute.
-         *
-         * @param  {*} value - The `originalValue` attribute.
-         * @return {void}
-         */
-        ,
+        },
         set: function set(value) {
           this.$originalValue = value;
         }
@@ -2520,9 +2479,9 @@
         return _this;
       }
       /**
-       * Get the component's top level DOM node.
+       * The `className` attribute. Used for CSS.
        *
-       * @return {HTMLElement} - The `el` attribute.
+       * @type {string}
        */
 
 
@@ -2598,17 +2557,21 @@
           return this.el;
         }
       }, {
+        key: "className",
+        get: function get() {
+          return kebabCase(this.constructor.defineName());
+        }
+        /**
+         * The `el` attribute.
+         *
+         * @type {HTMLElement}
+         */
+
+      }, {
         key: "el",
         get: function get() {
           return this.$el;
-        }
-        /**
-         * Set the component's top level DOM node.
-         *
-         * @param  {(null|HTMLElement)} value - The `el` attribute.
-         * @return {void}
-         */
-        ,
+        },
         set: function set(value) {
           if (!validate(value, null, HTMLElement)) {
             error(ConsoleMessages.element);
@@ -2617,45 +2580,31 @@
           this.$el = value;
         }
         /**
-         * Get the `parent` attribute. Parent is set when `DomComponent` instances are
+         * The `parent` attribute. Parent is set when `DomComponent` instances are
          * mounted.
          *
-         * @return {DomComponent} - The `parent` attribute.
+         * @type {DomComponent}
          */
 
       }, {
         key: "parent",
         get: function get() {
           return this.$parent;
-        }
-        /**
-         * Set the parent attribute.
-         *
-         * @param  {DomComponent} parent - The `parent` attribute value.
-         * @return {DomComponent} - The `parent` attribute.
-         */
-        ,
+        },
         set: function set(parent) {
           this.$parent = parent;
         }
         /**
-         * Get the `theme` attribute.
+         * The `theme` attribute.
          *
-         * @return {DomComponent} - The `theme` attribute.
+         * @type {object}
          */
 
       }, {
         key: "theme",
         get: function get() {
           return this.$theme;
-        }
-        /**
-         * Set the `theme` attribute.
-         *
-         * @param  {object} value - The `theme` attribute.
-         * @return {void}
-         */
-        ,
+        },
         set: function set(value) {
           if (!validate(value, 'object')) {
             error(ConsoleMessages.value);
@@ -2666,21 +2615,14 @@
         /**
          * Get the language attribute.
          *
-         * @return {object} - The `language` attribute.
+         * @type {object}
          */
 
       }, {
         key: "language",
         get: function get() {
           return this.$language;
-        }
-        /**
-         * Set the language attribute.
-         *
-         * @param  {object} value - The `language` attribute.
-         * @return {object} - The `language` attribute.
-         */
-        ,
+        },
         set: function set(value) {
           if (isString(value)) {
             value = language(value);
@@ -2720,6 +2662,19 @@
         return _possibleConstructorReturn(this, _getPrototypeOf(Divider).apply(this, arguments));
       }
 
+      _createClass(Divider, null, [{
+        key: "defineName",
+
+        /**
+         * Define the name of the class.
+         *
+         * @return {string}
+         */
+        value: function defineName() {
+          return 'Divider';
+        }
+      }]);
+
       return Divider;
     }(DomComponent);
 
@@ -2743,6 +2698,19 @@
           value: value
         }, isObject(value) ? value : null, attributes)));
       }
+      /**
+       * Define the name of the class.
+       *
+       * @return {string}
+       */
+
+
+      _createClass(ListItem, null, [{
+        key: "defineName",
+        value: function defineName() {
+          return 'ListItem';
+        }
+      }]);
 
       return ListItem;
     }(DomComponent);
@@ -2775,7 +2743,7 @@
       /**
        * Get the `value` attribute.
        *
-       * @return {(Number|String)} - The `value` attribute.
+       * @type {(Number|String)}
        */
 
 
@@ -2797,41 +2765,38 @@
           this.$items.push(item);
           return item;
         }
+        /**
+         * Define the name of the class.
+         *
+         * @return {string}
+         */
+
       }, {
         key: "value",
         get: function get() {
           return this.$value;
-        }
-        /**
-         * Set the `value` attribute.
-         *
-         * @param  {array} value - The `value` attribute.
-         * @return {(Number|String)} - The `value` attribute.
-         */
-        ,
+        },
         set: function set(value) {
           this.$value = value;
         }
         /**
          * Get the `items` attribute.
          *
-         * @return {(Number|String)} - The `items` attribute.
+         * @type {(Number|String)}
          */
 
       }, {
         key: "items",
         get: function get() {
           return this.$items;
-        }
-        /**
-         * Set the `items` attribute.
-         *
-         * @param  {array} value - The `items` attribute.
-         * @return {(Number|String)} - The `items` attribute.
-         */
-        ,
+        },
         set: function set(value) {
           this.$items = value;
+        }
+      }], [{
+        key: "defineName",
+        value: function defineName() {
+          return 'List';
         }
       }]);
 
@@ -2860,6 +2825,19 @@
           items: isArray(items) ? items : []
         }, isObject(items) ? items : null, attributes)));
       }
+      /**
+       * Define the name of the class.
+       *
+       * @return {string}
+       */
+
+
+      _createClass(Group, null, [{
+        key: "defineName",
+        value: function defineName() {
+          return 'Group';
+        }
+      }]);
 
       return Group;
     }(DomComponent);
@@ -2885,6 +2863,19 @@
           label: label
         }, isObject(label) ? label : null, attributes)));
       }
+      /**
+       * Define the name of the class.
+       *
+       * @return {string}
+       */
+
+
+      _createClass(Label, null, [{
+        key: "defineName",
+        value: function defineName() {
+          return 'Label';
+        }
+      }]);
 
       return Label;
     }(DomComponent);
@@ -2914,9 +2905,9 @@
         }, isObject(interval) ? interval : null)));
       }
       /**
-       * Gets the elapsed the time as an interger.
+       * The `elapsed` attribute.
        *
-       * @return {Number} The `elapsed` attribute.
+       * @type {Number}
        */
 
 
@@ -3000,15 +2991,21 @@
 
           return this;
         }
+        /**
+         * Define the name of the class.
+         *
+         * @return {string}
+         */
+
       }, {
         key: "elapsed",
         get: function get() {
           return !this.lastLoop ? 0 : this.lastLoop - (this.started ? this.started.getTime() : new Date().getTime());
         }
         /**
-         * Returns true is the timer is running.
+         * The `isRunning` attribute.
          *
-         * @return {boolean} - Returns `true` the `running` property is `true`
+         * @type {boolean}
          */
 
       }, {
@@ -3017,15 +3014,20 @@
           return this.running === true;
         }
         /**
-         * Returns true is the timer is not running.
+         * The `isStopped` attribute.
          *
-         * @return {boolean} - Returns `true` the `running` property is `false`
+         * @type {boolean}
          */
 
       }, {
         key: "isStopped",
         get: function get() {
           return this.running === false;
+        }
+      }], [{
+        key: "defineName",
+        value: function defineName() {
+          return 'Timer';
         }
       }]);
 
@@ -3064,6 +3066,17 @@
         value: function decrement(instance) {
           var value = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 1;
           instance.value = this.value.value - value;
+        }
+        /**
+         * Define the name of the class.
+         *
+         * @return {string}
+         */
+
+      }], [{
+        key: "defineName",
+        value: function defineName() {
+          return 'Counter';
         }
       }]);
 
@@ -3154,6 +3167,17 @@
         value: function getTotalSeconds(a, b) {
           return a.getTime() === b.getTime() ? 0 : Math.round((a.getTime() - b.getTime()) / 1000);
         }
+        /**
+         * Define the name of the class.
+         *
+         * @return {string}
+         */
+
+      }], [{
+        key: "defineName",
+        value: function defineName() {
+          return 'MinuteCounter';
+        }
       }]);
 
       return MinuteCounter;
@@ -3205,6 +3229,17 @@
         value: function getHours(a, b) {
           return Math.floor(this.getTotalSeconds(a, b) / 60 / 60);
         }
+        /**
+         * Define the name of the class.
+         *
+         * @return {string}
+         */
+
+      }], [{
+        key: "defineName",
+        value: function defineName() {
+          return 'HourCounter';
+        }
       }]);
 
       return HourCounter;
@@ -3255,6 +3290,17 @@
         key: "getHours",
         value: function getHours(a, b) {
           return Math.abs(_get(_getPrototypeOf(DayCounter.prototype), "getHours", this).call(this, a, b) % 24);
+        }
+        /**
+         * Define the name of the class.
+         *
+         * @return {string}
+         */
+
+      }], [{
+        key: "defineName",
+        value: function defineName() {
+          return 'DayCounter';
         }
       }]);
 
@@ -3326,6 +3372,17 @@
           var offset = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
           instance.value = new Date(this.value.value.getTime() - offset - (new Date().getTime() - instance.timer.lastLoop));
         }
+        /**
+         * Define the name of the class.
+         *
+         * @return {string}
+         */
+
+      }], [{
+        key: "defineName",
+        value: function defineName() {
+          return 'TwentyFourHourClock';
+        }
       }]);
 
       return TwentyFourHourClock;
@@ -3378,6 +3435,17 @@
 
           return groups;
         }
+        /**
+         * Define the name of the class.
+         *
+         * @return {string}
+         */
+
+      }], [{
+        key: "defineName",
+        value: function defineName() {
+          return 'TwelveHourClock';
+        }
       }]);
 
       return TwelveHourClock;
@@ -3429,6 +3497,17 @@
         value: function getDays(a, b) {
           return Math.abs(_get(_getPrototypeOf(WeekCounter.prototype), "getDays", this).call(this, a, b) % 7);
         }
+        /**
+         * Define the name of the class.
+         *
+         * @return {string}
+         */
+
+      }], [{
+        key: "defineName",
+        value: function defineName() {
+          return 'WeekCounter';
+        }
       }]);
 
       return WeekCounter;
@@ -3479,6 +3558,17 @@
         key: "getWeeks",
         value: function getWeeks(a, b) {
           return Math.abs(_get(_getPrototypeOf(YearCounter.prototype), "getWeeks", this).call(this, a, b) % 52);
+        }
+        /**
+         * Define the name of the class.
+         *
+         * @return {string}
+         */
+
+      }], [{
+        key: "defineName",
+        value: function defineName() {
+          return 'YearCounter';
         }
       }]);
 
@@ -3751,7 +3841,26 @@
        * @extends DomComponent
        * @param {HTMLElement} el - The HTML element used to bind clock DOM node.
        * @param {*} value - The value that is passed to the clock face.
-       * @param {object|undefined} [attributes] - The instance attributes.
+       * @param {object|undefined} attributes - {@link FlipClock.Options} passed an object with key/value.
+       */
+
+      /**
+       * @namespace FlipClock.Options
+       * @classdesc An object of key/value pairs that will be used to set the attributes.
+       * 
+       * ##### Example:
+       * 
+       *     {
+       *        face: 'DayCounter',
+       *        language: 'es',
+       *        timer: Timer.make(500)
+       *     }
+       * 
+       * @property {string|Face} [face={@link Faces.DayCounter}] - The clock's {@link Face} instance.
+       * @property {number} [interval=1000] - The clock's interval rate (in milliseconds).
+       * @property {object} [theme={@link Themes.Original}] - The clock's theme.
+       * @property {string|object} [language={@link Languages.English}] - The clock's language.
+       * @property {Timer} [timer={@link Timer}] - The clock's timer.
        */
       function FlipClock(el, value, attributes) {
         var _this;
@@ -3785,9 +3894,9 @@
         return _this;
       }
       /**
-       * Get the clock `Face`.
+       * The clock `Face`.
        *
-       * @return {Face} The `face` attribute.
+       * @type {Face}
        */
 
 
@@ -3797,7 +3906,7 @@
         /**
          * Mount the clock to the parent DOM element.
          *
-         * @param {HTMLElement} el - The parent `HTMLElement`.
+         * @param  {HTMLElement} el - The parent `HTMLElement`.
          * @return {FlipClock} - The `FlipClock` instance.
          */
         value: function mount(el) {
@@ -3809,7 +3918,7 @@
         /**
          * Render the clock's DOM nodes.
          *
-         * @return {HTMLElement} The parent `HTMLElement`.
+         * @return {HTMLElement} - The parent `HTMLElement`.
          */
 
       }, {
@@ -3894,7 +4003,7 @@
          *
          * @param  {*|undefined} value - Increment the clock by the specified value.
          *     If no value is passed, then the default increment is determined by
-         *     the Face, which is usually `1`.     *
+         *     the Face, which is usually `1`.
          * @return {FlipClock} - The `FlipClock` instance.
          */
 
@@ -3987,23 +4096,16 @@
           }, attributes));
         }
         /**
-         * Get the global default values.
+         * The `defaults` attribute.
          *
-         * @return {object}
+         * @type {object}
          */
 
       }, {
         key: "face",
         get: function get$$1() {
           return this.$face;
-        }
-        /**
-         * Sets the clock `Face`.
-         *
-         * @param  {Function|Face|string} value - The `Face` value.
-         * @return {void}
-         */
-        ,
+        },
         set: function set(value) {
           if (!validate(value, [Face, 'string', 'function'])) {
             error(ConsoleMessages.face);
@@ -4023,44 +4125,30 @@
           this.el && this.render();
         }
         /**
-         * Get the `stopAt` attribute.
+         * The `stopAt` attribute.
          *
-         * @return {*} The `stopAt` value.
+         * @type {*}
          */
 
       }, {
         key: "stopAt",
         get: function get$$1() {
           return isFunction(this.$stopAt) ? this.$stopAt(this) : this.$stopAt;
-        }
-        /**
-         * Set the `stopAt` attribute.
-         *
-         * @param  {*} value - The `stopAt` value.
-         * @return {void}
-         */
-        ,
+        },
         set: function set(value) {
           this.$stopAt = value;
         }
         /**
-         * Get the `Timer` instance.
+         * The `timer` instance.
          *
-         * @return {Timer} The `timer` attribute.
+         * @type {Timer}
          */
 
       }, {
         key: "timer",
         get: function get$$1() {
           return this.$timer;
-        }
-        /**
-         * Set the `Timer` instance.
-         *
-         * @param  {Timer} timer - The `timer` attribute.
-         * @return {void}
-         */
-        ,
+        },
         set: function set(timer) {
           if (!validate(timer, Timer)) {
             error(ConsoleMessages.timer);
@@ -4069,23 +4157,16 @@
           this.$timer = timer;
         }
         /**
-         * Helper method to get the clock's `FaceValue` instance.
+         * Helper method to The clock's `FaceValue` instance.
          *
-         * @return {FaceValue|null} The `FaceValue` if set, otherwise `null`.
+         * @type {FaceValue|null}
          */
 
       }, {
         key: "value",
         get: function get$$1() {
           return this.face ? this.face.value : null;
-        }
-        /**
-         * Helper method to set the clock's `FaceValue` instance.
-         *
-         * @param  {*} value - The `value` attribute.
-         * @return {void}
-         */
-        ,
+        },
         set: function set(value) {
           if (!this.face) {
             throw new Error('A face must be set before setting a value.');
@@ -4102,9 +4183,9 @@
           this.el && this.render();
         }
         /**
-         * Get the original value attribute.
+         * The `originalValue` attribute.
          *
-         * @return {*} - The `originalValue` attribute.
+         * @type {*}
          */
 
       }, {
@@ -4119,20 +4200,21 @@
           }
 
           return this.face ? this.face.defaultValue() : undefined;
-        }
-        /**
-         * Set the original value attribute.
-         *
-         * @param  {*} value - The `originalValue` attribute.
-         * @return {void}
-         */
-        ,
+        },
         set: function set(value) {
           this.$originalValue = value;
         }
       }], [{
-        key: "setDefaultFace",
+        key: "defineName",
 
+        /**
+         * Define the name of the class.
+         *
+         * @return {string}
+         */
+        value: function defineName() {
+          return 'FlipClock';
+        }
         /**
          * Helper method to set the default `Face` value.
          *
@@ -4140,6 +4222,9 @@
          *     constructor.
          * @return {void}
          */
+
+      }, {
+        key: "setDefaultFace",
         value: function setDefaultFace(value) {
           if (!validate(value, Face)) {
             error(ConsoleMessages.face);
