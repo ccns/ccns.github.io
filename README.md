@@ -22,3 +22,15 @@ $ npm update
 $ npm run bundle
 $ git commit -m 'update bundles'
 ```
+
+## 更新社員資料
+
+Update content in `resources/members.json`
+```
+$ vim resources/members.json   ## or your favorite editor
+```
+
+Generate `members.html`
+```
+$ npm run gen
+```
