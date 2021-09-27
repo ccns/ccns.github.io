@@ -80,7 +80,8 @@
   {
     "name": "Auyu0408",
     "thumbnail": "/resources/members/Auyu.jpg",
-    "description": "資工系大二，\n她會彈鋼琴，好厲害。"
+    "description": "資工系大二，\n她會彈鋼琴，好厲害。",
+    "links": [{ "link": "https://github.com/auyu0408", "icon": "github" }]
   },
   {
     "name": "MiohitoKiri5474",
@@ -91,6 +92,7 @@
   {
     "name": "Leo900807",
     "thumbnail": "/resources/members/leo.jpg",
-    "description": "資工系大二，競程助教，<br />據說 <a href=\"https://www.youtube.com/channel/UCl_gCybOJRIgOXw6Qb4qJzQ\">潤羽るしあ </a> 是他婆。"
+    "description": "資工系大二，競程助教，<br />據說 <a href=\"https://www.youtube.com/channel/UCl_gCybOJRIgOXw6Qb4qJzQ\">潤羽るしあ </a> 是他婆。",
+    "links": [{ "link": "https://github.com/leo900807", "icon": "github" }]
   }
 ]
