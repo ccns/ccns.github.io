@@ -40,3 +40,10 @@ ejs.renderFile("./members.ejs", { members: members }, null, (err, html) => {
   // console.log(html);
   fs.writeFileSync("./members.html", html, "utf8");
 });
+
+// projects
+const projects = require("./resources/projects.json");
+ejs.renderFile("./projects.ejs", { projects: projects }, null, (err, html) => {
+  //console.log(html);
+  fs.writeFileSync("./projects.html", html, "utf8");
+});
