@@ -73,26 +73,26 @@
     </header>
     <section class="memberIntro">
       <div class="member-list">
-        <% members.forEach(function (e, i) { %>
+<% members.forEach(function (e, i) { %>
         <div class="member-item">
           <img class="thumbnails" src="<%= e.thumbnail %>" alt="" />
           <div class="desc">
             <span class="whiteAdj">
               <h1>
                 <%= e.name %>
-                <% if(e.links) { %>
-                  <% e.links.forEach(function (l, i) { %>
+<%   if(e.links) { %>
+<%     e.links.forEach(function (l, i) { %>
                   <a href="<%= l.link %>" target="_blank">
                     <i class="fab fa-<%= l.icon %>" aria-hidden="true"></i>
                   </a>
-                  <% }); %>
-                <% } %>
+<%     }); %>
+<%   } %>
               </h1>
               <p><%- e.description.replace('\n', '<br />')  %></p>
             </span>
           </div>
         </div>
-        <% }); %>
+<% }); %>
       </div>
     </section>
     <section class="to-top">
