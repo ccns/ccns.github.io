@@ -47,3 +47,10 @@ ejs.renderFile("./projects.ejs", { projects: projects }, null, (err, html) => {
   //console.log(html);
   fs.writeFileSync("./projects.html", html, "utf8");
 });
+
+// timeline
+const timeline = require("./resources/timeline.json");
+ejs.renderFile("./intro.ejs", { timeline: timeline }, null, (err, html) => {
+  // console.log(html);
+  fs.writeFileSync("./intro.html", html, "utf8");
+});

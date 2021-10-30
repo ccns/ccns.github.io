@@ -22,7 +22,7 @@ $ git commit -m 'chore: update bundles'
 ### 更新資料
 - 社員資料: 編輯 `resources/members.json`
 - 專案資料: 編輯 `resources/projects.json`
-- ~~活動照片: 編輯 `resources/timeline.json`~~ (待有緣人改寫 `intro.html`)
+- 活動照片: 編輯 `resources/timeline.json`
 - 定期聚資料: 下個步驟會自動拉取
 
 ### 產生新的頁面
