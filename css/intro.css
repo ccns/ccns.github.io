@@ -156,30 +156,30 @@ section.timeline div.Timeline dl dd .events .events-footer ol .active {
   transform: scale(2);
 }
 
-section.timeline div.Timeline dl dd.pos-right .time {
+section.timeline div.Timeline dl dd:nth-last-of-type(2n+1) .time {
   margin-left: -100px;
   text-align: right
 }
 
-section.timeline div.Timeline dl dd.pos-right .events {
+section.timeline div.Timeline dl dd:nth-last-of-type(2n+1) .events {
   float: right
 }
 
-section.timeline div.Timeline dl dd.pos-right .events:before {
+section.timeline div.Timeline dl dd:nth-last-of-type(2n+1) .events:before {
   left: -12px;
   border-color: transparent #CCC transparent transparent
 }
 
-section.timeline div.Timeline dl dd.pos-left .time {
+section.timeline div.Timeline dl dd:nth-last-of-type(2n) .time {
   margin-left: 0;
   text-align: left
 }
 
-section.timeline div.Timeline dl dd.pos-left .events {
+section.timeline div.Timeline dl dd:nth-last-of-type(2n) .events {
   float: left
 }
 
-section.timeline div.Timeline dl dd.pos-left .events:before {
+section.timeline div.Timeline dl dd:nth-last-of-type(2n) .events:before {
   right: -12px;
   border-color: transparent transparent transparent #CCC
 }

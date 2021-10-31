@@ -49,14 +49,11 @@
   <section class="timeline">
     <div class="Timeline">
       <dl>
-<% var idx = 0; -%>
-<% timeline.forEach(function (year, i) { idx += year.events.length; }); -%>
 <% timeline.slice().reverse().forEach(function (year, i) { -%>
 <%   year.events.slice().reverse().forEach(function (event, j) { -%>
-<%     --idx; -%>
 <%-    (i || j) ? '\n' : '' -%>
-        <!--<%= (idx % 2 === 0) ? '右' : '左' %>側文章 start-->
-        <dd class="<%= (idx % 2 === 0) ? 'pos-right' : 'pos-left' %> clearfix">
+        <!--右/左側文章 start-->
+        <dd class="clearfix">
           <div class="circ"></div>
           <div class="events">
             <div class="events-header"><%= event.name %></div>
@@ -78,7 +75,7 @@
             </div>
           </div>
         </dd>
-        <!--<%= (idx % 2 === 0) ? '右' : '左' %>側文章 end-->
+        <!--右/左側文章 end-->
 <%   }); -%>
         <dt><%= year.year %></dt>
 <% }); -%>
