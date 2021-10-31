@@ -104,7 +104,7 @@
   <section class="timeline">
     <div class="Timeline">
       <dl>
-<% idx = 0; -%>
+<% var idx = 0; -%>
 <% timeline.forEach(function (year, i) { idx += year.events.length; }); -%>
 <% timeline.slice().reverse().forEach(function (year, i) { -%>
 <%   year.events.slice().reverse().forEach(function (event, j) { -%>
