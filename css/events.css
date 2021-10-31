@@ -25,8 +25,6 @@ section.events div.weIntro {
 	font-size: 8.2vw;
 	/*70px*/
 	font-weight: 900;
-	margin-left: 14vw;
-	/*150px*/
 	margin-top: 12.7vw;
 	/*190px*/
 	letter-spacing: 2px;
@@ -43,10 +41,6 @@ section.events div:nth-child(3) {
 section.events div.eventBox {
 	opacity: 0.3;
 	border-top: 1px solid #1c1c1c;
-	margin-left: 8.5vw;
-	/*125px*/
-	margin-right: 8.5vw;
-	/*125px*/
 	display: flex;
 	padding-top: 3.75vw;
 	/*50px*/
@@ -126,8 +120,6 @@ section.events div.eventBox div.eventName a.url {
 		font-size: 8.2vw;
 		/*70px*/
 		font-weight: 900;
-		margin-left: 14vw;
-		/*150px*/
 		margin-top: 12.7vw;
 		/*190px*/
 		letter-spacing: 2px;
@@ -144,10 +136,6 @@ section.events div.eventBox div.eventName a.url {
 	section.events div.eventBox {
 		opacity: 0.3;
 		border-top: 1px solid #1c1c1c;
-		margin-left: 6vw;
-		/*125px*/
-		margin-right: 8.5vw;
-		/*125px*/
 		display: flex;
 		padding-top: 3.75vw;
 		/*50px*/
@@ -187,8 +175,6 @@ section.events div.eventBox div.eventName a.url {
 		width: 75%;
 		display: flex;
 		flex-direction: column;
-		padding-left: 3.5vw;
-		/*45px*/
 	}
 
 	section.events div.eventBox div.eventName div.name {

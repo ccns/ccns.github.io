@@ -22,16 +22,12 @@ section.intro div.weIntro {
   font-size: 3.5vw;
   /*70px*/
   font-weight: 900;
-  margin-left: var(--ccns-margin-width);
-  /*150px*/
   margin-top: 1vw;
   /*190px*/
   letter-spacing: 1px;
 }
 
 section.intro div.contactLine {
-  margin-left: var(--ccns-margin-width);
-  /*150px*/
   margin-top: 1vw;
   display: flex;
   align-items: center;
@@ -60,7 +56,6 @@ section.intro div.contactLine i:hover {
 section.intro div.clubIntro {
   font-family: "Noto Sans TC";
   font-size: 2vw;
-  width: 60vw;
   margin: 0 auto;
   color: #999;
   margin-top: 2vw;
@@ -91,8 +86,6 @@ section.intro div.clubIntro span.white {
     font-size: 6vw;
     /*70px*/
     font-weight: 900;
-    margin-left: var(--ccns-margin-width);
-    /*150px*/
     margin-top: 4vw;
     /*190px*/
     letter-spacing: 1px;
@@ -109,7 +102,6 @@ section.intro div.clubIntro span.white {
   section.intro div.clubIntro {
     font-family: "Noto Sans TC";
     font-size: 5vw;
-    width: 65vw;
     margin: 0 auto;
     color: #999;
     margin-top: 3vw;
@@ -120,8 +112,6 @@ section.intro div.clubIntro span.white {
 
 /* iframe map */
 section.map-iframe div.map {
-  margin-left: var(--ccns-margin-width);
-  margin-right: var(--ccns-margin-width);
   margin-bottom: 5vw;
 }
 

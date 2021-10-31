@@ -2,13 +2,13 @@ section.memberIntro div.member-list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 50px 10vw;
+  padding: calc(var(--ccns-margin-width-min) / 2);
 }
 
 section.memberIntro div.member-item {
   flex: 50%;
   max-width: 50%;
-  padding: 50px 5vw;
+  padding: calc(var(--ccns-margin-width-min) / 2);
 }
 
 img.thumbnails {
@@ -44,10 +44,6 @@ iframe.c-chan {
 }
 
 @media only screen and (max-width: 768px) {
-  section.memberIntro div.member-list {
-    padding: 30px 30px;
-  }
-
   section.memberIntro div.member-item {
     flex: 100%;
     max-width: 100%;

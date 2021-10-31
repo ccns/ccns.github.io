@@ -19,12 +19,26 @@
   font-display: swap;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   background-color: #141414;
 }
 
+body > section {
+  margin: auto var(--ccns-margin-width);
+}
+
+body > section:nth-last-of-type(2) {
+  margin-bottom: var(--ccns-margin-height);
+}
+
 :root {
-  --ccns-margin-width: 20vw;
+  --ccns-margin-width-min: calc(var(--bs-gutter-x, .75rem) + 12px);
+  --ccns-margin-width: calc(max((100vw - (1024px - 2 * var(--ccns-margin-width-min))) / 2 + 3vw, var(--ccns-margin-width-min)));
+  --ccns-margin-height: calc(max(3.45vw, var(--ccns-margin-width-min)));
 }
 
 a {
@@ -38,6 +52,7 @@ a:hover {
 
 @media only screen and (max-width: 768px) {
   :root {
-    --ccns-margin-width: 17.5vw;
+    --ccns-margin-width: calc(var(--ccns-margin-width-min) + 3vw);
+    --ccns-margin-height: calc(max(3vw + 12px, var(--ccns-margin-width)));
   }
 }
