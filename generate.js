@@ -6,6 +6,10 @@ moment.locale("zh-tw");
 
 const renderPage = (src, dst, resources) => {
   ejs.renderFile(src, resources, null, (err, html) => {
+    if (err) {
+      console.log(err);
+      return;
+    }
     // console.log(html);
     fs.writeFileSync(dst, html, "utf8");
   });
