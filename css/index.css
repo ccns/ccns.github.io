@@ -50,11 +50,10 @@ section.intro div.contactLine i {
   /*30px*/
   margin: 0.75vw;
   color: #5c5c5c;
+  transition: color 0.5s;
 }
 
 section.intro div.contactLine i:hover {
-  animation-name: linkAnimate2;
-  animation-duration: 0.5s;
   color: #c49f54;
 }
 
@@ -180,25 +179,5 @@ a.button {
     text-decoration: none;
     border: 3px solid;
     border-radius: 25px;
-  }
-}
-
-@keyframes linkAnimate {
-  from {
-    color: white;
-  }
-
-  to {
-    color: #c49f54;
-  }
-}
-
-@keyframes linkAnimate2 {
-  from {
-    color: #5c5c5c;
-  }
-
-  to {
-    color: #c49f54;
   }
 }
