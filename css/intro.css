@@ -9,12 +9,9 @@ section.intro div.introImg img {
 
 @media only screen and (max-width:768px) {
   section.intro div.introImg img {
-    width: 62%;
-    height: auto;
-    max-width: 100%;
-    float: right;
-    margin-right: var(--ccns-margin-width);
+    width: calc(100% - 2 * var(--ccns-margin-width));
     margin-top: 3vw;
+    margin-bottom: 3vw;
   }
 
 }
