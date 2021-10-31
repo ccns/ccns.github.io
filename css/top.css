@@ -1,6 +1,7 @@
 header.top div.topNav {
   padding: 0;
   display: flex;
+  justify-content: space-between;
 }
 
 header.top div.topNav div.headerLeft {
@@ -102,7 +103,6 @@ header.top div.topNav div.navIcon i {
 
   header.top div.topNav a {
     color: white;
-    padding: 5px 5px;
     font-size: 20px;
     text-decoration: none;
     display: block;
@@ -114,7 +114,8 @@ header.top div.topNav div.navIcon i {
     display: flex;
     align-items: center;
     width: 75%;
-    margin-top: 12px
+    margin-top: 12px;
+    margin-left: 12px;
   }
 
   header.top div.topNav div.headerLeft a.homeLink {
@@ -200,14 +201,24 @@ header.top div.topNav div.navIcon i {
     right: 26px;
   }
 
+  header.top div.topNav div.navIcon {
+    display: table-cell;
+    margin-top: 12px;
+    margin-right: 12px;
+    padding: 3vw;
+  }
+
   header.top div.topNav div.navIcon i {
-    display: block;
-    position: absolute;
-    top: 30px;
-    right: 10px;
+    display: inline-block;
+    vertical-align: middle;
     cursor: pointer;
     color: white;
     font-size: 30px;
+  }
+
+  header.top div.topNav div.navIcon i:before {
+    position: relative;
+    top: calc((8.45vw - 1em) / 2);
   }
 }
 
