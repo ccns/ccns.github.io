@@ -83,7 +83,7 @@
           <p><%- e.description.replace('\n', '<br />') -%></p>
         </div>
       </div>
-<%   if (i % 2 !== 0) { -%>
+<%   if (i % 2 !== 0 || i + 1 == projects.length) { -%>
     </div>
 <%   } -%>
 <% }); -%>
