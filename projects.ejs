@@ -63,40 +63,41 @@
   </header>
 
   <section class="club-projects">
-<% projects.forEach(function (e, i) { %>
-<%   if (i % 2 === 0) { %>
+<% projects.forEach(function (e, i) { -%>
+<%-  i ? '\n' : '' -%>
+<%   if (i % 2 === 0) { -%>
     <div class="row">
       <!-- odd column -->
       <div class="column">
         <div class="card">
-<%   } else { %>
+<%   } else { -%>
       <!-- even column -->
       <div class="column">
         <div class="card">
-<%   } %>
+<%   } -%>
           <h2>
-          <%= e.name %>
+            <%= e.name %>
 <%
-       if(e.links) {
-         e.links.forEach(function (l, i) {
-           if(l.icon === "facebook" || l.icon === "github") {
-               var lolicon = "fab fa-" + l.icon
-           } else {
-               var lolicon = "fas fa-" + l.icon
-           }
-%>
+     if(e.links) {
+       e.links.forEach(function (l, i) {
+         if(l.icon === "facebook" || l.icon === "github") {
+             var lolicon = "fab fa-" + l.icon
+         } else {
+             var lolicon = "fas fa-" + l.icon
+         }
+-%>
             <a href="<%= l.link %>" target="_blank"><i class="<%= lolicon %> fa-1x"></i></a>
-<%       }); %>
-<%     } %>
+<%     }); -%>
+<%   } -%>
           </h2>
-          <p><%- e.description.replace('\n', '<br />')  %></p>
+          <p><%- e.description.replace('\n', '<br />') -%></p>
         </div>
       </div>
-<%   if (i % 2 === 0) { %>
-<%   } else { %>
+<%   if (i % 2 === 0) { -%>
+<%   } else { -%>
     </div>
-<%   } %>
-<% }); %>
+<%   } -%>
+<% }); -%>
   </section>
 
   <section class="project-form">
