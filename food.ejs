@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<%- include("html-head", { defered_scripts: [`
+  <!-- Discord embed by WidgetBot -->
+  <script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+    new Crate({
+      server: '330361502643257345',
+      channel: '519121577573613602'
+    })
+  </script>
+`] }); -%>
+
+<body>
+<%- include("header"); -%>
+
+  <section class="discord-embed">
+    <div class="discord-food">
+      <widgetbot server="330361502643257345"
+                 channel="519121577573613602"
+                 width="100%" height="100%">
+      </widgetbot>
+    </div>
+  </section>
+
+</body>
+
+</html>

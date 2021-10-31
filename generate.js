@@ -50,6 +50,9 @@ const pages = [
   { src: "./members.ejs", dst: "./members.html", resources: { members: members } },
   { src: "./projects.ejs", dst: "./projects.html", resources: { projects: projects } },
   { src: "./intro.ejs", dst: "./intro.html", resources: { timeline: timeline } },
+  { src: "./env.ejs", dst: "./env.html" },
+  { src: "./food.ejs", dst: "./food.html" },
+  { src: "./index.ejs", dst: "./index.html" },
 ];
 
 pages.forEach((e, i) => {
