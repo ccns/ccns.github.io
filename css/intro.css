@@ -126,6 +126,7 @@ section.timeline div.Timeline dl dd .events .events-object {
 }
 
 section.timeline div.Timeline dl dd .events .events-header {
+  margin: 0 10px 10px 10px;
   min-height: 30px;
   line-height: 20px;
   text-align: center;
