@@ -46,13 +46,13 @@ const members = require("./resources/members.json");
 const projects = require("./resources/projects.json");
 const timeline = require("./resources/timeline.json");
 const pages = [
-  { src: "./events.ejs", dst: "./events.html", renderer: renderEvents },
-  { src: "./members.ejs", dst: "./members.html", resources: { members: members } },
-  { src: "./projects.ejs", dst: "./projects.html", resources: { projects: projects } },
-  { src: "./intro.ejs", dst: "./intro.html", resources: { timeline: timeline } },
-  { src: "./env.ejs", dst: "./env.html" },
-  { src: "./food.ejs", dst: "./food.html" },
-  { src: "./index.ejs", dst: "./index.html" },
+  { src: "./ejs/events.ejs", dst: "./events.html", renderer: renderEvents },
+  { src: "./ejs/members.ejs", dst: "./members.html", resources: { members: members } },
+  { src: "./ejs/projects.ejs", dst: "./projects.html", resources: { projects: projects } },
+  { src: "./ejs/intro.ejs", dst: "./intro.html", resources: { timeline: timeline } },
+  { src: "./ejs/env.ejs", dst: "./env.html" },
+  { src: "./ejs/food.ejs", dst: "./food.html" },
+  { src: "./ejs/index.ejs", dst: "./index.html" },
 ];
 
 pages.forEach((e, i) => {
