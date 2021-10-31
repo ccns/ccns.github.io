@@ -140,10 +140,10 @@ section.map-iframe div.map iframe {
 }
 
 /* scroll top button */
-a.button {
+section.to-top a.button {
   position: fixed;
-  right: 20px;
-  bottom: 20px;
+  right: calc(var(--ccns-margin-width) - 30px - (var(--ccns-margin-width-min) + 3vw - 30px) / 2);
+  bottom: calc((var(--ccns-margin-width-min) + 3vw - 30px) / 2);
   display: block;
   width: 30px;
   height: 30px;
@@ -153,22 +153,4 @@ a.button {
   border: 3px solid;
   border-radius: 25px;
   z-index: 9999;
-}
-
-/* RWD scroll top button */
-@media only screen and (max-width:768px) {
-  a.button {
-    z-index: 9999;
-    position: fixed;
-    right: 10px;
-    bottom: 5px;
-    display: block;
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    color: white;
-    text-decoration: none;
-    border: 3px solid;
-    border-radius: 25px;
-  }
 }
