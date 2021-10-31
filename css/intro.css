@@ -97,7 +97,14 @@ section.timeline div.Timeline dl dd .time {
   display: inline-block;
   width: 100px;
   padding: 10px 20px;
-  color: #4fc1e9
+  color: #4fc1e9;
+  margin-left: -100px;
+  text-align: right;
+}
+
+section.timeline div.Timeline dl dd:nth-last-of-type(2n) .time {
+  margin-left: 0;
+  text-align: left;
 }
 
 section.timeline div.Timeline dl dd .events {
@@ -109,6 +116,11 @@ section.timeline div.Timeline dl dd .events {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   margin-top: 31px;
+  float: right;
+}
+
+section.timeline div.Timeline dl dd:nth-last-of-type(2n) .events {
+  float: left;
 }
 
 section.timeline div.Timeline dl dd .events:before {
@@ -118,7 +130,15 @@ section.timeline div.Timeline dl dd .events:before {
   height: 0;
   content: '';
   border-style: solid;
-  border-width: 6px
+  border-width: 6px;
+  left: -12px;
+  border-color: transparent #CCC transparent transparent;
+}
+
+section.timeline div.Timeline dl dd:nth-last-of-type(2n) .events:before {
+  left: unset;
+  right: -12px;
+  border-color: transparent transparent transparent #CCC;
 }
 
 section.timeline div.Timeline dl dd .events .events-object {
@@ -153,34 +173,6 @@ section.timeline div.Timeline dl dd .events .events-footer {
 
 section.timeline div.Timeline dl dd .events .events-footer ol .active {
   transform: scale(2);
-}
-
-section.timeline div.Timeline dl dd:nth-last-of-type(2n+1) .time {
-  margin-left: -100px;
-  text-align: right
-}
-
-section.timeline div.Timeline dl dd:nth-last-of-type(2n+1) .events {
-  float: right
-}
-
-section.timeline div.Timeline dl dd:nth-last-of-type(2n+1) .events:before {
-  left: -12px;
-  border-color: transparent #CCC transparent transparent
-}
-
-section.timeline div.Timeline dl dd:nth-last-of-type(2n) .time {
-  margin-left: 0;
-  text-align: left
-}
-
-section.timeline div.Timeline dl dd:nth-last-of-type(2n) .events {
-  float: left
-}
-
-section.timeline div.Timeline dl dd:nth-last-of-type(2n) .events:before {
-  right: -12px;
-  border-color: transparent transparent transparent #CCC
 }
 
 
