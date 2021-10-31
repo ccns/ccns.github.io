@@ -11,13 +11,7 @@
     <div class="weIntro">Latest Events</div>
 <% events.forEach(function (e, i) { -%>
 
-<% if(i == 0) { -%>
-    <div class="eventBox new">
-<% } else if(i == (events.length - 1)) { -%>
-    <div class="eventBox last">
-<% } else { -%>
     <div class="eventBox">
-<% } -%>
         <div class="eventInfo">
           <p class="eventPlace"><%= e.place %></p>
           <p class="eventTime"><%= e.time %></p>

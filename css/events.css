@@ -32,11 +32,11 @@ section.events div.weIntro {
 	letter-spacing: 2px;
 }
 
-section.events div.last {
+section.events div:last-child {
 	border-bottom: 1px solid #1c1c1c;
 }
 
-section.events div.new {
+section.events div:nth-child(3) {
 	opacity: 1 !important;
 }
 
@@ -133,11 +133,11 @@ section.events div.eventBox div.eventName a.url {
 		letter-spacing: 2px;
 	}
 
-	section.events div.last {
+	section.events div:last-child {
 		border-bottom: 1px solid #1c1c1c;
 	}
 
-	section.events div.new {
+	section.events div:nth-child(3) {
 		opacity: 1 !important;
 	}
 
