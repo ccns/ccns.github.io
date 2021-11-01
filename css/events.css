@@ -34,7 +34,8 @@ section.events div:last-child {
 	border-bottom: 1px solid #1c1c1c;
 }
 
-section.events div:nth-child(3) {
+section.events div:nth-child(3),
+section.events div.eventBox:hover {
 	opacity: 1 !important;
 }
 
@@ -46,6 +47,7 @@ section.events div.eventBox {
 	/*50px*/
 	padding-bottom: 3.75vw;
 	/*50px*/
+	transition: opacity 0.5s;
 }
 
 section.events div.eventBox div.eventInfo {
@@ -129,7 +131,8 @@ section.events div.eventBox div.eventName a.url {
 		border-bottom: 1px solid #1c1c1c;
 	}
 
-	section.events div:nth-child(3) {
+	section.events div:nth-child(3),
+        section.events div.eventBox:hover {
 		opacity: 1 !important;
 	}
 
@@ -141,6 +144,7 @@ section.events div.eventBox div.eventName a.url {
 		/*50px*/
 		padding-bottom: 3.75vw;
 		/*50px*/
+		transition: opacity 0.5s;
 	}
 
 	section.events div.eventBox div.eventInfo {
