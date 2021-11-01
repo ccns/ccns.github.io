@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 
-<%- include("html-head", { scripts: ["./js/hello.js"] }); -%>
+<%- include("html-head", { scripts: ["./js/hello.js", "./js/zoom.js"] }); -%>
 
 <body>
 <%- include("header"); -%>
@@ -9,7 +9,7 @@
   <section class="intro">
     </h1>
     <div class="introImg">
-      <img onclick="hello()" src="./resources/intro/ccns_page_photo.webp" alt="" />
+      <img onclick="hello()" class="zoom" src="./resources/intro/ccns_page_photo.webp" alt="" />
     </div>
     <div class="clubIntro">
       <span class="white">
@@ -40,7 +40,7 @@
       想共同協作? </br>
       <span class="white">這裡，有個開發團隊。</span></br></br>
       </span>
-      <img class="googleImg" src="./resources/intro/ccnsGoogle.webp" alt="" /></br>
+      <img class="googleImg zoom" src="./resources/intro/ccnsGoogle.webp" alt="" /></br>
       <span class="white">無論你是資訊領域的新手或是強者，只要懷著一顆熱情的心，我們都歡迎你。</span>
       </br>
     </div>
@@ -58,7 +58,7 @@
           <div class="events">
             <div class="events-header"><%= event.name %></div>
             <div class="events-body">
-              <img class="timeline-pic" src="<%= event.pic %>" loading="lazy" alt="">
+              <img class="timeline-pic zoom" src="<%= event.pic %>" loading="lazy" alt="">
 <%     if (event.description || event.links) { -%>
               <div class="events-footer">
 <%       if (event.description) { -%>

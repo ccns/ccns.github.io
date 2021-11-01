@@ -39,6 +39,7 @@ body > section:nth-last-of-type(2) {
   --ccns-margin-width-min: calc(var(--bs-gutter-x, .75rem) + 12px);
   --ccns-margin-width: calc(max((100vw - (1024px - 2 * var(--ccns-margin-width-min))) / 2 + 3vw, var(--ccns-margin-width-min)));
   --ccns-margin-height: calc(max(3.45vw, var(--ccns-margin-width-min)));
+  --100cw: calc(100vw - var(--scrollbar-width)); /* 100% page content width */
 }
 
 a {

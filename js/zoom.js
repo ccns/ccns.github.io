@@ -1,4 +1,5 @@
 $(function() {
+  $(":root").css("--scrollbar-width", ($(window).outerWidth() - $(":root").width()).toString() + "px");
   $(document.body).prepend('<div id="zoom-background"></div>');
   $(".zoom").click(function() {
     var zoomed = $(this).hasClass("zoomed");

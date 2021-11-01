@@ -1,4 +1,6 @@
 section.intro div.introImg img {
+  --zoom-left: calc(var(--100cw) / 2);
+  --zoom-scale: 1.35;
   width: 50%;
   height: auto;
   max-width: 100%;
@@ -9,6 +11,8 @@ section.intro div.introImg img {
 
 @media only screen and (max-width:768px) {
   section.intro div.introImg img {
+    --zoom-left: unset;
+    --zoom-scale: 1.1;
     width: 100%;
     margin-top: 3vw;
     margin-bottom: 3vw;
@@ -31,6 +35,12 @@ img.timeline-pic {
   max-width: 100%;
   display: block;
   margin: auto;
+  filter: brightness(1);
+  transition-property: z-index, opacity, transform, filter;
+}
+.zoomed img.timeline-pic:not(.zoomed) {
+  opacity: 1;
+  filter: brightness(0.25);
 }
 
 /* Timeline */
@@ -72,7 +82,6 @@ section.timeline div.Timeline dl dt {
 
 section.timeline div.Timeline dl dd {
   position: relative;
-  z-index: 200
 }
 
 section.timeline div.Timeline dl dd .circ {
@@ -108,6 +117,12 @@ section.timeline div.Timeline dl dd:nth-last-of-type(2n) .time {
 }
 
 section.timeline div.Timeline dl dd .events {
+  --zoom-left: calc(var(--100cw) / 2 + 13px + 6px + 10px);
+  --zoom-right: calc(var(--ccns-margin-width) + 10px);
+  --zoom-align-margin: 10px;
+  --zoom-align-base: 100%;
+  --zoom-align-orientation: -1;
+  --zoom-scale: 3.6;
   position: relative;
   width: calc(50% - 6px - 13px);
   padding: 10px 0 0;
@@ -120,6 +135,10 @@ section.timeline div.Timeline dl dd .events {
 }
 
 section.timeline div.Timeline dl dd:nth-last-of-type(2n) .events {
+  --zoom-left: calc(var(--ccns-margin-width) + 10px);
+  --zoom-right: calc(var(--100cw) / 2 + 13px + 6px + 10px);
+  --zoom-align-base: 0%;
+  --zoom-align-orientation: 1;
   float: left;
 }
 
@@ -155,7 +174,7 @@ section.timeline div.Timeline dl dd .events .events-header {
 }
 
 section.timeline div.Timeline dl dd .events .events-body {
-  overflow: hidden;
+  overflow: visible;
   zoom: 1;
   background-color: #EEE;
   padding: 10px;
@@ -178,6 +197,9 @@ section.timeline div.Timeline dl dd .events .events-footer ol .active {
 
 /* RWD timeline */
 @media only screen and (max-width:768px) {
+  section.timeline div.Timeline dl dd .events {
+    --zoom-scale: 3.0;
+  }
   section.timeline div.Timeline dl dd .events .events-header {
     font-size: 18px;
   }
