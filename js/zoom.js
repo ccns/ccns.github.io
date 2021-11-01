@@ -1,9 +1,16 @@
 $(function() {
+  $(document.body).prepend('<div id="zoom-background"></div>');
   $(".zoom").click(function() {
-    if ($(this).hasClass("before")) {
-      $(this).removeClass("before").addClass("after");
-    } else {
-      $(this).removeClass("after").addClass("before");
+    var zoomed = $(this).hasClass("zoomed");
+    $(".zoomed").removeClass("zoomed");
+    if (!zoomed) {
+      $(this).addClass("zoomed");
+      $(":root").addClass("zoomed");
     }
   })
+  $(document).click(function (event) {
+    if(!$(event.target).closest('.zoom').length) {
+      $(".zoomed").removeClass("zoomed");
+    }
+  });
 })
