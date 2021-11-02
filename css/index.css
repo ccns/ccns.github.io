@@ -142,8 +142,8 @@ section.map-iframe div.map iframe {
 /* scroll top button */
 section.to-top a.button {
   position: fixed;
-  right: calc(var(--ccns-margin-width) - 30px - (var(--ccns-margin-width-min) + 3vw - 30px) / 2);
-  bottom: calc((var(--ccns-margin-width-min) + 3vw - 30px) / 2);
+  right: calc(var(--ccns-margin-width) - 30px - (var(--ccns-margin-width-min) - 30px) / 2);
+  bottom: calc((var(--ccns-margin-width-min) - 30px) / 2);
   display: block;
   width: 30px;
   height: 30px;
