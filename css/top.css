@@ -98,6 +98,11 @@ header.top div.topNav div.navIcon i {
 
   header.top div.topNav #navBar {
     display: block;
+    width: 0%;
+  }
+
+  header.top div.topNav #navBar.open {
+    width: 100%;
   }
 
   header.top div.topNav a {
