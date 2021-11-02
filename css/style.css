@@ -41,6 +41,7 @@ body > section:nth-last-of-type(2) {
   --ccns-margin-width: calc(max((100vw - (1024px - 2 * var(--ccns-margin-width-min))) / 2 + 3vw, var(--ccns-margin-width-min)));
   --ccns-margin-height: calc(max(3.45vw, var(--ccns-margin-width-min)));
   --100cw: calc(100vw - var(--scrollbar-width)); /* 100% page content width */
+  --ccns-header-height: calc(2 * 3.45vw + 4.45vw);
 }
 
 a {
@@ -56,5 +57,6 @@ a:hover {
   :root {
     --ccns-margin-width: var(--ccns-margin-width-min);
     --ccns-margin-height: calc(max(3vw + 12px, var(--ccns-margin-width)));
+    --ccns-header-height: calc(12px + 2 * 3vw + 8.45vw);
   }
 }
