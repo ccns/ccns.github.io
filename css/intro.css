@@ -36,7 +36,7 @@ img.timeline-pic {
   display: block;
   margin: auto;
   filter: brightness(1);
-  transition-property: z-index, opacity, transform, filter;
+  --zoom-transition: filter 0.5s;
 }
 .zoomed img.timeline-pic:not(.zoomed) {
   opacity: 1;
