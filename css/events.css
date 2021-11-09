@@ -58,6 +58,10 @@ section.events div.eventBox div.eventInfo {
 	border-right: 1px solid #1c1c1c;
 }
 
+section.events div.eventBox:hover div.eventInfo {
+	display: inline-table;
+}
+
 section.events div.eventBox div.eventInfo p.eventPlace {
 	font-family: "Noto Sans TC";
 	margin-bottom: 5px;
@@ -67,6 +71,8 @@ section.events div.eventBox div.eventInfo p.eventPlace {
 	color: #999;
 	padding-top: 0.32vw;
 	/*5px*/
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 section.events div.eventBox div.eventInfo p.eventTime {
@@ -153,6 +159,10 @@ section.events div.eventBox div.eventName a.url {
 		display: flex;
 		flex-direction: column;
 		border-right: 1px solid #1c1c1c;
+	}
+
+	section.events div.eventBox:hover div.eventInfo {
+		display: inline-table;
 	}
 
 	section.events div.eventBox div.eventInfo p.eventPlace {
