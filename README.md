@@ -19,14 +19,14 @@ $ git commit -m 'chore: update bundles'
 ```
 
 ## 更新網頁資料
-### 更新資料
+### 步驟一：編輯資料
 - 社員資料: 編輯 `resources/members.json`
 - 專案資料: 編輯 `resources/projects.json`
 - 活動照片: 編輯 `resources/timeline.json`
-- 定期聚資料: 下個步驟會自動拉取
+- 定期聚資料: 直接執行下個步驟，腳本會自動抓 kktix 資料
 
-### 產生新的頁面
-Generate `index.html` and push it to github
+### 步驟二：跑腳本
+跑以下指令以產生新的 `index.html`，並推送至 GitHub
 ```
 $ npm run gen
 $ npm run push
