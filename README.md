@@ -23,7 +23,7 @@ $ git commit -m 'chore: update bundles'
 - 社員資料: 編輯 `resources/members.json`
 - 專案資料: 編輯 `resources/projects.json`
 - 活動照片: 編輯 `resources/timeline.json`
-- 定期聚資料: 直接執行下個步驟，腳本會自動抓 kktix 資料
+- 定期聚資料: 直接執行下個步驟，腳本會幫你抓 kktix 資料
 
 ### 步驟二：跑腳本
 跑以下指令以產生新的 `index.html`，並推送至 GitHub
