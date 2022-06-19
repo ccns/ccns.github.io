@@ -2,3 +2,12 @@ node_modules
 .vscode
 /public/*
 !/public/.gitkeep
+
+# These page should be generated
+env.html
+events.html
+food.html
+index.html
+intro.html
+members.html
+projects.html
