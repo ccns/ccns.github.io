@@ -1,0 +1,158 @@
+[
+  {
+    "name": "Idoleat",
+    "thumbnail": "resources/members/idoleat.webp",
+    "description": "資工系碩一，現任社長。",
+    "links": [{ "link": "https://github.com/idoleat", "icon": "github" }]
+  },
+  {
+    "name": "2011eric",
+    "thumbnail": "resources/members/eric.webp",
+    "description": "電機系大二，現任副社。<br>他是Leo的附屬品。",
+    "links": [{ "link": "https://github.com/2011eric", "icon": "github" }]
+  },
+  {
+    "name": "Chummy 泥鰍",
+    "thumbnail": "resources/members/chummuy.webp",
+    "description": "資工系大二，網管課助教。",
+    "links": [{ "link": "https://github.com/Jimmy01240397", "icon": "github" }]
+  },
+  {
+    "name": "小鳥紳士",
+    "thumbnail": "resources/members/bird.webp",
+    "description": "資工系大三，他是小鳥紳士。",
+    "links": [{ "link": "https://github.com/luckysmallbird", "icon": "github" }]
+  },
+  {
+    "name": "葉子果醬",
+    "thumbnail": "resources/members/yaz.webp",
+    "description": "電機系大四，聽說他是Vtuber。",
+    "links": [{ "link": "https://twitter.com/YazzzzzLabVTub1", "icon": "twitter" }]
+  },
+  {
+    "name": "Vincent550102",
+    "thumbnail": "resources/members/vincent.webp",
+    "description": "資工系大二，曾任職於 iKala。",
+    "links": [{ "link": "https://github.com/Vincent550102", "icon": "github" }]
+  },
+  {
+    "name": "tobychui",
+    "thumbnail": "resources/members/toby.webp",
+    "description": "資工系碩一，自幹了一個雲端桌面作業系統。",
+    "links": [{ "link": "https://github.com/tobychui", "icon": "github" }]
+  },
+  {
+    "name": "arasHi",
+    "thumbnail": "resources/members/araHi.webp",
+    "description": "資工系大二，aka 伊嵐，前任社長<br>他不想努力了。",
+    "links": [{ "link": "https://github.com/arasHi87", "icon": "github" }]
+  },
+  {
+    "name": "Auyu0408",
+    "thumbnail": "resources/members/Auyu.webp",
+    "description": "資工系大三，<br>她會彈鋼琴，好厲害。",
+    "links": [{ "link": "https://github.com/auyu0408", "icon": "github" }]
+  },
+  {
+    "name": "MiohitoKiri5474",
+    "thumbnail": "resources/members/Kirito.webp",
+    "description": "資工系大三，aka桐人，<br>前競程助教。<br>MTG 重度成癮者，歡迎 cEDH 朋友交流。",
+    "links": [{ "link": "https://github.com/miohitokiri5474", "icon": "github" }]
+  },
+  {
+    "name": "Leo900807",
+    "thumbnail": "resources/members/leo.webp",
+    "description": "資工系大三，競程助教，<br>據說 <a href=\"https://www.youtube.com/channel/UCl_gCybOJRIgOXw6Qb4qJzQ\">潤羽るしあ </a> 是他婆。<br>不知道那是誰。",
+    "links": [{ "link": "https://github.com/leo900807", "icon": "github" }]
+  },
+  {
+    "name": "Wiasliaw",
+    "thumbnail": "resources/members/wias.webp",
+    "description": "資工系大五，現任職於FiO。",
+    "links": [{ "link": "https://github.com/wiasliaw", "icon": "github" }]
+  },
+  {
+    "name": "Alex Tzeng",
+    "thumbnail": "resources/members/alex.webp",
+    "description": "資工系輟學，現任職於Xendit。",
+    "links": [{ "link": "https://github.com/alxtz", "icon": "github" }]
+  },
+  {
+    "name": "Darkborderman",
+    "thumbnail": "resources/members/darkborderman.webp",
+    "description": "資工系畢業，現任職於iChef。",
+    "links": [{ "link": "https://github.com/darkborderman", "icon": "github" }]
+  },
+  {
+    "name": "Ian Sung",
+    "thumbnail": "resources/members/Ian.webp",
+    "description": "資工系畢業，競程助教，<br>曾任職於NextDrive。",
+    "links": [{ "link": "https://github.com/a20034294", "icon": "github" }]
+  },
+  {
+    "name": "nbswords",
+    "thumbnail": "resources/members/nbsword.webp",
+    "description": "工資系畢業，aka空白，曾任社長，<br>目前任職於 AuthMe。",
+    "links": [{ "link": "https://github.com/nbswords", "icon": "github" }]
+  },
+  {
+    "name": "Rain",
+    "thumbnail": "resources/members/Rain.webp",
+    "description": "資工系畢業，曾任副社長，<br>目前任職於 Appier。",
+    "links": [{ "link": "https://github.com/RainrainWu", "icon": "github" }]
+  },
+  {
+    "name": "Tsundere Chen",
+    "thumbnail": "resources/members/TC.webp",
+    "description": "資工系大四，曾任社長，<br>曾任職於 Pixnet、NextDrive。",
+    "links": [{ "link": "https://github.com/TsundereChen", "icon": "github" }]
+  },
+  {
+    "name": "r2",
+    "thumbnail": "resources/members/r2.webp",
+    "description": "地科所碩二，曾任社長，<br>夢之大地 BBS 系統維護者。",
+    "links": [{ "link": "https://github.com/holishing", "icon": "github" }]
+  },
+  {
+    "name": "Dom2112",
+    "thumbnail": "resources/members/Dom2112.webp",
+    "description": "資工系大四，<br>夢之大地 BBS 程式開發者。",
+    "links": [{ "link": "https://github.com/IepIweidieng", "icon": "github" }]
+  },
+  {
+    "name": "Shun Jie",
+    "thumbnail": "resources/members/SJ.webp",
+    "description": "機械所畢業，曾任社長，<br>目前任職於 Lam Research。",
+    "links": [{ "link": "https://github.com/ShunJieZhang1995", "icon": "github" }]
+  },
+  {
+    "name": "Raiso",
+    "thumbnail": "resources/members/Raiso.webp",
+    "description": "機械所碩二，曾任副社長，<br>玩具大師，競程助教。",
+    "links": [{ "link": "https://github.com/raiso777", "icon": "github" }]
+  },
+  {
+    "name": "Daniel Chen",
+    "thumbnail": "resources/members/DC.webp",
+    "description": "美國南加州理工大學 Computer Science 畢業，曾任副社長，<br>目前任職於 Google。",
+    "links": [{ "link": "https://github.com/d4n1elchen", "icon": "github" }]
+  },
+  {
+    "name": "Sou",
+    "thumbnail": "resources/members/sou.webp",
+    "description": "資工碩二，曾任社長，<br>競程助教。",
+    "links": [{ "link": "https://github.com/IepIweidieng", "icon": "github" }]
+  },
+  {
+    "name": "Gholk",
+    "thumbnail": "resources/members/Gholk.webp",
+    "description": "交大測量所畢業，曾任副社長，<br>Emacs 擁護者。",
+    "links": [{ "link": "https://github.com/GHolk", "icon": "github" }]
+  },
+  {
+    "name": "HexRabbit",
+    "thumbnail": "resources/members/HexRabbit.webp",
+    "description": "交大資電駭客碩二，曾任社長，<br>10sec CTF 成員，曾任職於 TeamT5。",
+    "links": [{ "link": "https://github.com/HexRabbit", "icon": "github" }]
+  }
+]

@@ -1,0 +1,15 @@
+section.discord-embed div.discord-food {
+  --margin-width-embedded: calc(max((100vw - (1280px - 2 * 2em)) / 2, var(--ccns-margin-width-min)));
+  --margin-width-diff: calc(var(--margin-width-embedded) - var(--ccns-margin-width));
+  margin: var(--margin-width-diff);
+  margin-top: 0;
+  height: calc(100vh - var(--ccns-header-height) - var(--ccns-margin-width-min));
+  width: calc(100% - 2 * var(--margin-width-diff));
+}
+
+@media only screen and (max-width: 768px) {
+  section.discord-embed div.discord-food {
+    margin-top: 12px;
+    height: calc(100vh - var(--ccns-header-height) - var(--ccns-margin-width-min) - 12px);
+  }
+}

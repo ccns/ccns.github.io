@@ -1,0 +1,83 @@
+[
+  {
+    "name": "Rust 語言讀書會",
+    "description": "由參與者輪流閱讀 The Rust Programming Language 並報告內容",
+    "links": [{ "link": "https://hackmd.io/WJZCZzmOQb6S3l36xWU1wA", "icon": "book" }]
+  },
+  {
+    "name": "CCNS Weekly",
+    "description": "由參與者整理資訊相關內容並合作撰寫每周推出的 blog",
+    "links": [{ "link": "https://weekly.ccns.io/", "icon": "globe" }]
+  },
+  {
+    "name": "Pytorch Tainan",
+    "description": "以社群形式作為台南第一個 AI 社群報告相關論文與書籍",
+    "links": [{ "link": "https://hackmd.io/@DanielChen/HJU1M8-vm/%2Fs%2FHJU1M8-vm?type=book", "icon": "book" }]
+  },
+  {
+    "name": "Go 語言讀書會",
+    "description": "由參與者輪流閱讀 The Go Programming Language 並報告內容，前三周選出 Leetcode 題目練習解題",
+    "links": [
+    { "link": "https://hackmd.io/B8OBXBoWTA-FbZMRdLXP9Q?view", "icon": "book" },
+    { "link": "https://github.com/ccns/study_group_2020_spring", "icon": "github" }
+    ]
+  },
+  {
+    "name": "CCNS Chatbot",
+    "description": "社團自行設計的跨平台問答 Chatbot，並會在期初社團大會頒發獎項給前三名。",
+    "links": [
+    { "link": "https://hackmd.io/@DanielChen/rkxHtlN5W?type=view", "icon": "book" },
+    { "link": "https://www.facebook.com/ncku.ccns/posts/1771315396403984/", "icon": "facebook" }
+    ]
+  },
+  {
+    "name": "CCNS CTF",
+    "description": "CTF 是一種資安競賽，將資安概念跟工具使用的方法包裝成題目，參賽者要從題目中找出 Flag，題型大約可以分為幾類: Pwnable, Web, Crypto, Stego, Forensic, Misc",
+    "links": [
+    { "link": "https://ctf.ccns.io/", "icon": "globe" },
+    { "link": "https://github.com/ccns/CCNS-CTF", "icon": "github" }
+    ]
+  },
+  {
+    "name": "競技程式設計",
+    "description": "由社員發起撰寫的競技程式教材，並自架 Online judge 平台用於資工所的高階競技程式設計課程",
+    "links": [
+    { "link": "https://hackmd.io/3NqazYITT5OgnSsGu61-lQ", "icon": "book" },
+    { "link": "https://judge.csie.ncku.edu.tw/", "icon": "globe" }
+    ]
+  },
+  {
+    "name": "加密貨幣/區塊鍊讀書會",
+    "description": "閱讀各關鍵技術的官方文件，從第一手資料去理解各種區塊鍊相關技術，採自由規劃進度，並共同編輯筆記",
+    "links": [
+    { "link": "https://hackmd.io/dY0xXnazR9OHmeV_Dn0AEA", "icon": "book" }
+    ]
+  },
+  {
+    "name": "ROS",
+    "description": "研讀 ROS 機器人編程 並製作一臺以 ROS 控制的小車",
+    "links": [
+    { "link": "https://hackmd.io/bw7xnixnSxazX8l6vvroAQ", "icon": "book" }
+    ]
+  },
+  {
+    "name": "CS:APP 讀書會",
+    "description": "閱讀 CS:APP 並輪流報告內容",
+    "links": [
+    { "link": "https://hackmd.io/VzjmKBlSRki2oN4wskB55Q?view", "icon": "book" }
+    ]
+  },
+  {
+    "name": "DreamBBS Project",
+    "description": "夢之大地創立於 1995 年，並持續經營站臺，維護改良 BBS 架站原始碼至今。",
+    "links": [
+    { "link": "https://term.ccns.cc", "icon": "terminal" },
+    { "link": "https://github.com/ccns/dreambbs", "icon": "github" }
+    ]
+  },
+  {
+    "name": "CCNS Mirrors",
+    "description": "CCNS 鏡像站提供多家 Linux 發行版的鏡像下載服務，由 NCKU CSIE 與 NCKU EE CANS Lab 提供基礎網路環境設施。",
+    "links": [{ "link": "https://mirror.ccns.ncku.edu.tw/", "icon": "globe" }]
+  }
+]

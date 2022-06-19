@@ -1,0 +1,209 @@
+section.intro div.introImg img {
+  --zoom-left: calc(var(--100cw) / 2);
+  --zoom-scale: 1.35;
+  width: 50%;
+  height: auto;
+  max-width: 100%;
+  float: right;
+  margin-right: 0;
+  margin-top: 2vw;
+}
+
+@media only screen and (max-width:768px) {
+  section.intro div.introImg img {
+    --zoom-left: unset;
+    --zoom-scale: 1.1;
+    width: 100%;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+  }
+
+}
+
+img.googleImg {
+  width: 800px;
+  height: auto;
+  max-width: 100%;
+  margin-bottom: 3vw;
+}
+
+/* ---Timeline-- */
+/* Timeline picture */
+img.timeline-pic {
+  width: 600px;
+  height: auto;
+  max-width: 100%;
+  display: block;
+  margin: auto;
+  filter: brightness(1);
+  --zoom-transition: filter 0.5s;
+}
+.zoomed img.timeline-pic:not(.zoomed) {
+  opacity: 1;
+  filter: brightness(0.25);
+}
+
+/* Timeline */
+section.timeline div.Timeline dl {
+  position: relative;
+  top: 0;
+  padding: 20px 0;
+  margin: 0
+}
+
+section.timeline div.Timeline dl:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  z-index: 100;
+  width: 2px;
+  margin-left: -1px;
+  content: '';
+  background-color: #ccd1d9
+}
+
+section.timeline div.Timeline dl dt {
+  position: relative;
+  top: 30px;
+  z-index: 200;
+  width: 120px;
+  padding: 3px 5px;
+  margin: 0 auto 30px;
+  font-weight: 400;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  background-color: #3d444e;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px
+}
+
+section.timeline div.Timeline dl dd {
+  position: relative;
+}
+
+section.timeline div.Timeline dl dd .circ {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  z-index: 200;
+  width: 22px;
+  height: 22px;
+  margin-left: -11px;
+  background-color: #4fc1e9;
+  border: 4px solid #f5f7fa;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%
+}
+
+section.timeline div.Timeline dl dd .time {
+  position: absolute;
+  top: 31px;
+  left: 50%;
+  display: inline-block;
+  width: 100px;
+  padding: 10px 20px;
+  color: #4fc1e9;
+  margin-left: -100px;
+  text-align: right;
+}
+
+section.timeline div.Timeline dl dd:nth-last-of-type(2n) .time {
+  margin-left: 0;
+  text-align: left;
+}
+
+section.timeline div.Timeline dl dd .events {
+  --zoom-left: calc(var(--100cw) / 2 + 13px + 6px + 10px);
+  --zoom-right: calc(var(--ccns-margin-width) + 10px);
+  --zoom-align-margin: 10px;
+  --zoom-align-base: 100%;
+  --zoom-align-orientation: -1;
+  --zoom-scale: 3.6;
+  position: relative;
+  width: calc(50% - 6px - 13px);
+  padding: 10px 0 0;
+  background-color: #CCC;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  margin-top: 31px;
+  float: right;
+}
+
+section.timeline div.Timeline dl dd:nth-last-of-type(2n) .events {
+  --zoom-left: calc(var(--ccns-margin-width) + 10px);
+  --zoom-right: calc(var(--100cw) / 2 + 13px + 6px + 10px);
+  --zoom-align-base: 0%;
+  --zoom-align-orientation: 1;
+  float: left;
+}
+
+section.timeline div.Timeline dl dd .events:before {
+  position: absolute;
+  top: 12px;
+  width: 0;
+  height: 0;
+  content: '';
+  border-style: solid;
+  border-width: 6px;
+  left: -12px;
+  border-color: transparent #CCC transparent transparent;
+}
+
+section.timeline div.Timeline dl dd:nth-last-of-type(2n) .events:before {
+  left: unset;
+  right: -12px;
+  border-color: transparent transparent transparent #CCC;
+}
+
+section.timeline div.Timeline dl dd .events .events-object {
+  margin: 0 auto;
+}
+
+section.timeline div.Timeline dl dd .events .events-header {
+  margin: 0 10px 10px 10px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+section.timeline div.Timeline dl dd .events .events-body {
+  overflow: visible;
+  zoom: 1;
+  background-color: #EEE;
+  padding: 10px;
+}
+
+section.timeline div.Timeline dl dd .events .events-body .events-desc {
+  text-indent: 2em;
+  padding: 0 15px;
+}
+
+section.timeline div.Timeline dl dd .events .events-footer {
+  text-align: center;
+  font-size: 20px;
+}
+
+section.timeline div.Timeline dl dd .events .events-footer ol .active {
+  transform: scale(2);
+}
+
+
+/* RWD timeline */
+@media only screen and (max-width:768px) {
+  section.timeline div.Timeline dl dd .events {
+    --zoom-scale: 3.0;
+  }
+  section.timeline div.Timeline dl dd .events .events-header {
+    font-size: 18px;
+  }
+  section.timeline div.Timeline dl dd .events .events-footer {
+    font-size: 16px;
+  }
+}

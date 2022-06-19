@@ -1,0 +1,62 @@
+@import "top.css";
+@import "index.css";
+@import "intro.css";
+@import "events.css";
+@import "member.css";
+@import "projects.css";
+@import "food.css";
+@import "env.css";
+
+@font-face {
+  font-family: "Noto Sans TC";
+  src: url("../fonts/NotoSans-Regular.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Noto Sans TC Bold";
+  src: url("../fonts/NotoSans-Regular.ttf");
+  font-display: swap;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #141414;
+}
+
+body > section {
+  margin: auto var(--ccns-margin-width);
+}
+
+body > section:nth-last-of-type(2) {
+  margin-bottom: var(--ccns-margin-height);
+}
+
+:root {
+  --ccns-margin-width-min-base: calc(var(--bs-gutter-x, .75rem) + 12px);
+  --ccns-margin-width-min: calc(var(--ccns-margin-width-min-base) + 12px);
+  --ccns-margin-width: calc(max((100vw - (1024px - 2 * var(--ccns-margin-width-min))) / 2 + 3vw, var(--ccns-margin-width-min)));
+  --ccns-margin-height: calc(max(3.45vw, var(--ccns-margin-width-min)));
+  --100cw: calc(100vw - var(--scrollbar-width)); /* 100% page content width */
+  --ccns-header-height: calc(2 * 3.45vw + 4.45vw);
+}
+
+a {
+  color: #5479c4;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #c49f54;
+}
+
+@media only screen and (max-width: 768px) {
+  :root {
+    --ccns-margin-width: var(--ccns-margin-width-min);
+    --ccns-margin-height: calc(max(3vw + 12px, var(--ccns-margin-width)));
+    --ccns-header-height: calc(12px + 2 * 3vw + 8.45vw);
+  }
+}
