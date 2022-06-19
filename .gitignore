@@ -1,7 +1,7 @@
 node_modules
 .vscode
-/public/*
-!/public/.gitkeep
+public
+frameworks
 
 # These page should be generated
 env.html
