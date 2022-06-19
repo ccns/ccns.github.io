@@ -3,6 +3,8 @@ name: EJS Template Build and Deploy
 on: 
   push:
     branches: [main]
+  schedule:
+    - cron: "22 11 * * Tue,Fri"
 
 jobs:
   pages:
