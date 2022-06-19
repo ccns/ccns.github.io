@@ -144,6 +144,19 @@
         ]
     },
     {
+        "year": 2018,
+        "events": [
+            {
+                "name": "107上學期 社團博覽大會",
+                "pic": "resources/timeline/timeline_2018_Kururinpa.webp",
+                "description": "咕嚕靈波(○′∀‵)ノ♡",
+                "links": [
+                    { "link": "https://www.facebook.com/ncku.ccns/posts/1225320377670158/", "text": "more" }
+                ]
+            }
+        ]
+    },
+    {
         "year": 2019,
         "events": [
             {
@@ -184,6 +197,11 @@
                 "name": "CCNS 109上 烤肉聚餐",
                 "pic": "resources/timeline/timeline_2020_meat.webp",
                 "description": "忘記為甚麼跑來吃烤肉，但很爽"
+            },
+            {
+                "name": "CCNS 2020 畢業合照",
+                "pic": "resources/timeline/timeline_2020_graduate.webp",
+                "description": "順利畢業啦"
             },
             {
                 "name": "CCNS 109上 期末聚餐",
