@@ -24,7 +24,7 @@ $ git commit -m 'chore: update bundles'
 - 專案資料: 編輯 `resources/projects.json`
 - 活動照片: 編輯 `resources/timeline.json`
 - 定期聚資料: 直接執行下個步驟，腳本會幫你抓 kktix 資料
-- 其他網頁: 請先看 `ejs/` 資料夾底下有沒有名字一樣的範本檔 (`*.ejs`)，避免執行下一步驟時將舊資訊覆蓋回來
+- 其他網頁: 請先檢查 `ejs/` 資料夾底下有沒有名字一樣的範本檔 (`*.ejs`)。有的話請編輯範本檔而非 HTML 檔，避免執行下一步驟時將舊資訊覆蓋回來
 
 ### 步驟二：跑腳本
 跑以下指令以產生新的 `*.html`，並推送至 GitHub
