@@ -45,14 +45,15 @@ const renderEvents = (src, dst) => {
 const members = require("./resources/members.json");
 const projects = require("./resources/projects.json");
 const timeline = require("./resources/timeline.json");
+fs.mkdirSync("./public/frameworks/", { recursive: true })
 const pages = [
-  { src: "./ejs/events.ejs", dst: "./events.html", renderer: renderEvents },
-  { src: "./ejs/members.ejs", dst: "./members.html", resources: { members: members } },
-  { src: "./ejs/projects.ejs", dst: "./projects.html", resources: { projects: projects } },
-  { src: "./ejs/intro.ejs", dst: "./intro.html", resources: { timeline: timeline } },
-  { src: "./ejs/env.ejs", dst: "./env.html" },
-  { src: "./ejs/food.ejs", dst: "./food.html" },
-  { src: "./ejs/index.ejs", dst: "./index.html" },
+  { src: "./ejs/events.ejs", dst: "./public/events.html", renderer: renderEvents },
+  { src: "./ejs/members.ejs", dst: "./public/members.html", resources: { members: members } },
+  { src: "./ejs/projects.ejs", dst: "./public/projects.html", resources: { projects: projects } },
+  { src: "./ejs/intro.ejs", dst: "./public/intro.html", resources: { timeline: timeline } },
+  { src: "./ejs/env.ejs", dst: "./public/env.html" },
+  { src: "./ejs/food.ejs", dst: "./public/food.html" },
+  { src: "./ejs/index.ejs", dst: "./public/index.html" },
 ];
 
 pages.forEach((e, i) => {

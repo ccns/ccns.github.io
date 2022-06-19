@@ -16,12 +16,14 @@
     "request": "^2.88.2"
   },
   "scripts": {
-    "gen": "node generate.js",
-    "bootstrap": "cp -r node_modules/bootstrap/dist -T frameworks/bootstrap",
-    "flipclock": "cp -r node_modules/flipclock/dist -T frameworks/flipclock",
-    "fontawesome": "cp -r node_modules/@fortawesome/fontawesome-free -T frameworks/fontawesome-free",
-    "jquery": "cp -r node_modules/jquery/dist/ -T frameworks/jquery",
-    "bundle": "rm -rf frameworks/*; npm run bootstrap; npm run flipclock; npm run fontawesome; npm run jquery",
+    "gen": "node generate.js; npm run bundle; npm run resources",
+    "clean": "rm -rvf public/*",
+    "bootstrap": "cp -r node_modules/bootstrap/dist -T public/frameworks/bootstrap",
+    "flipclock": "cp -r node_modules/flipclock/dist -T public/frameworks/flipclock",
+    "fontawesome": "cp -r node_modules/@fortawesome/fontawesome-free -T public/frameworks/fontawesome-free",
+    "jquery": "cp -r node_modules/jquery/dist/ -T public/frameworks/jquery",
+    "bundle": "mkdir -p public/frameworks/; npm run bootstrap; npm run flipclock; npm run fontawesome; npm run jquery",
+    "resources": "mkdir -p public/; cp -r resources/ css/ js/ model/ fonts/ c-chan.html -t public/",
     "push": "git add -A && git diff-index --quiet HEAD || (git commit -m 'update pages' && git push)",
     "update": "npm run gen; npm run push"
   },
