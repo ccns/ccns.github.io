@@ -22,8 +22,8 @@
     "jquery": "cp -r node_modules/jquery/dist/ -T public/frameworks/jquery",
     "bundle": "mkdir -p public/frameworks/; npm run bootstrap; npm run fontawesome; npm run jquery",
     "resources": "mkdir -p public/; cp -r resources/ css/ js/ model/ fonts/ c-chan.html -t public/",
-    "push": "git add -A && git diff-index --quiet HEAD || (git commit -m 'update pages' && git push)",
-    "update": "npm run gen; npm run push"
+    "push": "#'This command is deprecated!  See README.md to learn how to update pages.'",
+    "update": "#'This command is deprecated!  See README.md to learn how to update pages.'"
   },
   "repository": {
     "type": "git",
