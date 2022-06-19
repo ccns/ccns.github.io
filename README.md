@@ -10,7 +10,8 @@ Roughly rebuilding of CCNS website
 - 其他網頁: 請先檢查 `ejs/` 資料夾底下有沒有名字一樣的範本檔 (`*.ejs`)。有的話請編輯範本檔而非 HTML 檔，避免執行下一步驟時將舊資訊覆蓋回來
 
 ### 步驟二：交給 CI 跑腳本
-將你的修改 commit 完 `git push` 上去，或是直接在 GitHub 網頁編輯完內容儲存，CI (GitHub Action) 就會幫你產生更新過後的網頁了
+- 將你的修改 commit 完 `git push` 上去，或是直接在 GitHub 網頁編輯完內容儲存，CI (GitHub Action) 就會幫你產生更新過後的網頁了
+- 如果你只要更新定期聚資料，沒要改其他東西，請直接[重跑 CI](https://docs.github.com/en/actions/managing-workflow-runs/re-running-workflows-and-jobs#re-running-all-the-jobs-in-a-workflow)。
 
 ## 本地開發環境測試
 ### 需求
