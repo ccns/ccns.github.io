@@ -8,6 +8,8 @@
 
   <section class="member-intro">
     <div class="member-list">
+<%- include("c-chan"); -%>
+
 <% members.forEach(function (e, i) { -%>
 <%-  i ? '\n' : '' -%>
       <div class="member-item">
@@ -33,8 +35,6 @@
   </section>
 
 <%- include("footer"); -%>
-
-<%- include("c-chan"); -%>
 </body>
 
 </html>

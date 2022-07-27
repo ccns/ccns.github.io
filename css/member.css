@@ -20,6 +20,7 @@ img.thumbnails {
 section.member-intro div.desc {
   text-align: left;
   font-size: 20px;
+  transform: translateZ(10px);
 }
 
 section.member-intro div.desc h1 {
@@ -31,6 +32,10 @@ section.member-intro div.desc h1 a {
   /* color: #888; */
   font-size: 95%;
   margin-left: 5px;
+}
+
+section.member-intro div.desc p {
+  text-shadow: #1f1f1f 0 1px 10px;
 }
 
 section.member-intro div.desc span.white-adj {
