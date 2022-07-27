@@ -58,10 +58,6 @@ section.member-intro div.desc span.white-adj {
     max-width: 100%;
   }
 
-  section.member-intro div.member-item:last-of-type p:last-child {
-    min-height: 50vh;
-  }
-
   img.thumbnails {
     object-position: center;
   }
