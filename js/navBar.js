@@ -1,7 +1,7 @@
 function openNav() {
-  document.getElementById("navBar").classList.add("open");
+  document.getElementById("nav-bar").classList.add("open");
 }
 
 function closeNav() {
-  document.getElementById("navBar").classList.remove("open");
+  document.getElementById("nav-bar").classList.remove("open");
 }
