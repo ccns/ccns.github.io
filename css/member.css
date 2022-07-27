@@ -37,12 +37,19 @@ section.member-intro div.desc span.white-adj {
   color: rgb(229, 233, 236);
 }
 
-iframe.c-chan {
-  width: 200px;
-  height: 400px;
+.c-chan {
+  width: 36vh;
+  height: 72vh;
   position: fixed;
   right: 0;
   bottom: 0;
+  opacity: 0.75;
+  transition: opacity 0.5s;
+}
+
+.c-chan:hover,
+.c-chan:focus {
+  opacity: 1;
 }
 
 @media only screen and (max-width: 768px) {
@@ -60,7 +67,8 @@ iframe.c-chan {
     font-size: 22px;
   }
 
-  iframe.c-chan {
-    display: none;
+  .c-chan {
+    width: 25vh;
+    height: 50vh;
   }
 }

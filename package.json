@@ -21,7 +21,7 @@
     "fontawesome": "cp -r node_modules/@fortawesome/fontawesome-free -T public/frameworks/fontawesome-free",
     "jquery": "cp -r node_modules/jquery/dist/ -T public/frameworks/jquery",
     "bundle": "mkdir -p public/frameworks/; npm run bootstrap; npm run fontawesome; npm run jquery",
-    "resources": "mkdir -p public/; cp -r resources/ css/ js/ model/ fonts/ c-chan.html -t public/",
+    "resources": "mkdir -p public/; cp -r resources/ css/ js/ model/ fonts/ -t public/",
     "push": "#'This command is deprecated!  See README.md to learn how to update pages.'",
     "update": "#'This command is deprecated!  See README.md to learn how to update pages.'"
   },
