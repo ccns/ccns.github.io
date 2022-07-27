@@ -63,8 +63,12 @@ header.top div.top-nav div.header-right a {
   transition: color 0.4s;
 }
 
-header.top div.top-nav div.header-right a:hover {
+header.top div.top-nav div.header-right a.nav-focus {
   color: #c49f54;
+}
+
+header.top div.top-nav div.header-right a:hover {
+  color: #ffc107;
 }
 
 header.top div.top-nav div.header-right i {
@@ -187,6 +191,11 @@ header.top div.top-nav div.nav-icon i.fa {
     margin-bottom: 5vw;
     margin-left: 0;
     min-width: 180px;
+  }
+
+  header.top div.top-nav div.overlay div.header-right a.nav-focus {
+    background-color: #c49f54;
+    color: #161616;
   }
 
   header.top div.top-nav div.overlay div.header-right a:hover,
