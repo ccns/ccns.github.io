@@ -1,23 +1,22 @@
-header.top div.topNav {
+header.top div.top-nav {
   padding: 0;
   display: flex;
   justify-content: space-between;
 }
 
-header.top div.topNav div.headerLeft {
-  padding: 3.45vw;
-  /*45px*/
+header.top div.top-nav div.header-left {
+  padding: 3.45vw; /* 45px */
   display: flex;
   align-items: center;
   width: 49%;
 }
 
-header.top div.topNav div.headerLeft a.homeLink {
+header.top div.top-nav div.header-left a.home-link {
   text-decoration: none;
   color: white;
 }
 
-header.top div.topNav div.headerLeft div.logoBox {
+header.top div.top-nav div.header-left div.logo-box {
   margin-right: 1.5vw;
   width: 4.6vw;
   height: 4.45vw;
@@ -27,25 +26,24 @@ header.top div.topNav div.headerLeft div.logoBox {
   align-items: center;
 }
 
-header.top div.topNav div.headerLeft div.logoBox p {
-  font-family: "Roboto";
+header.top div.top-nav div.header-left div.logo-box p {
+  font-family: Roboto;
   color: #161616;
   margin-top: 1.3vw;
   font-size: 1.35vw;
   line-height: 0.4vw;
 }
 
-header.top div.topNav div.headerLeft p {
+header.top div.top-nav div.header-left p {
   font-family: "Noto Sans TC";
-  font-size: 1.35vw;
-  /*18px*/
+  font-size: 1.35vw; /* 18px */
   color: white;
   margin-bottom: 0;
   letter-spacing: 2px;
   text-indent: 2px;
 }
 
-header.top div.topNav div.headerRight {
+header.top div.top-nav div.header-right {
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -55,7 +53,7 @@ header.top div.topNav div.headerRight {
   padding: 3.45vw;
 }
 
-header.top div.topNav div.headerRight a {
+header.top div.top-nav div.header-right a {
   text-decoration: none;
   color: white;
   font-size: 1.35vw;
@@ -65,56 +63,56 @@ header.top div.topNav div.headerRight a {
   transition: color 0.4s;
 }
 
-header.top div.topNav div.headerRight a:hover {
+header.top div.top-nav div.header-right a:hover {
   color: #c49f54;
 }
 
-header.top div.topNav div.headerRight i {
+header.top div.top-nav div.header-right i {
   cursor: pointer;
   color: white;
-  font-size: 2.13vw;
-  /*30px*/
-  margin-right: 3.45vw;
-  /*45px*/
+  font-size: 2.13vw; /* 30px */
+  margin-right: 3.45vw; /* 45px */
   transition: color 0.4s;
 }
 
-header.top div.topNav div.headerRight i:hover {
+header.top div.top-nav div.header-right i:hover {
   color: #c49f54;
 }
 
 .overlay .closebtn {
   display: none;
 }
-header.top div.topNav div.navIcon i {
+
+header.top div.top-nav div.nav-icon i {
   display: none;
 }
-@media only screen and (max-width:768px) {
-  header.top div.topNav {
+
+@media only screen and (max-width: 768px) {
+  header.top div.top-nav {
     position: relative;
-    /* 讓navBar 最上層顯示 */
+
+    /* 讓nav-bar 最上層顯示 */
     z-index: 9999;
   }
 
-  header.top div.topNav #navBar {
+  header.top div.top-nav #nav-bar {
     display: block;
     width: 0%;
   }
 
-  header.top div.topNav #navBar.open {
+  header.top div.top-nav #nav-bar.open {
     width: 100%;
   }
 
-  header.top div.topNav a {
+  header.top div.top-nav a {
     color: white;
     font-size: 20px;
     text-decoration: none;
     display: block;
   }
 
-  header.top div.topNav div.headerLeft {
-    padding: 3vw;
-    /*45px*/
+  header.top div.top-nav div.header-left {
+    padding: 3vw; /* 45px */
     display: flex;
     align-items: center;
     width: 75%;
@@ -122,16 +120,16 @@ header.top div.topNav div.navIcon i {
     margin-left: 12px;
   }
 
-  header.top div.topNav div.headerLeft a.homeLink {
+  header.top div.top-nav div.header-left a.home-link {
     text-decoration: none;
     color: white;
   }
 
-  header.top div.topNav div.headerLeft a.homeLink p {
+  header.top div.top-nav div.header-left a.home-link p {
     font-size: 4.5vw;
   }
 
-  header.top div.topNav div.headerLeft div.logoBox {
+  header.top div.top-nav div.header-left div.logo-box {
     margin-right: 2vw;
     width: 10vw;
     height: 8.45vw;
@@ -141,8 +139,8 @@ header.top div.topNav div.navIcon i {
     align-items: center;
   }
 
-  header.top div.topNav div.headerLeft div.logoBox p {
-    font-family: "Roboto";
+  header.top div.top-nav div.header-left div.logo-box p {
+    font-family: Roboto;
     color: #161616;
     margin-top: 1.3vw;
     font-size: 3.35vw;
@@ -150,7 +148,7 @@ header.top div.topNav div.navIcon i {
   }
 
   /* NavBar for RWD  */
-  header.top div.topNav div.headerRight {
+  header.top div.top-nav div.header-right {
     display: block;
     align-items: center;
     justify-content: flex-end;
@@ -166,7 +164,7 @@ header.top div.topNav div.navIcon i {
     z-index: 1;
     top: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 90%);
     overflow-x: hidden;
     transition: 0.5s;
   }
@@ -177,7 +175,7 @@ header.top div.topNav div.navIcon i {
     text-align: center;
   }
 
-  header.top div.topNav div.headerRight a {
+  header.top div.top-nav div.header-right a {
     display: block;
     transition: 0.3s;
     text-decoration: none;
@@ -191,11 +189,12 @@ header.top div.topNav div.navIcon i {
     min-width: 180px;
   }
 
-  header.top div.topNav div.headerRight a:hover {
+  header.top div.top-nav div.header-right a:hover {
     background-color: grey;
   }
 
-  .overlay a:hover, .overlay a:focus {
+  .overlay a:hover,
+  .overlay a:focus {
     color: white;
   }
 
@@ -205,14 +204,14 @@ header.top div.topNav div.navIcon i {
     right: 26px;
   }
 
-  header.top div.topNav div.navIcon {
+  header.top div.top-nav div.nav-icon {
     display: table-cell;
     margin-top: 12px;
     margin-right: 12px;
     padding: 3vw;
   }
 
-  header.top div.topNav div.navIcon i {
+  header.top div.top-nav div.nav-icon i {
     display: inline-block;
     vertical-align: middle;
     cursor: pointer;
@@ -220,7 +219,7 @@ header.top div.topNav div.navIcon i {
     font-size: 30px;
   }
 
-  header.top div.topNav div.navIcon i:before {
+  header.top div.top-nav div.nav-icon i:before {
     position: relative;
     top: calc((8.45vw - 1em) / 2);
   }
