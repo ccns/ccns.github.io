@@ -1,7 +1,6 @@
 section.memberIntro div.member-list {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   padding: calc(var(--ccns-margin-width-min) / 2);
 }
 

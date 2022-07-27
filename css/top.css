@@ -5,8 +5,7 @@ header.top div.topNav {
 }
 
 header.top div.topNav div.headerLeft {
-  padding: 3.45vw;
-  /*45px*/
+  padding: 3.45vw; /* 45px */
   display: flex;
   align-items: center;
   width: 49%;
@@ -28,7 +27,7 @@ header.top div.topNav div.headerLeft div.logoBox {
 }
 
 header.top div.topNav div.headerLeft div.logoBox p {
-  font-family: "Roboto";
+  font-family: Roboto;
   color: #161616;
   margin-top: 1.3vw;
   font-size: 1.35vw;
@@ -37,8 +36,7 @@ header.top div.topNav div.headerLeft div.logoBox p {
 
 header.top div.topNav div.headerLeft p {
   font-family: "Noto Sans TC";
-  font-size: 1.35vw;
-  /*18px*/
+  font-size: 1.35vw; /* 18px */
   color: white;
   margin-bottom: 0;
   letter-spacing: 2px;
@@ -72,10 +70,8 @@ header.top div.topNav div.headerRight a:hover {
 header.top div.topNav div.headerRight i {
   cursor: pointer;
   color: white;
-  font-size: 2.13vw;
-  /*30px*/
-  margin-right: 3.45vw;
-  /*45px*/
+  font-size: 2.13vw; /* 30px */
+  margin-right: 3.45vw; /* 45px */
   transition: color 0.4s;
 }
 
@@ -86,12 +82,15 @@ header.top div.topNav div.headerRight i:hover {
 .overlay .closebtn {
   display: none;
 }
+
 header.top div.topNav div.navIcon i {
   display: none;
 }
-@media only screen and (max-width:768px) {
+
+@media only screen and (max-width: 768px) {
   header.top div.topNav {
     position: relative;
+
     /* 讓navBar 最上層顯示 */
     z-index: 9999;
   }
@@ -113,8 +112,7 @@ header.top div.topNav div.navIcon i {
   }
 
   header.top div.topNav div.headerLeft {
-    padding: 3vw;
-    /*45px*/
+    padding: 3vw; /* 45px */
     display: flex;
     align-items: center;
     width: 75%;
@@ -142,7 +140,7 @@ header.top div.topNav div.navIcon i {
   }
 
   header.top div.topNav div.headerLeft div.logoBox p {
-    font-family: "Roboto";
+    font-family: Roboto;
     color: #161616;
     margin-top: 1.3vw;
     font-size: 3.35vw;
@@ -166,7 +164,7 @@ header.top div.topNav div.navIcon i {
     z-index: 1;
     top: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 90%);
     overflow-x: hidden;
     transition: 0.5s;
   }
@@ -195,7 +193,8 @@ header.top div.topNav div.navIcon i {
     background-color: grey;
   }
 
-  .overlay a:hover, .overlay a:focus {
+  .overlay a:hover,
+  .overlay a:focus {
     color: white;
   }
 

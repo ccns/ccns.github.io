@@ -1,6 +1,7 @@
 section.intro div.introImg img {
   --zoom-left: calc(var(--100cw) / 2);
   --zoom-scale: 1.35;
+
   width: 50%;
   height: auto;
   max-width: 100%;
@@ -9,15 +10,15 @@ section.intro div.introImg img {
   margin-top: 2vw;
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width: 768px) {
   section.intro div.introImg img {
     --zoom-left: unset;
     --zoom-scale: 1.1;
+
     width: 100%;
     margin-top: 3vw;
     margin-bottom: 3vw;
   }
-
 }
 
 img.googleImg {
@@ -28,6 +29,7 @@ img.googleImg {
 }
 
 /* ---Timeline-- */
+
 /* Timeline picture */
 img.timeline-pic {
   width: 600px;
@@ -36,8 +38,10 @@ img.timeline-pic {
   display: block;
   margin: auto;
   filter: brightness(1);
+
   --zoom-transition: filter 0.5s;
 }
+
 .zoomed img.timeline-pic:not(.zoomed) {
   opacity: 1;
   filter: brightness(0.25);
@@ -48,7 +52,7 @@ section.timeline div.Timeline dl {
   position: relative;
   top: 0;
   padding: 20px 0;
-  margin: 0
+  margin: 0;
 }
 
 section.timeline div.Timeline dl:before {
@@ -59,8 +63,8 @@ section.timeline div.Timeline dl:before {
   z-index: 100;
   width: 2px;
   margin-left: -1px;
-  content: '';
-  background-color: #ccd1d9
+  content: "";
+  background-color: #ccd1d9;
 }
 
 section.timeline div.Timeline dl dt {
@@ -77,7 +81,7 @@ section.timeline div.Timeline dl dt {
   background-color: #3d444e;
   border-radius: 4px;
   -webkit-border-radius: 4px;
-  -moz-border-radius: 4px
+  -moz-border-radius: 4px;
 }
 
 section.timeline div.Timeline dl dd {
@@ -96,7 +100,7 @@ section.timeline div.Timeline dl dd .circ {
   border: 4px solid #f5f7fa;
   border-radius: 50%;
   -webkit-border-radius: 50%;
-  -moz-border-radius: 50%
+  -moz-border-radius: 50%;
 }
 
 section.timeline div.Timeline dl dd .time {
@@ -123,10 +127,11 @@ section.timeline div.Timeline dl dd .events {
   --zoom-align-base: 100%;
   --zoom-align-orientation: -1;
   --zoom-scale: 3.6;
+
   position: relative;
   width: calc(50% - 6px - 13px);
   padding: 10px 0 0;
-  background-color: #CCC;
+  background-color: #ccc;
   border-radius: 4px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -139,6 +144,7 @@ section.timeline div.Timeline dl dd:nth-last-of-type(2n) .events {
   --zoom-right: calc(var(--100cw) / 2 + 13px + 6px + 10px);
   --zoom-align-base: 0%;
   --zoom-align-orientation: 1;
+
   float: left;
 }
 
@@ -147,17 +153,17 @@ section.timeline div.Timeline dl dd .events:before {
   top: 12px;
   width: 0;
   height: 0;
-  content: '';
+  content: "";
   border-style: solid;
   border-width: 6px;
   left: -12px;
-  border-color: transparent #CCC transparent transparent;
+  border-color: transparent #ccc transparent transparent;
 }
 
 section.timeline div.Timeline dl dd:nth-last-of-type(2n) .events:before {
   left: unset;
   right: -12px;
-  border-color: transparent transparent transparent #CCC;
+  border-color: transparent transparent transparent #ccc;
 }
 
 section.timeline div.Timeline dl dd .events .events-object {
@@ -165,7 +171,7 @@ section.timeline div.Timeline dl dd .events .events-object {
 }
 
 section.timeline div.Timeline dl dd .events .events-header {
-  margin: 0 10px 10px 10px;
+  margin: 0 10px 10px;
   line-height: 30px;
   text-align: center;
   font-size: 20px;
@@ -176,7 +182,7 @@ section.timeline div.Timeline dl dd .events .events-header {
 section.timeline div.Timeline dl dd .events .events-body {
   overflow: visible;
   zoom: 1;
-  background-color: #EEE;
+  background-color: #eee;
   padding: 10px;
 }
 
@@ -194,15 +200,16 @@ section.timeline div.Timeline dl dd .events .events-footer ol .active {
   transform: scale(2);
 }
 
-
 /* RWD timeline */
-@media only screen and (max-width:768px) {
+@media only screen and (max-width: 768px) {
   section.timeline div.Timeline dl dd .events {
-    --zoom-scale: 3.0;
+    --zoom-scale: 3;
   }
+
   section.timeline div.Timeline dl dd .events .events-header {
     font-size: 18px;
   }
+
   section.timeline div.Timeline dl dd .events .events-footer {
     font-size: 16px;
   }

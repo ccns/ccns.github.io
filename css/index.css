@@ -9,21 +9,17 @@ section.intro div.backgroundWords {
   text-align: center;
   color: #5d5b5b;
   font-family: "Playfair Display";
-  margin-top: 1vw;
-  /*95px*/
-  font-size: 10vw;
-  /*135px*/
+  margin-top: 1vw; /* 95px */
+  font-size: 10vw; /* 135px */
   user-select: none;
 }
 
 section.intro div.weIntro {
   color: #c49f54;
-  font-family: "Amiri";
-  font-size: 3.5vw;
-  /*70px*/
+  font-family: Amiri;
+  font-size: 3.5vw; /* 70px */
   font-weight: 900;
-  margin-top: 1vw;
-  /*190px*/
+  margin-top: 1vw; /* 190px */
   letter-spacing: 1px;
 }
 
@@ -42,8 +38,7 @@ section.intro div.contactLine div.line {
 }
 
 section.intro div.contactLine i {
-  font-size: 3vw;
-  /*30px*/
+  font-size: 3vw; /* 30px */
   margin: 0.75vw;
   color: #5c5c5c;
   transition: color 0.5s;
@@ -67,33 +62,28 @@ section.intro div.clubIntro span.white {
   color: white;
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width: 768px) {
   section.intro div.backgroundWords {
     width: 100%;
     text-align: center;
     color: #5d5b5b;
     font-family: "Playfair Display";
-    margin-top: 1vw;
-    /*95px*/
-    font-size: 10vw;
-    /*135px*/
+    margin-top: 1vw; /* 95px */
+    font-size: 10vw; /* 135px */
     user-select: none;
   }
 
   section.intro div.weIntro {
     color: #c49f54;
-    font-family: "Amiri";
-    font-size: 6vw;
-    /*70px*/
+    font-family: Amiri;
+    font-size: 6vw; /* 70px */
     font-weight: 900;
-    margin-top: 4vw;
-    /*190px*/
+    margin-top: 4vw; /* 190px */
     letter-spacing: 1px;
   }
 
   section.intro div.contactLine i {
-    font-size: 8vw;
-    /*30px*/
+    font-size: 8vw; /* 30px */
     margin: 0.75vw;
     color: #5c5c5c;
     letter-spacing: 5px;
@@ -121,7 +111,7 @@ section.map-iframe div.map iframe {
 }
 
 /* iframe RWD  */
-@media only screen and (max-width:768px) {
+@media only screen and (max-width: 768px) {
   section.map-iframe div.map {
     position: relative;
     padding-bottom: 75%;
