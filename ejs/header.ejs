@@ -16,13 +16,18 @@
 
       <div id="nav-bar" class="overlay">
         <div class="header-right overlay-content">
-          <a href="index.html">首頁</a>
-          <a href="intro.html">介紹</a>
-          <a href="members.html">社員</a>
-          <a href="env.html">社辦</a>
-          <a href="projects.html">專案</a>
-          <a href="events.html">定期聚</a>
-          <a href="food.html">食物</a>
+<% const pages = [
+    ["index.html", "首頁"],
+    ["intro.html", "介紹"],
+    ["members.html", "社員"],
+    ["env.html", "社辦"],
+    ["projects.html", "專案"],
+    ["events.html", "定期聚"],
+    ["food.html", "食物"],
+]; -%>
+<% pages.forEach(function (e, i) { -%>
+          <a href="<%= e[0] %>" class="<%= (e[1] == title) ? 'nav-focus' : '' %>"><%= e[1] %></a>
+<% }); -%>
         </div>
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
           <i class="fas fa-times fa"></i>
