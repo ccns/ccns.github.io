@@ -13,6 +13,7 @@ section.member-intro div.member-item {
 img.thumbnails {
   width: 100%;
   object-fit: contain;
+  object-position: left;
   aspect-ratio: 29 / 13;
 }
 
@@ -48,6 +49,10 @@ iframe.c-chan {
   section.member-intro div.member-item {
     flex: 100%;
     max-width: 100%;
+  }
+
+  img.thumbnails {
+    object-position: center;
   }
 
   section.member-intro div.desc {
