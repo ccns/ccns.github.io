@@ -27,7 +27,7 @@ header.top div.top-nav div.header-left div.logo-box {
 }
 
 header.top div.top-nav div.header-left div.logo-box p {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   color: #161616;
   margin-top: 1.3vw;
   font-size: 1.35vw;
@@ -35,7 +35,7 @@ header.top div.top-nav div.header-left div.logo-box p {
 }
 
 header.top div.top-nav div.header-left p {
-  font-family: "Noto Sans TC";
+  font-family: "Noto Sans TC", sans-serif;
   font-size: 1.35vw; /* 18px */
   color: white;
   margin-bottom: 0;
@@ -140,7 +140,7 @@ header.top div.top-nav div.nav-icon i {
   }
 
   header.top div.top-nav div.header-left div.logo-box p {
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     color: #161616;
     margin-top: 1.3vw;
     font-size: 3.35vw;
