@@ -25,15 +25,6 @@ section.events div.we-intro {
   letter-spacing: 2px;
 }
 
-section.events div:last-child {
-  border-bottom: 1px solid #1c1c1c;
-}
-
-section.events div:nth-child(3),
-section.events div.event-box:hover {
-  opacity: 1 !important;
-}
-
 section.events div.event-box {
   opacity: 0.3;
   border-top: 1px solid #1c1c1c;
@@ -41,6 +32,15 @@ section.events div.event-box {
   padding-top: 3.75vw; /* 50px */
   padding-bottom: 3.75vw; /* 50px */
   transition: opacity 0.5s;
+}
+
+section.events div:last-child {
+  border-bottom: 1px solid #1c1c1c;
+}
+
+section.events div:nth-child(3),
+section.events div.event-box:hover {
+  opacity: 1;
 }
 
 section.events div.event-box div.event-info {
@@ -117,15 +117,6 @@ section.events div.event-box div.event-name a.url {
     letter-spacing: 2px;
   }
 
-  section.events div:last-child {
-    border-bottom: 1px solid #1c1c1c;
-  }
-
-  section.events div:nth-child(3),
-  section.events div.event-box:hover {
-    opacity: 1 !important;
-  }
-
   section.events div.event-box {
     opacity: 0.3;
     border-top: 1px solid #1c1c1c;
@@ -133,6 +124,15 @@ section.events div.event-box div.event-name a.url {
     padding-top: 3.75vw; /* 50px */
     padding-bottom: 3.75vw; /* 50px */
     transition: opacity 0.5s;
+  }
+
+  section.events div:last-child {
+    border-bottom: 1px solid #1c1c1c;
+  }
+
+  section.events div:nth-child(3),
+  section.events div.event-box:hover {
+    opacity: 1;
   }
 
   section.events div.event-box div.event-info {
