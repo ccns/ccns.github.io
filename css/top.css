@@ -26,21 +26,21 @@ header.top div.top-nav div.header-left div.logo-box {
   align-items: center;
 }
 
-header.top div.top-nav div.header-left div.logo-box p {
-  font-family: Roboto;
-  color: #161616;
-  margin-top: 1.3vw;
-  font-size: 1.35vw;
-  line-height: 0.4vw;
-}
-
 header.top div.top-nav div.header-left p {
-  font-family: "Noto Sans TC";
+  font-family: "Noto Sans TC", sans-serif;
   font-size: 1.35vw; /* 18px */
   color: white;
   margin-bottom: 0;
   letter-spacing: 2px;
   text-indent: 2px;
+}
+
+header.top div.top-nav div.header-left div.logo-box p {
+  font-family: Roboto, sans-serif;
+  color: #161616;
+  margin-top: 1.3vw;
+  font-size: 1.35vw;
+  line-height: 0.4vw;
 }
 
 header.top div.top-nav div.header-right {
@@ -83,7 +83,7 @@ header.top div.top-nav div.header-right i:hover {
   display: none;
 }
 
-header.top div.top-nav div.nav-icon i {
+header.top div.top-nav div.nav-icon i.fa {
   display: none;
 }
 
@@ -140,7 +140,7 @@ header.top div.top-nav div.nav-icon i {
   }
 
   header.top div.top-nav div.header-left div.logo-box p {
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     color: #161616;
     margin-top: 1.3vw;
     font-size: 3.35vw;
@@ -193,8 +193,8 @@ header.top div.top-nav div.nav-icon i {
     background-color: grey;
   }
 
-  .overlay a:hover,
-  .overlay a:focus {
+  header.top div.top-nav div.overlay div.header-right a:hover,
+  header.top div.top-nav div.overlay div.header-right a:focus {
     color: white;
   }
 
@@ -211,7 +211,7 @@ header.top div.top-nav div.nav-icon i {
     padding: 3vw;
   }
 
-  header.top div.top-nav div.nav-icon i {
+  header.top div.top-nav div.nav-icon i.fa {
     display: inline-block;
     vertical-align: middle;
     cursor: pointer;
@@ -219,7 +219,7 @@ header.top div.top-nav div.nav-icon i {
     font-size: 30px;
   }
 
-  header.top div.top-nav div.nav-icon i:before {
+  header.top div.top-nav div.nav-icon i.fa:before {
     position: relative;
     top: calc((8.45vw - 1em) / 2);
   }
