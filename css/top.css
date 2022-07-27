@@ -189,12 +189,9 @@ header.top div.top-nav div.nav-icon i.fa {
     min-width: 180px;
   }
 
-  header.top div.top-nav div.header-right a:hover {
-    background-color: grey;
-  }
-
   header.top div.top-nav div.overlay div.header-right a:hover,
   header.top div.top-nav div.overlay div.header-right a:focus {
+    background-color: grey;
     color: white;
   }
 

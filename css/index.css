@@ -64,20 +64,12 @@ section.intro div.club-intro span.white {
 
 @media only screen and (max-width: 768px) {
   section.intro div.background-words {
-    width: 100%;
-    text-align: center;
-    color: #5d5b5b;
-    font-family: "Playfair Display", serif;
     margin-top: 1vw; /* 95px */
     font-size: 10vw; /* 135px */
-    user-select: none;
   }
 
   section.intro div.we-intro {
-    color: #c49f54;
-    font-family: Amiri, serif;
     font-size: 6vw; /* 70px */
-    font-weight: 900;
     margin-top: 4vw; /* 190px */
     letter-spacing: 1px;
   }
@@ -85,15 +77,11 @@ section.intro div.club-intro span.white {
   section.intro div.contact-line i {
     font-size: 8vw; /* 30px */
     margin: 0.75vw;
-    color: #5c5c5c;
     letter-spacing: 5px;
   }
 
   section.intro div.club-intro {
-    font-family: "Noto Sans TC", sans-serif;
     font-size: 5vw;
-    margin: 0 auto;
-    color: #999;
     margin-top: 3vw;
     letter-spacing: 2px;
     line-height: 8vw;
