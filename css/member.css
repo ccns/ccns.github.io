@@ -1,10 +1,10 @@
-section.memberIntro div.member-list {
+section.member-intro div.member-list {
   display: flex;
   flex-flow: row wrap;
   padding: calc(var(--ccns-margin-width-min) / 2);
 }
 
-section.memberIntro div.member-item {
+section.member-intro div.member-item {
   flex: 50%;
   max-width: 50%;
   padding: calc(var(--ccns-margin-width-min) / 2);
@@ -14,23 +14,23 @@ img.thumbnails {
   width: 100%;
 }
 
-section.memberIntro div.desc {
+section.member-intro div.desc {
   text-align: left;
   font-size: 20px;
 }
 
-section.memberIntro div.desc h1 {
+section.member-intro div.desc h1 {
   color: #c49f54;
   margin-top: 20px;
 }
 
-section.memberIntro div.desc h1 a {
+section.member-intro div.desc h1 a {
   /* color: #888; */
   font-size: 95%;
   margin-left: 5px;
 }
 
-section.memberIntro div.desc span.whiteAdj {
+section.member-intro div.desc span.white-adj {
   color: rgb(229, 233, 236);
 }
 
@@ -43,12 +43,12 @@ iframe.c-chan {
 }
 
 @media only screen and (max-width: 768px) {
-  section.memberIntro div.member-item {
+  section.member-intro div.member-item {
     flex: 100%;
     max-width: 100%;
   }
 
-  section.memberIntro div.desc {
+  section.member-intro div.desc {
     text-align: center;
     font-size: 22px;
   }

@@ -6,14 +6,14 @@
 <body>
 <%- include("header"); -%>
 
-  <section class="memberIntro">
+  <section class="member-intro">
     <div class="member-list">
 <% members.forEach(function (e, i) { -%>
 <%-  i ? '\n' : '' -%>
       <div class="member-item">
         <img class="thumbnails" src="<%= e.thumbnail %>" alt="" />
         <div class="desc">
-          <span class="whiteAdj">
+          <span class="white-adj">
             <h1>
               <%= e.name %>
 <%   if(e.links) { -%>

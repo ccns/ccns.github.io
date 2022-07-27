@@ -5,7 +5,7 @@ section.events {
   padding-bottom: 0.64vw; /* 10px */
 }
 
-section.events div.backgroundWords {
+section.events div.background-words {
   position: absolute;
   width: 100%;
   text-align: center;
@@ -16,7 +16,7 @@ section.events div.backgroundWords {
   font-size: 9vw; /* 135px */
 }
 
-section.events div.weIntro {
+section.events div.we-intro {
   color: white;
   font-family: Amiri;
   font-size: 8.2vw; /* 70px */
@@ -30,11 +30,11 @@ section.events div:last-child {
 }
 
 section.events div:nth-child(3),
-section.events div.eventBox:hover {
+section.events div.event-box:hover {
   opacity: 1 !important;
 }
 
-section.events div.eventBox {
+section.events div.event-box {
   opacity: 0.3;
   border-top: 1px solid #1c1c1c;
   display: flex;
@@ -43,7 +43,7 @@ section.events div.eventBox {
   transition: opacity 0.5s;
 }
 
-section.events div.eventBox div.eventInfo {
+section.events div.event-box div.event-info {
   font-family: "Noto Sans TC";
   width: 25%;
   display: flex;
@@ -51,11 +51,11 @@ section.events div.eventBox div.eventInfo {
   border-right: 1px solid #1c1c1c;
 }
 
-section.events div.eventBox:hover div.eventInfo {
+section.events div.event-box:hover div.event-info {
   display: inline-table;
 }
 
-section.events div.eventBox div.eventInfo p.eventPlace {
+section.events div.event-box div.event-info p.event-place {
   font-family: "Noto Sans TC";
   margin-bottom: 5px;
   font-size: 1.5vw; /* 20px */
@@ -66,14 +66,14 @@ section.events div.eventBox div.eventInfo p.eventPlace {
   text-overflow: ellipsis;
 }
 
-section.events div.eventBox div.eventInfo p.eventTime {
+section.events div.event-box div.event-info p.event-time {
   font-family: "Noto Sans TC";
   margin-bottom: 0;
   font-size: 1.35vw; /* 17px */
   color: #999;
 }
 
-section.events div.eventBox div.eventName {
+section.events div.event-box div.event-name {
   font-family: "Noto Sans TC";
   width: 75%;
   display: flex;
@@ -81,7 +81,7 @@ section.events div.eventBox div.eventName {
   padding-left: 3.5vw; /* 45px */
 }
 
-section.events div.eventBox div.eventName div.name {
+section.events div.event-box div.event-name div.name {
   font-family: Helvetica, "Noto Sans TC Bold";
   font-size: 2.85vw; /* 37.5px */
   color: white;
@@ -89,7 +89,7 @@ section.events div.eventBox div.eventName div.name {
   font-weight: 700;
 }
 
-section.events div.eventBox div.eventName a.url {
+section.events div.event-box div.event-name a.url {
   color: #c0a062;
   font-family: "Noto Sans TC";
   font-size: 1.5vw; /* 20px */
@@ -97,7 +97,7 @@ section.events div.eventBox div.eventName a.url {
 }
 
 @media only screen and (max-width: 768px) {
-  section.events div.backgroundWords {
+  section.events div.background-words {
     position: absolute;
     width: 100%;
     text-align: center;
@@ -108,7 +108,7 @@ section.events div.eventBox div.eventName a.url {
     font-size: 10vw; /* 135px */
   }
 
-  section.events div.weIntro {
+  section.events div.we-intro {
     color: white;
     font-family: Amiri;
     font-size: 8.2vw; /* 70px */
@@ -122,11 +122,11 @@ section.events div.eventBox div.eventName a.url {
   }
 
   section.events div:nth-child(3),
-  section.events div.eventBox:hover {
+  section.events div.event-box:hover {
     opacity: 1 !important;
   }
 
-  section.events div.eventBox {
+  section.events div.event-box {
     opacity: 0.3;
     border-top: 1px solid #1c1c1c;
     display: flex;
@@ -135,7 +135,7 @@ section.events div.eventBox div.eventName a.url {
     transition: opacity 0.5s;
   }
 
-  section.events div.eventBox div.eventInfo {
+  section.events div.event-box div.event-info {
     font-family: "Noto Sans TC";
     width: 25%;
     display: flex;
@@ -143,11 +143,11 @@ section.events div.eventBox div.eventName a.url {
     border-right: 1px solid #1c1c1c;
   }
 
-  section.events div.eventBox:hover div.eventInfo {
+  section.events div.event-box:hover div.event-info {
     display: inline-table;
   }
 
-  section.events div.eventBox div.eventInfo p.eventPlace {
+  section.events div.event-box div.event-info p.event-place {
     font-family: "Noto Sans TC";
     margin-bottom: 5px;
     font-size: 3vw; /* 20px */
@@ -156,21 +156,21 @@ section.events div.eventBox div.eventName a.url {
     padding-top: 0.32vw; /* 5px */
   }
 
-  section.events div.eventBox div.eventInfo p.eventTime {
+  section.events div.event-box div.event-info p.event-time {
     font-family: "Noto Sans TC";
     margin-bottom: 0;
     font-size: 3vw; /* 17px */
     color: #999;
   }
 
-  section.events div.eventBox div.eventName {
+  section.events div.event-box div.event-name {
     font-family: "Noto Sans TC";
     width: 75%;
     display: flex;
     flex-direction: column;
   }
 
-  section.events div.eventBox div.eventName div.name {
+  section.events div.event-box div.event-name div.name {
     font-family: Helvetica, "Noto Sans TC Bold";
     font-size: 3.5vw; /* 37.5px */
     color: white;
@@ -178,7 +178,7 @@ section.events div.eventBox div.eventName a.url {
     font-weight: 700;
   }
 
-  section.events div.eventBox div.eventName a.url {
+  section.events div.event-box div.event-name a.url {
     color: #c0a062;
     font-family: "Noto Sans TC";
     font-size: 3vw; /* 20px */

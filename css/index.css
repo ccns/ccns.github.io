@@ -4,7 +4,7 @@ section.intro {
   padding-bottom: 5vw;
 }
 
-section.intro div.backgroundWords {
+section.intro div.background-words {
   width: 100%;
   text-align: center;
   color: #5d5b5b;
@@ -14,7 +14,7 @@ section.intro div.backgroundWords {
   user-select: none;
 }
 
-section.intro div.weIntro {
+section.intro div.we-intro {
   color: #c49f54;
   font-family: Amiri;
   font-size: 3.5vw; /* 70px */
@@ -23,32 +23,32 @@ section.intro div.weIntro {
   letter-spacing: 1px;
 }
 
-section.intro div.contactLine {
+section.intro div.contact-line {
   margin-top: 1vw;
   display: flex;
   align-items: center;
   margin-bottom: 3vw;
 }
 
-section.intro div.contactLine div.line {
+section.intro div.contact-line div.line {
   width: 8vw;
   height: 1px;
   background-color: #c49f54;
   margin-right: 2vw;
 }
 
-section.intro div.contactLine i {
+section.intro div.contact-line i {
   font-size: 3vw; /* 30px */
   margin: 0.75vw;
   color: #5c5c5c;
   transition: color 0.5s;
 }
 
-section.intro div.contactLine i:hover {
+section.intro div.contact-line i:hover {
   color: #c49f54;
 }
 
-section.intro div.clubIntro {
+section.intro div.club-intro {
   font-family: "Noto Sans TC";
   font-size: 2vw;
   margin: 0 auto;
@@ -58,12 +58,12 @@ section.intro div.clubIntro {
   line-height: 3.5vw;
 }
 
-section.intro div.clubIntro span.white {
+section.intro div.club-intro span.white {
   color: white;
 }
 
 @media only screen and (max-width: 768px) {
-  section.intro div.backgroundWords {
+  section.intro div.background-words {
     width: 100%;
     text-align: center;
     color: #5d5b5b;
@@ -73,7 +73,7 @@ section.intro div.clubIntro span.white {
     user-select: none;
   }
 
-  section.intro div.weIntro {
+  section.intro div.we-intro {
     color: #c49f54;
     font-family: Amiri;
     font-size: 6vw; /* 70px */
@@ -82,14 +82,14 @@ section.intro div.clubIntro span.white {
     letter-spacing: 1px;
   }
 
-  section.intro div.contactLine i {
+  section.intro div.contact-line i {
     font-size: 8vw; /* 30px */
     margin: 0.75vw;
     color: #5c5c5c;
     letter-spacing: 5px;
   }
 
-  section.intro div.clubIntro {
+  section.intro div.club-intro {
     font-family: "Noto Sans TC";
     font-size: 5vw;
     margin: 0 auto;

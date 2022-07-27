@@ -46,7 +46,7 @@ body > section:nth-last-of-type(2) {
       )
     );
   --ccns-margin-height: calc(max(3.45vw, var(--ccns-margin-width-min)));
-  --100cw: calc(100vw - var(--scrollbar-width)); /* 100% page content width */
+  --cw: calc(100vw - var(--scrollbar-width)); /* 100% page content width */
   --ccns-header-height: calc(2 * 3.45vw + 4.45vw);
 }
 
