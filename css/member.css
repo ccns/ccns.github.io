@@ -12,6 +12,8 @@ section.member-intro div.member-item {
 
 img.thumbnails {
   width: 100%;
+  object-fit: contain;
+  aspect-ratio: 29 / 13;
 }
 
 section.member-intro div.desc {
