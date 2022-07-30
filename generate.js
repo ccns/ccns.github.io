@@ -61,3 +61,7 @@ pages.forEach((e, i) => {
     return e.renderer(e.src, e.dst);
   renderPage(e.src, e.dst, e.resources || {});
 });
+
+// Run-time config for "live2d-lapp-ccns.js" (unofficially extended CubismWebSamples)
+// https://github.com/IepIweidieng/CubismWebSamples
+fs.copyFileSync("./resources/c-chan.json", "./public/lappconfig.json");
