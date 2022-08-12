@@ -15,6 +15,7 @@
     "request": "^2.88.2"
   },
   "scripts": {
+    "build": "npm run gen",
     "gen": "node generate.js; npm run bundle; npm run resources",
     "clean": "rm -rvf public/*",
     "bootstrap": "cp -r node_modules/bootstrap/dist -T public/frameworks/bootstrap",
