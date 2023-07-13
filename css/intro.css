@@ -131,7 +131,8 @@ section.timeline div.timeline dl dd .events {
   position: relative;
   width: calc(50% - 6px - 13px);
   padding: 10px 0 0;
-  background-color: #ccc;
+  color: #fff;
+  background-color: #3d444e;
   border-radius: 4px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -157,13 +158,13 @@ section.timeline div.timeline dl dd .events:before {
   border-style: solid;
   border-width: 6px;
   left: -12px;
-  border-color: transparent #ccc transparent transparent;
+  border-color: transparent #3d444e transparent transparent;
 }
 
 section.timeline div.timeline dl dd:nth-last-of-type(2n) .events:before {
   left: unset;
   right: -12px;
-  border-color: transparent transparent transparent #ccc;
+  border-color: transparent transparent transparent #3d444e;
 }
 
 section.timeline div.timeline dl dd .events .events-object {
@@ -182,7 +183,6 @@ section.timeline div.timeline dl dd .events .events-header {
 section.timeline div.timeline dl dd .events .events-body {
   overflow: visible;
   zoom: 1;
-  background-color: #eee;
   padding: 10px;
 }
 
