@@ -49,6 +49,8 @@ img.timeline-pic {
 
 /* timeline */
 section.timeline div.timeline dl {
+  --events-compact: 250px;
+
   position: relative;
   top: 0;
   padding: 20px 0;
@@ -69,11 +71,10 @@ section.timeline div.timeline dl:before {
 
 section.timeline div.timeline dl dt {
   position: relative;
-  top: 30px;
   z-index: 200;
   width: 120px;
   padding: 3px 5px;
-  margin: 0 auto 30px;
+  margin: calc(var(--events-compact) + 30px) auto 30px;
   font-weight: 400;
   color: #fff;
   font-size: 20px;
@@ -86,16 +87,17 @@ section.timeline div.timeline dl dt {
 
 section.timeline div.timeline dl dd {
   position: relative;
+  margin: 0 0 calc(-1 * var(--events-compact));
 }
 
-section.timeline div.timeline dl dd .circ {
+section.timeline div.timeline dl dd .events:before { /* circle */
   position: absolute;
-  top: 40px;
-  left: 50%;
+  content: "";
+  top: calc(10px + 30px / 2 - 22px / 2);
+  right: calc(100% + 6px + 13px - 22px / 2);
   z-index: 200;
   width: 22px;
   height: 22px;
-  margin-left: -11px;
   background-color: #4fc1e9;
   border: 4px solid #f5f7fa;
   -webkit-border-radius: 50%;
@@ -103,9 +105,13 @@ section.timeline div.timeline dl dd .circ {
   border-radius: 50%;
 }
 
+section.timeline div.timeline dl dd:nth-last-of-type(2n) .events:before {
+  right: unset;
+  left: calc(100% + 6px + 13px - 22px / 2);
+}
+
 section.timeline div.timeline dl dd .time {
   position: absolute;
-  top: 31px;
   left: 50%;
   display: inline-block;
   width: 100px;
@@ -131,11 +137,12 @@ section.timeline div.timeline dl dd .events {
   position: relative;
   width: calc(50% - 6px - 13px);
   padding: 10px 0 0;
-  background-color: #ccc;
+  margin: 10px 0;
+  color: #fff;
+  background-color: #3d444e;
   border-radius: 4px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
-  margin-top: 31px;
   float: right;
 }
 
@@ -148,22 +155,22 @@ section.timeline div.timeline dl dd:nth-last-of-type(2n) .events {
   float: left;
 }
 
-section.timeline div.timeline dl dd .events:before {
+section.timeline div.timeline dl dd .events .events-header:before {
   position: absolute;
-  top: 12px;
+  top: calc(30px / 2 - 6px);
   width: 0;
   height: 0;
   content: "";
   border-style: solid;
   border-width: 6px;
-  left: -12px;
-  border-color: transparent #ccc transparent transparent;
+  right: 100%;
+  border-color: transparent #3d444e transparent transparent;
 }
 
-section.timeline div.timeline dl dd:nth-last-of-type(2n) .events:before {
-  left: unset;
-  right: -12px;
-  border-color: transparent transparent transparent #ccc;
+section.timeline div.timeline dl dd:nth-last-of-type(2n) .events .events-header:before {
+  left: 100%;
+  right: unset;
+  border-color: transparent transparent transparent #3d444e;
 }
 
 section.timeline div.timeline dl dd .events .events-object {
@@ -171,7 +178,9 @@ section.timeline div.timeline dl dd .events .events-object {
 }
 
 section.timeline div.timeline dl dd .events .events-header {
-  margin: 0 10px 10px;
+  position: relative;
+  padding: 0 10px;
+  margin: 0 0 10px;
   line-height: 30px;
   text-align: center;
   font-size: 20px;
@@ -182,8 +191,11 @@ section.timeline div.timeline dl dd .events .events-header {
 section.timeline div.timeline dl dd .events .events-body {
   overflow: visible;
   zoom: 1;
-  background-color: #eee;
-  padding: 10px;
+  padding: 0 10px 10px;
+}
+
+section.timeline div.timeline dl dd .events .events-body > :not(:last-child) {
+  margin-bottom: 10px;
 }
 
 section.timeline div.timeline dl dd .events .events-body .events-desc {
@@ -202,6 +214,10 @@ section.timeline div.timeline dl dd .events .events-footer ol .active {
 
 /* RWD timeline */
 @media only screen and (max-width: 768px) {
+  section.timeline div.timeline dl {
+    --events-compact: calc(250 / 768 * 100vw);
+  }
+
   section.timeline div.timeline dl dd .events {
     --zoom-scale: 3;
   }
