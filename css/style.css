@@ -36,7 +36,7 @@ html {
 }
 
 body {
-  background-color: #141414;
+  background-color: var(--ccns-bg-color);
 }
 
 body > section {
@@ -60,6 +60,7 @@ body > section:nth-last-of-type(2) {
   --ccns-margin-height: calc(max(3.45vw, var(--ccns-margin-width-min)));
   --cw: calc(100vw - var(--scrollbar-width)); /* 100% page content width */
   --ccns-header-height: calc(2 * 3.45vw + 4.45vw);
+  --ccns-bg-color: #141414;
   --ccns-bgword-color: #6c757d;
   --ccns-hl-color: #c49f54;
   --ccns-hl-focus-color: #ffc107;

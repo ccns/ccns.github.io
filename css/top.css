@@ -36,7 +36,7 @@ header.top div.top-nav div.header-left p {
 
 header.top div.top-nav div.header-left div.logo-box p {
   font-family: Roboto, sans-serif;
-  color: #161616;
+  color: var(--ccns-bg-color);
   margin-top: 1.3vw;
   font-size: 1.35vw;
   line-height: 0.4vw;
@@ -143,7 +143,7 @@ header.top div.top-nav div.nav-icon i.fa {
   }
 
   header.top div.top-nav div.header-left div.logo-box p {
-    color: #161616;
+    color: var(--ccns-bg-color);
     margin-top: 1.3vw;
     font-size: 3.35vw;
     line-height: 2.4vw;

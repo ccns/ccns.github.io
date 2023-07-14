@@ -35,7 +35,7 @@ section.member-intro div.desc h1 a {
 }
 
 section.member-intro div.desc p {
-  text-shadow: #1f1f1f 0 1px 10px;
+  text-shadow: var(--ccns-bg-color) 0 1px 10px;
 }
 
 section.member-intro div.desc span.white-adj {
