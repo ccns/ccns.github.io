@@ -56,7 +56,7 @@ section.member-intro div.desc span.white-adj {
 
 section.member-intro .c-chan {
   aspect-ratio: 1 / 2;
-  height: max(75%, min(100%, 512px, calc(2 * 33vw)));
+  height: min(100%, calc(2 * 50vw), max(75%, 512px));
   position: fixed;
   right: 0;
   bottom: 0;
