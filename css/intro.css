@@ -89,7 +89,7 @@ section.timeline div.timeline dl dd .events:before { /* circle */
   position: absolute;
   content: "";
   top: calc(10px + 30px / 2 - 22px / 2);
-  right: calc(100% + 6px + 13px - 22px / 2);
+  right: calc(100% + var(--bs-card-border-width) + 6px + 13px - 22px / 2);
   z-index: 200;
   width: 22px;
   height: 22px;
@@ -102,7 +102,7 @@ section.timeline div.timeline dl dd .events:before { /* circle */
 
 section.timeline div.timeline dl dd:nth-last-of-type(2n) .events:before {
   right: unset;
-  left: calc(100% + 6px + 13px - 22px / 2);
+  left: calc(100% + var(--bs-card-border-width) + 6px + 13px - 22px / 2);
 }
 
 section.timeline div.timeline dl dd .time {
