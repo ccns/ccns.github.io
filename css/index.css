@@ -44,7 +44,7 @@ section.intro div.contact-line i {
 }
 
 section.intro div.contact-line i:hover {
-  color: #c49f54;
+  color: var(--ccns-hl-focus-color);
 }
 
 section.intro div.club-intro {

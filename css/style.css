@@ -51,6 +51,7 @@ body > section:nth-last-of-type(2) {
   --ccns-header-height: calc(2 * 3.45vw + 4.45vw);
   --ccns-bgword-color: #6c757d;
   --ccns-hl-color: #c49f54;
+  --ccns-hl-focus-color: #ffc107;
 }
 
 a {
@@ -59,7 +60,7 @@ a {
 }
 
 a:hover {
-  color: #c49f54;
+  color: var(--ccns-hl-focus-color);
 }
 
 @media only screen and (max-width: 768px) {

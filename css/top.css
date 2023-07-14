@@ -68,7 +68,7 @@ header.top div.top-nav div.header-right a.nav-focus {
 }
 
 header.top div.top-nav div.header-right a:hover {
-  color: #ffc107;
+  color: var(--ccns-hl-focus-color);
 }
 
 header.top div.top-nav div.header-right i {
