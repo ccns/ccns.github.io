@@ -94,7 +94,7 @@ header.top div.top-nav div.header-right i:hover {
   color: var(--ccns-hl-color);
 }
 
-.overlay .closebtn {
+header.top div.top-nav .overlay .closebtn {
   display: none;
 }
 
@@ -145,7 +145,7 @@ header.top div.top-nav div.nav-icon i.fa {
     padding: 0;
   }
 
-  .overlay {
+  header.top div.top-nav .overlay {
     height: 100%;
     width: 0%;
     position: fixed;
@@ -157,7 +157,7 @@ header.top div.top-nav div.nav-icon i.fa {
     transition: 0.5s;
   }
 
-  .overlay-content {
+  header.top div.top-nav .overlay-content {
     position: relative;
     width: 100%;
     text-align: center;
@@ -187,7 +187,7 @@ header.top div.top-nav div.nav-icon i.fa {
     color: white;
   }
 
-  .overlay .closebtn {
+  header.top div.top-nav .overlay .closebtn {
     position: absolute;
     top: calc((var(--ccns-margin-width-min) - 30px) / 2);
     right: calc(var(--ccns-margin-width) - 30px - (var(--ccns-margin-width-min) - 30px) / 2);

@@ -28,7 +28,7 @@ section.intro div.intro-img img {
   }
 }
 
-img.google-img {
+section.intro img.google-img {
   width: 800px;
   height: auto;
   max-width: 100%;
@@ -38,7 +38,7 @@ img.google-img {
 /* ---timeline-- */
 
 /* timeline picture */
-img.timeline-pic {
+section.timeline img.timeline-pic {
   width: 600px;
   height: auto;
   max-width: 100%;
@@ -49,7 +49,7 @@ img.timeline-pic {
   --zoom-transition: filter 0.5s;
 }
 
-.zoomed img.timeline-pic:not(.zoomed) {
+.zoomed section.timeline img.timeline-pic:not(.zoomed) {
   opacity: 1;
   filter: brightness(0.25);
 }

@@ -1,26 +1,26 @@
 /* 一行要幾個 */
-.column {
+section.club-projects .column {
   float: left;
   width: 50%;
   padding: 0 calc(var(--ccns-margin-width-min) / 2);
 }
 
-.row > .column:first-of-type {
+section.club-projects .row > .column:first-of-type {
   padding-left: 0;
 }
 
-.row > .column:last-of-type {
+section.club-projects .row > .column:last-of-type {
   padding-right: 0;
 }
 
 /* 用padding分開 */
-.row {
+section.club-projects .row {
   padding: calc(var(--ccns-margin-width-min) / 2) 0;
   margin: 0;
 }
 
 /* clear float */
-.row:after {
+section.club-projects .row:after {
   content: "";
   display: table;
   clear: both;
@@ -62,7 +62,8 @@ section.project-form form {
   margin: 0;
 }
 
-input[type="text"], textarea {
+section.project-form input[type="text"],
+section.project-form textarea {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0 0;
@@ -73,12 +74,12 @@ input[type="text"], textarea {
   vertical-align: middle;
 }
 
-textarea {
+section.project-form textarea {
   height: auto;
   margin: 10px 0 0;
 }
 
-input[type="submit"] {
+section.project-form input[type="submit"] {
   font-size: 1rem;
   background-color: #198754;
   color: white;
@@ -89,12 +90,12 @@ input[type="submit"] {
   margin-top: 30px;
 }
 
-input[type="submit"]:hover {
+section.project-form input[type="submit"]:hover {
   background-color: #45a049;
 }
 
 @media only screen and (max-width: 768px) {
-  .column {
+  section.club-projects .column {
     display: block;
     float: none;
     width: 100%;
@@ -102,7 +103,7 @@ input[type="submit"]:hover {
     padding: 0;
   }
 
-  .row {
+  section.club-projects .row {
     height: auto;
     padding: 0;
   }
@@ -113,7 +114,7 @@ input[type="submit"]:hover {
   }
 
   /* form */
-  input[type="submit"] {
+  section.project-form input[type="submit"] {
     width: 100%;
     height: auto;
   }

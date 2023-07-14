@@ -10,7 +10,7 @@ section.member-intro div.member-item {
   padding: calc(var(--ccns-margin-width-min) / 2);
 }
 
-img.thumbnails {
+section.member-intro img.thumbnails {
   max-height: 10rem;
   width: 100%;
   object-fit: contain;
@@ -54,7 +54,7 @@ section.member-intro div.desc span.white-adj {
   color: rgb(229, 233, 236);
 }
 
-.c-chan {
+section.member-intro .c-chan {
   aspect-ratio: 1 / 2;
   height: max(75%, min(100%, 512px, calc(2 * 33vw)));
   position: fixed;
@@ -65,8 +65,8 @@ section.member-intro div.desc span.white-adj {
   mix-blend-mode: screen;
 }
 
-.c-chan:hover,
-.c-chan:focus {
+section.member-intro .c-chan:hover,
+section.member-intro .c-chan:focus {
   opacity: 1;
   mix-blend-mode: normal;
 }
@@ -77,7 +77,7 @@ section.member-intro div.desc span.white-adj {
     max-width: 100%;
   }
 
-  img.thumbnails {
+  section.member-intro img.thumbnails {
     object-position: center;
   }
 
@@ -93,7 +93,7 @@ section.member-intro div.desc span.white-adj {
 
 @media screen and (min-width: 1268px),
 screen and (min-aspect-ratio: 7 / 2) {
-  .c-chan {
+  section.member-intro .c-chan {
     opacity: 1;
     mix-blend-mode: normal;
   }
