@@ -15,21 +15,10 @@ section.events div.we-intro {
 }
 
 section.events div.event-box {
-  opacity: 0.3;
-  border-top: 1px solid #1c1c1c;
   display: flex;
-  padding-top: 3.75vw; /* 50px */
-  padding-bottom: 3.75vw; /* 50px */
-  transition: opacity 0.5s;
-}
-
-section.events div:last-child {
-  border-bottom: 1px solid #1c1c1c;
-}
-
-section.events div:nth-child(3),
-section.events div.event-box:hover {
-  opacity: 1;
+  flex-direction: row;
+  margin-top: var(--ccns-margin-width-min);
+  padding: 15px;
 }
 
 section.events div.event-box div.event-info {
@@ -37,21 +26,13 @@ section.events div.event-box div.event-info {
   width: 25%;
   display: flex;
   flex-direction: column;
-  border-right: 1px solid #1c1c1c;
-}
-
-section.events div.event-box:hover div.event-info {
-  display: inline-table;
+  border-right: var(--bs-card-border-width) solid var(--bs-card-border-color);
+  padding-right: 15px;
 }
 
 section.events div.event-box div.event-info p.event-place {
   font-family: "Noto Sans TC", sans-serif;
-  margin-bottom: 5px;
   font-size: 1.5vw; /* 20px */
-  letter-spacing: 1px;
-  padding-top: 0.32vw; /* 5px */
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 section.events div.event-box div.event-info p.event-time {
@@ -65,7 +46,7 @@ section.events div.event-box div.event-name {
   width: 75%;
   display: flex;
   flex-direction: column;
-  padding-left: 3.5vw; /* 45px */
+  padding-left: 15px;
 }
 
 section.events div.event-box div.event-name div.name {
@@ -84,10 +65,6 @@ section.events div.event-box div.event-name a.url {
 }
 
 @media only screen and (max-width: 768px) {
-  section.events div.event-box {
-    padding-top: 3.75vw; /* 50px */
-    padding-bottom: 3.75vw; /* 50px */
-  }
 
   section.events div.event-box div.event-info p.event-place {
     margin-bottom: 5px;
