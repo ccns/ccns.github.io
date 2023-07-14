@@ -154,13 +154,13 @@ section.timeline div.timeline dl dd .events .events-header:before {
   border-style: solid;
   border-width: 6px;
   right: 100%;
-  border-color: transparent #3d444e transparent transparent;
+  border-color: transparent var(--ccns-cardbg-color) transparent transparent;
 }
 
 section.timeline div.timeline dl dd:nth-last-of-type(2n) .events .events-header:before {
   left: 100%;
   right: unset;
-  border-color: transparent transparent transparent #3d444e;
+  border-color: transparent transparent transparent var(--ccns-cardbg-color);
 }
 
 section.timeline div.timeline dl dd .events .events-object {
