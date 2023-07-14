@@ -5,6 +5,7 @@ section.events div.we-intro {
   font-weight: 900;
   margin-top: 10px;
   letter-spacing: 2px;
+  text-indent: 2px;
 }
 
 section.events div.event-box {
@@ -46,6 +47,7 @@ section.events div.event-box div.event-name div.name {
   font-size: 1.4rem; /* 37.5px */
   color: white;
   letter-spacing: 1px;
+  text-indent: 1px;
   font-weight: 700;
 }
 
