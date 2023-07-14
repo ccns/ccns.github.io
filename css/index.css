@@ -1,34 +1,27 @@
-section.intro {
-  border-top: 1px solid #141414;
-  position: relative;
-  padding-bottom: 5vw;
-}
-
 section.intro div.we-intro {
   color: var(--ccns-hl-color);
-  font-size: 3.5vw; /* 70px */
+  font-size: max(2.2rem, min(2.6rem, 6vw));
   font-weight: 900;
-  margin-top: 5vw;
-  letter-spacing: 1px;
+  margin-top: 30px;
 }
 
 section.intro div.contact-line {
-  margin-top: 1vw;
+  margin-top: 10px;
   display: flex;
   align-items: center;
-  margin-bottom: 3vw;
+  margin-bottom: 10px;
 }
 
 section.intro div.contact-line div.line {
-  width: 8vw;
+  width: 4em;
   height: 1px;
   background-color: var(--ccns-hl-color);
-  margin-right: 2vw;
+  margin-right: 1em;
 }
 
 section.intro div.contact-line i {
-  font-size: 3vw; /* 30px */
-  margin: 0.75vw;
+  font-size: 2rem;
+  margin: 0 10px;
   color: var(--ccns-bgword-color);
   transition: color 0.5s;
 }
@@ -38,39 +31,19 @@ section.intro div.contact-line i:hover {
 }
 
 section.intro div.club-intro {
-  font-size: 2vw;
+  font-size: 1.2rem;
   margin: 0 auto;
-  margin-top: 2vw;
-  letter-spacing: 1px;
-  line-height: 3.5vw;
+  margin-top: 20px;
+  line-height: 1.6;
 }
 
 section.intro div.club-intro span.white {
   color: white;
 }
 
-@media only screen and (max-width: 768px) {
-  section.intro div.we-intro {
-    font-size: 6vw; /* 70px */
-  }
-
-  section.intro div.contact-line i {
-    font-size: 8vw; /* 30px */
-    margin: 0.75vw;
-    letter-spacing: 5px;
-  }
-
-  section.intro div.club-intro {
-    font-size: 5vw;
-    margin-top: 3vw;
-    letter-spacing: 2px;
-    line-height: 8vw;
-  }
-}
-
 /* iframe map */
 section.map-iframe div.map {
-  margin-bottom: 5vw;
+  margin: 30px 0 10px;
 }
 
 section.map-iframe div.map iframe {
