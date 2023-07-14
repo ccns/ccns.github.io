@@ -43,8 +43,8 @@ section.member-intro div.desc span.white-adj {
 }
 
 .c-chan {
-  width: 36vh;
-  height: 72vh;
+  aspect-ratio: 1 / 2;
+  height: max(75%, min(100%, 512px, calc(2 * 33vw)));
   position: fixed;
   right: 0;
   bottom: 0;
@@ -71,9 +71,11 @@ section.member-intro div.desc span.white-adj {
     text-align: center;
     font-size: 22px;
   }
+}
 
+@media screen and (min-width: 1268px),
+screen and (min-aspect-ratio: 7 / 2) {
   .c-chan {
-    width: 25vh;
-    height: 50vh;
+    opacity: 1;
   }
 }
