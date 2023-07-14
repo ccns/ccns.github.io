@@ -61,12 +61,14 @@ section.member-intro div.desc span.white-adj {
   right: 0;
   bottom: 0;
   opacity: 0.75;
-  transition: opacity 0.5s;
+  transition: opacity 0.5s ease-in;
+  mix-blend-mode: screen;
 }
 
 .c-chan:hover,
 .c-chan:focus {
   opacity: 1;
+  mix-blend-mode: normal;
 }
 
 @media only screen and (max-width: 768px) {
@@ -89,5 +91,6 @@ section.member-intro div.desc span.white-adj {
 screen and (min-aspect-ratio: 7 / 2) {
   .c-chan {
     opacity: 1;
+    mix-blend-mode: normal;
   }
 }
