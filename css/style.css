@@ -9,19 +9,22 @@
 
 @font-face {
   font-family: "Noto Sans TC";
+  font-weight: normal;
   src: url("../fonts/NotoSans-Regular.ttf");
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Noto Sans TC Bold";
-  src: url("../fonts/NotoSans-Regular.ttf");
+  font-family: "Noto Sans TC";
+  font-weight: bold;
+  src: url("../fonts/NotoSansUI-Bold.ttf");
   font-display: swap;
 }
 
 html {
   overflow-x: hidden;
   color: var(--ccns-bgword-color);
+  font-family: "Noto Sans TC", sans-serif;
   font-size: 125%;
   overflow-wrap: break-word;
 }
@@ -90,6 +93,10 @@ div.background-words {
   margin-top: 0.25em;
   line-height: 0.5;
   font-size: 10vw;
+}
+
+div.we-intro {
+  font-family: Amiri, serif;
 }
 
 @media only screen and (max-width: 768px) {
