@@ -54,7 +54,7 @@
 <%-    (i || j) ? '\n' : '' -%>
         <!--右/左側文章 start-->
         <dd class="clearfix">
-          <div class="events">
+          <div class="events card">
             <div class="events-header"><%= event.name %></div>
             <div class="events-body">
               <img class="timeline-pic zoom" src="<%= event.pic %>" loading="lazy" alt="">
@@ -76,7 +76,7 @@
         </dd>
         <!--右/左側文章 end-->
 <%   }); -%>
-        <dt><%= year.year %></dt>
+        <dt class="card"><%= year.year %></dt>
 <% }); -%>
       </dl>
     </div>

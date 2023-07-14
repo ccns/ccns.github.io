@@ -30,18 +30,8 @@
   clear: both;
 }
 
-.card {
-  padding: 16px;
-  color: #fff;
-  background-color: #3d444e;
-  transition: border-color 0.2s;
-}
-
-.card:hover {
-  border-color: var(--ccns-hl-focus-color);
-}
-
 section.club-projects .card {
+  padding: 16px;
   text-align: center;
 }
 

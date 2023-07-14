@@ -63,6 +63,16 @@ a:hover {
   color: var(--ccns-hl-focus-color);
 }
 
+.card {
+  color: #fff;
+  background-color: #3d444e;
+  transition: border-color 0.2s;
+}
+
+.card:hover {
+  border-color: var(--ccns-hl-focus-color);
+}
+
 @media only screen and (max-width: 768px) {
   :root {
     --ccns-margin-width: var(--ccns-margin-width-min);
