@@ -11,6 +11,7 @@ section.member-intro div.member-item {
 }
 
 img.thumbnails {
+  max-height: 10rem;
   width: 100%;
   object-fit: contain;
   object-position: left;
@@ -21,7 +22,7 @@ section.member-intro div.desc {
   --desc-border-alpha: 25%;
 
   text-align: left;
-  font-size: 20px;
+  font-size: 1.2rem;
   transform: translateZ(10px);
 }
 
@@ -35,14 +36,13 @@ section.member-intro div.desc * {
 
 section.member-intro div.desc h1 {
   color: var(--ccns-hl-color);
+  font-size: 1.4rem;
   margin-top: 20px;
 }
 
 section.member-intro div.desc h1 a {
   --desc-border-alpha: 10%;
 
-  /* color: #888; */
-  font-size: 95%;
   margin-left: 5px;
 }
 
@@ -82,8 +82,12 @@ section.member-intro div.desc span.white-adj {
   }
 
   section.member-intro div.desc {
+    font-size: 1.4rem;
     text-align: center;
-    font-size: 22px;
+  }
+
+  section.member-intro div.desc h1 {
+    font-size: 1.6rem;
   }
 }
 
