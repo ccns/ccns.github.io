@@ -63,10 +63,13 @@ section.timeline div.timeline dl:before {
   bottom: 0;
   left: 50%;
   z-index: 100;
-  width: 2px;
-  margin-left: -1px;
+  width: 4px;
+  margin-left: -2px;
   content: "";
   background-color: #ccd1d9;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
 }
 
 section.timeline div.timeline dl dt {
@@ -76,13 +79,8 @@ section.timeline div.timeline dl dt {
   padding: 3px 5px;
   margin: calc(var(--events-compact) + 30px) auto 30px;
   font-weight: 400;
-  color: #fff;
   font-size: 20px;
   text-align: center;
-  background-color: #3d444e;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
 }
 
 section.timeline div.timeline dl dd {
@@ -94,7 +92,7 @@ section.timeline div.timeline dl dd .events:before { /* circle */
   position: absolute;
   content: "";
   top: calc(10px + 30px / 2 - 22px / 2);
-  right: calc(100% + 6px + 13px - 22px / 2);
+  right: calc(100% + var(--bs-card-border-width) + 6px + 13px - 22px / 2);
   z-index: 200;
   width: 22px;
   height: 22px;
@@ -107,7 +105,7 @@ section.timeline div.timeline dl dd .events:before { /* circle */
 
 section.timeline div.timeline dl dd:nth-last-of-type(2n) .events:before {
   right: unset;
-  left: calc(100% + 6px + 13px - 22px / 2);
+  left: calc(100% + var(--bs-card-border-width) + 6px + 13px - 22px / 2);
 }
 
 section.timeline div.timeline dl dd .time {
@@ -138,11 +136,6 @@ section.timeline div.timeline dl dd .events {
   width: calc(50% - 6px - 13px);
   padding: 10px 0 0;
   margin: 10px 0;
-  color: #fff;
-  background-color: #3d444e;
-  border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
   float: right;
 }
 
@@ -164,13 +157,13 @@ section.timeline div.timeline dl dd .events .events-header:before {
   border-style: solid;
   border-width: 6px;
   right: 100%;
-  border-color: transparent #3d444e transparent transparent;
+  border-color: transparent var(--ccns-cardbg-color) transparent transparent;
 }
 
 section.timeline div.timeline dl dd:nth-last-of-type(2n) .events .events-header:before {
   left: 100%;
   right: unset;
-  border-color: transparent transparent transparent #3d444e;
+  border-color: transparent transparent transparent var(--ccns-cardbg-color);
 }
 
 section.timeline div.timeline dl dd .events .events-object {

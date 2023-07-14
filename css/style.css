@@ -52,10 +52,11 @@ body > section:nth-last-of-type(2) {
   --ccns-bgword-color: #6c757d;
   --ccns-hl-color: #c49f54;
   --ccns-hl-focus-color: #ffc107;
+  --ccns-cardbg-color: #3d444e;
 }
 
 a {
-  color: #5479c4;
+  color: #6ea8fe;
   text-decoration: none;
 }
 
@@ -65,7 +66,7 @@ a:hover {
 
 .card {
   color: #fff;
-  background-color: #3d444e;
+  background-color: var(--ccns-cardbg-color);
   transition: border-color 0.2s;
 }
 
