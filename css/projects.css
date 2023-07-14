@@ -35,13 +35,11 @@
   text-align: center;
   color: #fff;
   background-color: #3d444e;
-  transition: transform 0.2s;
+  transition: border-color 0.2s;
 }
 
 .card:hover {
-  transform: scale(1.2);
-  z-index: 100;
-  position: relative;
+  border-color: var(--ccns-hl-focus-color);
 }
 
 section.club-projects div.project-title span.white {
@@ -137,10 +135,6 @@ input[type="submit"]:hover {
     padding: 15px;
     height: auto;
     width: 100%;
-  }
-
-  .card:hover {
-    transform: scale(1.1);
   }
 
   /* form */
