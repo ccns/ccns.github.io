@@ -35,6 +35,10 @@ section.club-projects .card {
   text-align: center;
 }
 
+section.club-projects .card > :last-child {
+  margin-bottom: 0;
+}
+
 /* form */
 section.project-form {
   margin-top: calc(var(--ccns-margin-width-min) / 2);
