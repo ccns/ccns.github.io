@@ -58,10 +58,8 @@ section.events div.event-box div.event-name div.name {
 }
 
 section.events div.event-box div.event-name a.url {
-  color: #c0a062;
   font-family: "Noto Sans TC", sans-serif;
   font-size: 1.5vw; /* 20px */
-  text-decoration: none;
 }
 
 @media only screen and (max-width: 768px) {
