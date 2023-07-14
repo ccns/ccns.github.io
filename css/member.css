@@ -24,7 +24,7 @@ section.member-intro div.desc {
 }
 
 section.member-intro div.desc h1 {
-  color: #c49f54;
+  color: var(--ccns-hl-color);
   margin-top: 20px;
 }
 
