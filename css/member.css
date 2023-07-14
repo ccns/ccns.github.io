@@ -10,7 +10,8 @@ section.member-intro div.member-item {
   padding: calc(var(--ccns-margin-width-min) / 2);
 }
 
-img.thumbnails {
+section.member-intro img.thumbnails {
+  max-height: 10rem;
   width: 100%;
   object-fit: contain;
   object-position: left;
@@ -18,43 +19,56 @@ img.thumbnails {
 }
 
 section.member-intro div.desc {
+  --desc-border-alpha: 25%;
+
   text-align: left;
-  font-size: 20px;
+  font-size: 1.2rem;
   transform: translateZ(10px);
+}
+
+section.member-intro div.desc * {
+  text-shadow: 0 1px 10px var(--ccns-bg-color),
+    1px 1px 0 rgb(var(--ccns-bg-color-rgb), var(--desc-border-alpha)),
+    1px -1px 0 rgb(var(--ccns-bg-color-rgb), var(--desc-border-alpha)),
+    -1px 1px 0 rgb(var(--ccns-bg-color-rgb), var(--desc-border-alpha)),
+    -1px -1px 0 rgb(var(--ccns-bg-color-rgb), var(--desc-border-alpha));
 }
 
 section.member-intro div.desc h1 {
   color: var(--ccns-hl-color);
+  font-size: 1.4rem;
   margin-top: 20px;
 }
 
 section.member-intro div.desc h1 a {
-  /* color: #888; */
-  font-size: 95%;
+  --desc-border-alpha: 10%;
+
   margin-left: 5px;
 }
 
 section.member-intro div.desc p {
-  text-shadow: #1f1f1f 0 1px 10px;
+  --desc-border-alpha: 100%;
 }
 
 section.member-intro div.desc span.white-adj {
   color: rgb(229, 233, 236);
 }
 
-.c-chan {
-  width: 36vh;
-  height: 72vh;
+section.member-intro .c-chan {
+  aspect-ratio: 1 / 2;
+  height: max(75%, min(100%, 512px, calc(2 * 33vw)));
   position: fixed;
   right: 0;
   bottom: 0;
   opacity: 0.75;
-  transition: opacity 0.5s;
+  transition: opacity 0.5s ease-in;
+  mix-blend-mode: screen;
 }
 
-.c-chan:hover,
-.c-chan:focus {
+section.member-intro .c-chan:hover,
+section.member-intro .c-chan:focus {
   opacity: 1;
+  mix-blend-mode: normal;
 }
 
 @media only screen and (max-width: 768px) {
@@ -63,17 +77,24 @@ section.member-intro div.desc span.white-adj {
     max-width: 100%;
   }
 
-  img.thumbnails {
+  section.member-intro img.thumbnails {
     object-position: center;
   }
 
   section.member-intro div.desc {
+    font-size: 1.4rem;
     text-align: center;
-    font-size: 22px;
   }
 
-  .c-chan {
-    width: 25vh;
-    height: 50vh;
+  section.member-intro div.desc h1 {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (min-width: 1268px),
+screen and (min-aspect-ratio: 7 / 2) {
+  section.member-intro .c-chan {
+    opacity: 1;
+    mix-blend-mode: normal;
   }
 }

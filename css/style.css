@@ -9,23 +9,38 @@
 
 @font-face {
   font-family: "Noto Sans TC";
+  font-weight: normal;
   src: url("../fonts/NotoSans-Regular.ttf");
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Noto Sans TC Bold";
-  src: url("../fonts/NotoSans-Regular.ttf");
+  font-family: "Noto Sans TC";
+  font-weight: bold;
+  src: url("../fonts/NotoSansUI-Bold.ttf");
   font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 html {
   overflow-x: hidden;
   color: var(--ccns-bgword-color);
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 125%;
+  overflow-wrap: break-word;
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 100%;
+  }
 }
 
 body {
-  background-color: #141414;
+  background-color: var(--ccns-bg-color);
 }
 
 body > section {
@@ -49,6 +64,8 @@ body > section:nth-last-of-type(2) {
   --ccns-margin-height: calc(max(3.45vw, var(--ccns-margin-width-min)));
   --cw: calc(100vw - var(--scrollbar-width)); /* 100% page content width */
   --ccns-header-height: calc(2 * 3.45vw + 4.45vw);
+  --ccns-bg-color: #141414;
+  --ccns-bg-color-rgb: 20, 20, 20;
   --ccns-bgword-color: #6c757d;
   --ccns-hl-color: #c49f54;
   --ccns-hl-focus-color: #ffc107;
@@ -74,10 +91,105 @@ a:hover {
   border-color: var(--ccns-hl-focus-color);
 }
 
+div.background-words {
+  width: 100%;
+  text-align: center;
+  z-index: -1;
+  font-family: "Playfair Display", serif;
+  margin-top: 0.25em;
+  line-height: 0.5;
+  font-size: max(1rem, min(5rem, 10vw));
+}
+
+div.we-intro {
+  font-family: Amiri, serif;
+}
+
 @media only screen and (max-width: 768px) {
   :root {
     --ccns-margin-width: var(--ccns-margin-width-min);
     --ccns-margin-height: calc(max(3vw + 12px, var(--ccns-margin-width)));
     --ccns-header-height: calc(12px + 2 * 3vw + 8.45vw);
   }
+}
+
+/* Original image */
+.zoom {
+  --zooming-scale-default: 1.8;
+
+  position: relative;
+  overflow: hidden;
+  cursor: zoom-in;
+  z-index: 1000;
+  opacity: 1;
+  transform: scale(1);
+
+  --zooming-scale: var(--zoom-scale, var(--zooming-scale-default));
+
+  /* Bounded to the left edge (harder limit) */
+  --zooming-x-max: calc(var(--zoom-left, var(--ccns-margin-width)) / (var(--zooming-scale) - 1));
+
+  /* Bounded to the right edge (hard limit) */
+  --zooming-x-min: calc(100% - var(--zoom-right, var(--ccns-margin-width)) / (var(--zooming-scale) - 1));
+
+  /* Aligned (soft limit) or centered */
+  --zooming-x-align:
+    calc(
+      var(--zoom-align-base, 0%) + var(--zoom-align-orientation, 1)
+      * min(var(--zoom-align-margin, var(--ccns-margin-width)) / (var(--zooming-scale) - 1), 50%)
+    );
+
+  transform-origin: min(max(var(--zooming-x-align), var(--zooming-x-min)), var(--zooming-x-max)) 50%;
+  transition: z-index 0.25s, transform 0.25s, var(--zoom-transition, opacity 0.5s);
+}
+
+@media only screen and (max-width: 768px) {
+  --zooming-scale-default: 1.5;
+}
+
+.zoomed .zoom:not(.zoomed) {
+  opacity: 0.25;
+}
+
+/* zoomed */
+.zoom.zoomed {
+  cursor: zoom-out;
+  z-index: 2000;
+  opacity: 1;
+  transform: scale(var(--zoom-scale, var(--zooming-scale-default)));
+}
+
+#zoom-background {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 1000;
+  pointer-events: none;
+  background-color: transparent;
+  transition: background-color 0.5s;
+}
+
+/* zoomed */
+.zoomed #zoom-background {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+html.zoomed {
+  overflow-x: visible;
+}
+
+/* scroll top button */
+section.to-top a.button {
+  position: fixed;
+  right: calc(var(--ccns-margin-width) - 30px - (var(--ccns-margin-width-min) - 30px) / 2);
+  bottom: calc((var(--ccns-margin-width-min) - 30px) / 2);
+  display: block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  border: 3px solid;
+  border-radius: 25px;
+  z-index: 9999;
 }

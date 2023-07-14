@@ -1,132 +1,70 @@
 /* index.html */
-section.events {
-  border-top: 1px solid #141414;
-  position: relative;
-  padding-bottom: 0.64vw; /* 10px */
-}
-
-section.events div.background-words {
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  z-index: -1;
-  font-family: "Playfair Display", serif;
-  margin-top: 1vw; /* 95px */
-  font-size: 9vw; /* 135px */
-}
-
 section.events div.we-intro {
   color: white;
-  font-family: Amiri, serif;
-  font-size: 8.2vw; /* 70px */
+  font-size: max(1rem, min(4rem, 9vw));
   font-weight: 900;
-  margin-top: 12.7vw; /* 190px */
+  margin-top: 10px;
   letter-spacing: 2px;
+  text-indent: 2px;
 }
 
 section.events div.event-box {
-  opacity: 0.3;
-  border-top: 1px solid #1c1c1c;
   display: flex;
-  padding-top: 3.75vw; /* 50px */
-  padding-bottom: 3.75vw; /* 50px */
-  transition: opacity 0.5s;
+  flex-direction: row;
+  margin-top: var(--ccns-margin-width-min);
+  padding: 15px;
 }
 
-section.events div:last-child {
-  border-bottom: 1px solid #1c1c1c;
-}
-
-section.events div:nth-child(3),
-section.events div.event-box:hover {
-  opacity: 1;
+section.events div.we-intro + div.event-box {
+  margin-top: 15px;
 }
 
 section.events div.event-box div.event-info {
-  font-family: "Noto Sans TC", sans-serif;
   width: 25%;
   display: flex;
   flex-direction: column;
-  border-right: 1px solid #1c1c1c;
-}
-
-section.events div.event-box:hover div.event-info {
-  display: inline-table;
+  border-right: var(--bs-card-border-width) solid var(--bs-card-border-color);
+  padding-right: 15px;
 }
 
 section.events div.event-box div.event-info p.event-place {
-  font-family: "Noto Sans TC", sans-serif;
-  margin-bottom: 5px;
-  font-size: 1.5vw; /* 20px */
-  letter-spacing: 1px;
-  padding-top: 0.32vw; /* 5px */
-  overflow: hidden;
-  text-overflow: ellipsis;
+  font-size: 1rem; /* 20px */
 }
 
 section.events div.event-box div.event-info p.event-time {
-  font-family: "Noto Sans TC", sans-serif;
   margin-bottom: 0;
-  font-size: 1.35vw; /* 17px */
+  font-size: 1rem; /* 17px */
 }
 
 section.events div.event-box div.event-name {
-  font-family: "Noto Sans TC", sans-serif;
   width: 75%;
   display: flex;
   flex-direction: column;
-  padding-left: 3.5vw; /* 45px */
+  padding-left: 15px;
 }
 
 section.events div.event-box div.event-name div.name {
-  font-family: Helvetica, "Noto Sans TC Bold", sans-serif;
-  font-size: 2.85vw; /* 37.5px */
+  font-size: 1.4rem; /* 37.5px */
   color: white;
   letter-spacing: 1px;
+  text-indent: 1px;
   font-weight: 700;
 }
 
 section.events div.event-box div.event-name a.url {
-  color: #c0a062;
-  font-family: "Noto Sans TC", sans-serif;
-  font-size: 1.5vw; /* 20px */
-  text-decoration: none;
+  font-size: 1rem; /* 20px */
 }
 
 @media only screen and (max-width: 768px) {
-  section.events div.background-words {
-    margin-top: 1vw; /* 95px */
-    font-size: 10vw; /* 135px */
+  section.events div.event-box div.event-info {
+    width: 33%;
   }
 
-  section.events div.we-intro {
-    font-size: 8.2vw; /* 70px */
-    margin-top: 12.7vw; /* 190px */
-    letter-spacing: 2px;
-  }
-
-  section.events div.event-box {
-    padding-top: 3.75vw; /* 50px */
-    padding-bottom: 3.75vw; /* 50px */
-  }
-
-  section.events div.event-box div.event-info p.event-place {
-    margin-bottom: 5px;
-    font-size: 3vw; /* 20px */
-    letter-spacing: 1px;
-    padding-top: 0.32vw; /* 5px */
-  }
-
-  section.events div.event-box div.event-info p.event-time {
-    font-size: 3vw; /* 17px */
+  section.events div.event-box div.event-name {
+    width: 67%;
   }
 
   section.events div.event-box div.event-name div.name {
-    font-size: 3.5vw; /* 37.5px */
-    letter-spacing: 1px;
-  }
-
-  section.events div.event-box div.event-name a.url {
-    font-size: 3vw; /* 20px */
+    font-size: 1.2rem;
   }
 }

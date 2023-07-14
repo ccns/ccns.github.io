@@ -2,36 +2,43 @@ section.intro div.intro-img img {
   --zoom-left: calc(var(--cw) / 2);
   --zoom-scale: 1.35;
 
-  width: 50%;
-  height: auto;
+  top: calc(0.6 / 2 * 1.2rem);
+  max-height: calc(9 * 1.4 * 1.2rem);
+  width: auto;
   max-width: 100%;
   float: right;
   margin-right: 0;
-  margin-top: 2vw;
 }
 
 @media only screen and (max-width: 768px) {
+  section.intro div.intro-poetic {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
   section.intro div.intro-img img {
     --zoom-left: unset;
     --zoom-scale: 1.1;
 
-    width: 100%;
-    margin-top: 3vw;
-    margin-bottom: 3vw;
+    max-height: calc(9 * 1.4 * 1.4rem);
+    display: block;
+    top: 0;
+    float: unset;
+    margin: 0 auto 20px;
   }
 }
 
-img.google-img {
+section.intro img.google-img {
   width: 800px;
   height: auto;
   max-width: 100%;
-  margin-bottom: 3vw;
+  margin-bottom: 20px;
 }
 
 /* ---timeline-- */
 
 /* timeline picture */
-img.timeline-pic {
+section.timeline img.timeline-pic {
   width: 600px;
   height: auto;
   max-width: 100%;
@@ -42,7 +49,7 @@ img.timeline-pic {
   --zoom-transition: filter 0.5s;
 }
 
-.zoomed img.timeline-pic:not(.zoomed) {
+.zoomed section.timeline img.timeline-pic:not(.zoomed) {
   opacity: 1;
   filter: brightness(0.25);
 }
@@ -53,8 +60,8 @@ section.timeline div.timeline dl {
 
   position: relative;
   top: 0;
-  padding: 20px 0;
-  margin: 0;
+  padding: 0 0 20px;
+  margin: 30px 0 0;
 }
 
 section.timeline div.timeline dl:before {
@@ -67,9 +74,9 @@ section.timeline div.timeline dl:before {
   margin-left: -2px;
   content: "";
   background-color: #ccd1d9;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
 }
 
 section.timeline div.timeline dl dt {
@@ -172,11 +179,10 @@ section.timeline div.timeline dl dd .events .events-object {
 
 section.timeline div.timeline dl dd .events .events-header {
   position: relative;
-  padding: 0 10px;
+  padding: 3px 10px;
   margin: 0 0 10px;
-  line-height: 30px;
+  line-height: calc(30px - 2 * 3px);
   text-align: center;
-  font-size: 20px;
   font-weight: bold;
   cursor: pointer;
 }
@@ -192,13 +198,11 @@ section.timeline div.timeline dl dd .events .events-body > :not(:last-child) {
 }
 
 section.timeline div.timeline dl dd .events .events-body .events-desc {
-  text-indent: 2em;
   padding: 0 15px;
 }
 
 section.timeline div.timeline dl dd .events .events-footer {
   text-align: center;
-  font-size: 20px;
 }
 
 section.timeline div.timeline dl dd .events .events-footer ol .active {
@@ -213,13 +217,5 @@ section.timeline div.timeline dl dd .events .events-footer ol .active {
 
   section.timeline div.timeline dl dd .events {
     --zoom-scale: 3;
-  }
-
-  section.timeline div.timeline dl dd .events .events-header {
-    font-size: 18px;
-  }
-
-  section.timeline div.timeline dl dd .events .events-footer {
-    font-size: 16px;
   }
 }
