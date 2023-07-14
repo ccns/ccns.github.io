@@ -192,4 +192,11 @@ section.to-top a.button {
   border: 3px solid;
   border-radius: 25px;
   z-index: 9999;
+  font-size: calc(1em / 1.25);
+}
+
+@media only screen and (max-width: 768px) {
+  section.to-top a.button {
+    font-size: 1em;
+  }
 }
