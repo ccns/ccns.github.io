@@ -69,19 +69,3 @@ section.map-iframe div.map iframe {
     border: 0;
   }
 }
-
-/* scroll top button */
-section.to-top a.button {
-  position: fixed;
-  right: calc(var(--ccns-margin-width) - 30px - (var(--ccns-margin-width-min) - 30px) / 2);
-  bottom: calc((var(--ccns-margin-width-min) - 30px) / 2);
-  display: block;
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  color: white;
-  text-decoration: none;
-  border: 3px solid;
-  border-radius: 25px;
-  z-index: 9999;
-}

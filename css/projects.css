@@ -1,7 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-
 /* 一行要幾個 */
 .column {
   float: left;
