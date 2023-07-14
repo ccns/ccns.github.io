@@ -18,9 +18,19 @@ img.thumbnails {
 }
 
 section.member-intro div.desc {
+  --desc-border-alpha: 25%;
+
   text-align: left;
   font-size: 20px;
   transform: translateZ(10px);
+}
+
+section.member-intro div.desc * {
+  text-shadow: 0 1px 10px var(--ccns-bg-color),
+    1px 1px 0 rgb(var(--ccns-bg-color-rgb), var(--desc-border-alpha)),
+    1px -1px 0 rgb(var(--ccns-bg-color-rgb), var(--desc-border-alpha)),
+    -1px 1px 0 rgb(var(--ccns-bg-color-rgb), var(--desc-border-alpha)),
+    -1px -1px 0 rgb(var(--ccns-bg-color-rgb), var(--desc-border-alpha));
 }
 
 section.member-intro div.desc h1 {
@@ -29,13 +39,15 @@ section.member-intro div.desc h1 {
 }
 
 section.member-intro div.desc h1 a {
+  --desc-border-alpha: 10%;
+
   /* color: #888; */
   font-size: 95%;
   margin-left: 5px;
 }
 
 section.member-intro div.desc p {
-  text-shadow: var(--ccns-bg-color) 0 1px 10px;
+  --desc-border-alpha: 100%;
 }
 
 section.member-intro div.desc span.white-adj {
