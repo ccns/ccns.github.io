@@ -82,6 +82,16 @@ a:hover {
   border-color: var(--ccns-hl-focus-color);
 }
 
+div.background-words {
+  width: 100%;
+  text-align: center;
+  z-index: -1;
+  font-family: "Playfair Display", serif;
+  margin-top: 0.25em;
+  line-height: 0.5;
+  font-size: 10vw;
+}
+
 @media only screen and (max-width: 768px) {
   :root {
     --ccns-margin-width: var(--ccns-margin-width-min);
