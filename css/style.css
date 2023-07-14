@@ -92,7 +92,7 @@ div.background-words {
   font-family: "Playfair Display", serif;
   margin-top: 0.25em;
   line-height: 0.5;
-  font-size: 10vw;
+  font-size: max(1rem, min(5rem, 10vw));
 }
 
 div.we-intro {

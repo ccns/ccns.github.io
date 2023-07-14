@@ -1,15 +1,9 @@
 /* index.html */
-section.events {
-  border-top: 1px solid #141414;
-  position: relative;
-  padding-bottom: 0.64vw; /* 10px */
-}
-
 section.events div.we-intro {
   color: white;
-  font-size: 8.2vw; /* 70px */
+  font-size: max(1rem, min(4rem, 9vw));
   font-weight: 900;
-  margin-top: 1vw;
+  margin-top: 10px;
   letter-spacing: 2px;
 }
 
@@ -18,6 +12,10 @@ section.events div.event-box {
   flex-direction: row;
   margin-top: var(--ccns-margin-width-min);
   padding: 15px;
+}
+
+section.events div.we-intro + div.event-box {
+  margin-top: 15px;
 }
 
 section.events div.event-box div.event-info {
@@ -29,12 +27,12 @@ section.events div.event-box div.event-info {
 }
 
 section.events div.event-box div.event-info p.event-place {
-  font-size: 1.5vw; /* 20px */
+  font-size: 1rem; /* 20px */
 }
 
 section.events div.event-box div.event-info p.event-time {
   margin-bottom: 0;
-  font-size: 1.35vw; /* 17px */
+  font-size: 1rem; /* 17px */
 }
 
 section.events div.event-box div.event-name {
@@ -45,35 +43,26 @@ section.events div.event-box div.event-name {
 }
 
 section.events div.event-box div.event-name div.name {
-  font-size: 2.85vw; /* 37.5px */
+  font-size: 1.4rem; /* 37.5px */
   color: white;
   letter-spacing: 1px;
   font-weight: 700;
 }
 
 section.events div.event-box div.event-name a.url {
-  font-size: 1.5vw; /* 20px */
+  font-size: 1rem; /* 20px */
 }
 
 @media only screen and (max-width: 768px) {
-
-  section.events div.event-box div.event-info p.event-place {
-    margin-bottom: 5px;
-    font-size: 3vw; /* 20px */
-    letter-spacing: 1px;
-    padding-top: 0.32vw; /* 5px */
+  section.events div.event-box div.event-info {
+    width: 33%;
   }
 
-  section.events div.event-box div.event-info p.event-time {
-    font-size: 3vw; /* 17px */
+  section.events div.event-box div.event-name {
+    width: 67%;
   }
 
   section.events div.event-box div.event-name div.name {
-    font-size: 3.5vw; /* 37.5px */
-    letter-spacing: 1px;
-  }
-
-  section.events div.event-box div.event-name a.url {
-    font-size: 3vw; /* 20px */
+    font-size: 1.2rem;
   }
 }
