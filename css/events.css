@@ -9,7 +9,6 @@ section.events div.background-words {
   position: absolute;
   width: 100%;
   text-align: center;
-  color: #5d5b5b;
   z-index: -1;
   font-family: "Playfair Display", serif;
   margin-top: 1vw; /* 95px */
@@ -60,7 +59,6 @@ section.events div.event-box div.event-info p.event-place {
   margin-bottom: 5px;
   font-size: 1.5vw; /* 20px */
   letter-spacing: 1px;
-  color: #999;
   padding-top: 0.32vw; /* 5px */
   overflow: hidden;
   text-overflow: ellipsis;
@@ -70,7 +68,6 @@ section.events div.event-box div.event-info p.event-time {
   font-family: "Noto Sans TC", sans-serif;
   margin-bottom: 0;
   font-size: 1.35vw; /* 17px */
-  color: #999;
 }
 
 section.events div.event-box div.event-name {

@@ -7,7 +7,6 @@ section.intro {
 section.intro div.background-words {
   width: 100%;
   text-align: center;
-  color: #5d5b5b;
   font-family: "Playfair Display", serif;
   margin-top: 1vw; /* 95px */
   font-size: 10vw; /* 135px */
@@ -40,7 +39,7 @@ section.intro div.contact-line div.line {
 section.intro div.contact-line i {
   font-size: 3vw; /* 30px */
   margin: 0.75vw;
-  color: #5c5c5c;
+  color: var(--ccns-bgword-color);
   transition: color 0.5s;
 }
 
@@ -52,7 +51,6 @@ section.intro div.club-intro {
   font-family: "Noto Sans TC", sans-serif;
   font-size: 2vw;
   margin: 0 auto;
-  color: #999;
   margin-top: 2vw;
   letter-spacing: 1px;
   line-height: 3.5vw;

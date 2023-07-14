@@ -21,6 +21,7 @@
 
 html {
   overflow-x: hidden;
+  color: var(--ccns-bgword-color);
 }
 
 body {
@@ -48,6 +49,7 @@ body > section:nth-last-of-type(2) {
   --ccns-margin-height: calc(max(3.45vw, var(--ccns-margin-width-min)));
   --cw: calc(100vw - var(--scrollbar-width)); /* 100% page content width */
   --ccns-header-height: calc(2 * 3.45vw + 4.45vw);
+  --ccns-bgword-color: #6c757d;
 }
 
 a {
