@@ -32,7 +32,6 @@
 
 .card {
   padding: 16px;
-  text-align: center;
   color: #fff;
   background-color: #3d444e;
   transition: border-color 0.2s;
@@ -40,6 +39,10 @@
 
 .card:hover {
   border-color: var(--ccns-hl-focus-color);
+}
+
+section.club-projects .card {
+  text-align: center;
 }
 
 section.club-projects div.project-title span.white {
@@ -73,10 +76,7 @@ section.project-form {
   margin-bottom: 60px;
 }
 
-form {
-  border-radius: 5px;
-  color: #fff;
-  background-color: #3d444e;
+section.project-form form {
   padding: 30px;
   margin: 0;
 }
@@ -131,7 +131,7 @@ input[type="submit"]:hover {
     padding: 0;
   }
 
-  .card {
+  section.club-projects .card {
     padding: 15px;
     height: auto;
     width: 100%;
@@ -151,10 +151,9 @@ input[type="submit"]:hover {
   }
 
   input[type="submit"] {
-    width: 75%;
+    width: 100%;
     height: auto;
     padding: 14px 20px;
-    margin-left: 12.5%;
     margin-top: 20px;
   }
 }
