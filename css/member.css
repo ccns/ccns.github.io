@@ -27,7 +27,8 @@ section.member-intro div.desc {
 }
 
 section.member-intro div.desc * {
-  text-shadow: 0 1px 10px var(--ccns-bg-color),
+  text-shadow:
+    0 1px 10px var(--ccns-bg-color),
     1px 1px 0 rgb(var(--ccns-bg-color-rgb), var(--desc-border-alpha)),
     1px -1px 0 rgb(var(--ccns-bg-color-rgb), var(--desc-border-alpha)),
     -1px 1px 0 rgb(var(--ccns-bg-color-rgb), var(--desc-border-alpha)),
@@ -92,7 +93,7 @@ section.member-intro .c-chan:focus {
 }
 
 @media screen and (min-width: 1268px),
-screen and (min-aspect-ratio: 7 / 2) {
+  screen and (min-aspect-ratio: 7 / 2) {
   section.member-intro .c-chan {
     opacity: 1;
     mix-blend-mode: normal;
