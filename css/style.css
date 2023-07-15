@@ -69,7 +69,7 @@ body > section:nth-last-of-type(2) {
   --ccns-bgword-color: #6c757d;
   --ccns-hl-color: #c49f54;
   --ccns-hl-focus-color: #ffc107;
-  --ccns-cardbg-color: #3d444e;
+  --ccns-cardbg-color: #212529;
 }
 
 a {
