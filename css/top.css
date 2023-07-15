@@ -188,6 +188,7 @@ header.top div.top-nav div.nav-icon i.fa {
   }
 
   header.top div.top-nav .overlay .closebtn {
+    display: block;
     position: absolute;
     top: calc((var(--ccns-margin-width-min) - 30px) / 2);
     right: calc(var(--ccns-margin-width) - 30px - (var(--ccns-margin-width-min) - 30px) / 2);
