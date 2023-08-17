@@ -1,7 +1,7 @@
 const ejs = require("ejs");
 const fs = require("fs");
 const moment = require("moment");
-const request = require("request");
+const axios = require("axios");
 moment.locale("zh-tw");
 
 const renderPage = (src, dst, resources) => {
@@ -18,27 +18,26 @@ const renderPage = (src, dst, resources) => {
 // events
 const events_url = "https://ccns.kktix.cc/events.json";
 const renderEvents = (src, dst) => {
-  request.get(events_url, (error, response, body) => {
-    if (!error && response.statusCode == 200) {
-      var events = JSON.parse(body);
-      var events = events.entry.map((e) => {
-        var content = e.content;
-        var spl = content.split("\n");
-        var time_origin = spl[0].split("：")[1].split("~")[0];
-        var place = spl[1].split("：")[1].split("/")[0];
+  axios.get(events_url).then((response) => {
+    var events = response.data;
+    var events = events.entry.map((e) => {
+      var content = e.content;
+      var spl = content.split("\n");
+      var time_origin = spl[0].split("：")[1].split("~")[0];
+      var place = spl[1].split("：")[1].split("/")[0];
 
-        var time = moment(time_origin, "YYYY/MM/DD HH:mm(Z)").format(
-          "YYYY年M月D日 Ah點"
-        );
+      var time = moment(time_origin, "YYYY/MM/DD HH:mm(Z)").format(
+        "YYYY年M月D日 Ah點"
+      );
 
-        e.time = time;
-        e.place = place;
-        return e;
-      });
-      renderPage(src, dst, { events: events });
-    } else {
-      console.log("Failed to fetch events.");
-    }
+      e.time = time;
+      e.place = place;
+      return e;
+    });
+    renderPage(src, dst, { events: events });
+  }).catch((error) => {
+    console.log(error)
+    console.log("Failed to fetch events.");
   });
 };
 
