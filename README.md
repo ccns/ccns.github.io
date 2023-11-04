@@ -27,6 +27,7 @@ $ npm install
 Update modules under `frameworks/` and push them to github
 ```
 $ npm update
+$ git add package-lock.json
 $ git commit -m 'chore: update bundles'
 ```
 
