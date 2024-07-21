@@ -15,7 +15,7 @@ Roughly rebuilding of CCNS website
 
 ## 本地開發環境測試
 ### 需求
-- nodejs ( >= 18 )
+- nodejs (建議版本：>= 22)
 
 ### 第一次使用頁面產生器
 ```
