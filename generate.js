@@ -53,6 +53,7 @@ const pages = [
   { src: "./ejs/env.ejs", dst: "./public/env.html" },
   { src: "./ejs/food.ejs", dst: "./public/food.html" },
   { src: "./ejs/index.ejs", dst: "./public/index.html" },
+  { src: "./resources/maplibre.html", dst: "./public/maplibre.html" },
 ];
 
 pages.forEach((e, i) => {
