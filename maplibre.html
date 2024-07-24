@@ -20,12 +20,6 @@
       style: 'https://api.protomaps.com/styles/v2/light.json?key=38cbf126d8149997', // Style URL; see ProtoMaps documentation for more options
       center: [120.21969795227051, 22.994353003362463], // starting position
       cooperativeGestures: true,
-      // disable map rotation using right click + drag
-      map.dragRotate.disable();
-      // disable map rotation using keyboard
-      map.keyboard.disable();
-      // disable map rotation using touch rotation gesture
-      map.touchZoomRotate.disableRotation();
       zoom: 16
     });
     const marker = new maplibregl.Marker()
@@ -33,8 +27,12 @@
         .addTo(map);
     // Add zoom and rotation controls to the map.
     map.addControl(new maplibregl.NavigationControl());
-    // disable map zoom when using scroll
-    //map.scrollZoom.disable();
+    // disable map rotation using right click + drag
+    map.dragRotate.disable();
+    // disable map rotation using keyboard
+    map.keyboard.disable();
+    // disable map rotation using touch rotation gesture
+    map.touchZoomRotate.disableRotation();
 </script>
 </body>
 </html>
