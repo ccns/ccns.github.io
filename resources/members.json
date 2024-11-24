@@ -1,8 +1,14 @@
 [
   {
+    "name": "Zen",
+    "thumbnail": "resources/members/zen.webp",
+    "description": "光電系大三，現任社長。<br>不會寫程式怎麼辦(＞﹏＜)",
+    "links": [{ "link": "https://github.com/zen8841", "icon": "github" }]
+  },
+  {
     "name": "Idoleat",
     "thumbnail": "resources/members/idoleat.webp",
-    "description": "資工系碩一，現任社長。",
+    "description": "資工系碩一，前任社長。",
     "links": [{ "link": "https://github.com/idoleat", "icon": "github" }]
   },
   {
