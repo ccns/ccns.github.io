@@ -1,10 +1,11 @@
 name: EJS Template Build and Deploy
 
-on: 
+on:
   push:
     branches: [main]
   schedule:
     - cron: "22 11 * * Tue,Fri"
+  workflow_dispatch:
 
 jobs:
   pages:
