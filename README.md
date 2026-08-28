@@ -20,7 +20,7 @@ Roughly rebuilding of CCNS website
 ### 第一次使用頁面產生器
 ```
 $ git clone https://github.com/ccns/ccns.github.io.git
-$ npm install
+$ npm ci
 ```
 
 ### 更新網頁框架
