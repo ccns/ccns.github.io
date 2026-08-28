@@ -1,7 +1,6 @@
 const ejs = require("ejs");
 const fs = require("fs");
 const moment = require("moment");
-const axios = require("axios");
 moment.locale("zh-tw");
 
 const renderPage = (src, dst, resources) => {
@@ -10,7 +9,7 @@ const renderPage = (src, dst, resources) => {
       console.log(err);
       return;
     }
-    // console.log(html);
+    // console.log(html); 
     fs.writeFileSync(dst, html, "utf8");
   });
 }
@@ -18,9 +17,10 @@ const renderPage = (src, dst, resources) => {
 // events
 const events_url = "https://ccns.kktix.cc/events.json";
 const renderEvents = (src, dst) => {
-  axios.get(events_url).then((response) => {
-    var events = response.data;
-    var events = events.entry.map((e) => {
+  fetch(events_url)
+    .then((response) => response.json())
+    .then((events) => {
+      var events = events.entry.map((e) => {
       var content = e.content;
       var spl = content.split("\n");
       var time_origin = spl[0].split("：")[1].split("~")[0];
