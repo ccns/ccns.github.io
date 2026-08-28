@@ -9,7 +9,7 @@ const renderPage = (src, dst, resources) => {
       console.log(err);
       return;
     }
-    // console.log(html); 
+    // console.log(html);
     fs.writeFileSync(dst, html, "utf8");
   });
 }
@@ -21,19 +21,19 @@ const renderEvents = (src, dst) => {
     .then((response) => response.json())
     .then((events) => {
       var events = events.entry.map((e) => {
-      var content = e.content;
-      var spl = content.split("\n");
-      var time_origin = spl[0].split("：")[1].split("~")[0];
-      var place = spl[1].split("：")[1].split("/")[0];
+        var content = e.content;
+        var spl = content.split("\n");
+        var time_origin = spl[0].split("：")[1].split("~")[0];
+        var place = spl[1].split("：")[1].split("/")[0];
 
-      var time = moment(time_origin, "YYYY/MM/DD HH:mm(Z)").format(
-        "YYYY年M月D日 Ah點"
-      );
+        var time = moment(time_origin, "YYYY/MM/DD HH:mm(Z)").format(
+          "YYYY年M月D日 Ah點"
+        );
 
-      e.time = time;
-      e.place = place;
-      return e;
-    });
+        e.time = time;
+        e.place = place;
+        return e;
+      });
     renderPage(src, dst, { events: events });
   }).catch((error) => {
     console.log(error)
